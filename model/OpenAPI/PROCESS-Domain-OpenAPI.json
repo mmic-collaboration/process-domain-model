@@ -1,13 +1,13 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "PLANT Domain Open API Schema",
-    "version": "0.0.1"
+    "title": "PROCESS Domain Open API Schema",
+    "version": "0.2.1"
   },
   "paths": {},
   "components": {
     "schemas": {
-      "Alarm": {
+      "Alarm_Process_Event": {
         "type": "object",
         "properties": {
           "sensorEventId": {
@@ -43,7 +43,7 @@
         },
         "nullable": false
       },
-      "Sensor": {
+      "Recipe": {
         "type": "object",
         "properties": {
           "sensorId": {
@@ -75,26 +75,7 @@
         },
         "nullable": false
       },
-      "Equipment": {
-        "type": "object",
-        "properties": {
-          "equipmentId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "equipment id"
-          },
-          "equipmentModel": {
-            "type": "string",
-            "title": "equipment model"
-          },
-          "manufacturer": {
-            "type": "string",
-            "title": "manufacturer"
-          }
-        },
-        "nullable": false
-      },
-      "Sensor_Event": {
+      "Process_Event": {
         "type": "object",
         "properties": {
           "sensorEventId": {
@@ -110,6 +91,122 @@
             "type": "integer",
             "format": "int32",
             "title": "sensor id"
+          }
+        },
+        "nullable": false
+      },
+      "Recipe_Process_Event": {
+        "type": "object",
+        "description": "The Recipe Process Event Configuration describes the relationship between the Recipe and any Process Events which may be produced from a Production Run that uses that recipe.  Different Process Events have different properties depending on their type or the version of the recipe employed.",
+        "properties": {
+          "recipeProcessEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe process event id"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe id"
+          },
+          "processEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event id"
+          },
+          "recipeProcessEventDescription": {
+            "type": "string",
+            "title": "recipe process event description"
+          },
+          "recipeProcessEventConfiguration": {
+            "type": "array",
+            "title": "recipe process event configuration",
+            "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
+            "items": {
+              "type": "object",
+              "nullable": false
+            },
+            "nullable": false
+          }
+        },
+        "nullable": false
+      },
+      "Recipe_Process_Event_Configuration": {
+        "type": "object",
+        "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
+        "properties": {
+          "recipeProcessEventConfigurationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe process event configuration id"
+          },
+          "recipeProcessEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe process event id"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe id"
+          },
+          "processEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event id"
+          },
+          "recipeProcessEventConfigurationName": {
+            "type": "string",
+            "title": "recipe process event configuration name"
+          },
+          "recipeProcessEventConfigurationValue": {
+            "type": "string",
+            "title": "recipe process event configuration value"
+          }
+        },
+        "nullable": false
+      },
+      "Alarm_Code": {
+        "type": "object",
+        "properties": {
+          "alarmCodeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "alarm code id"
+          },
+          "alarmCode": {
+            "type": "string",
+            "title": "alarm code"
+          },
+          "alarmCodeDescription": {
+            "type": "string",
+            "title": "alarm code description"
+          },
+          "alarmCodeSeverity": {
+            "type": "string",
+            "title": "alarm code severity"
+          },
+          "warningMessage": {
+            "type": "string",
+            "title": "warning message"
+          },
+          "recoveryAction": {
+            "type": "string",
+            "title": "recovery action"
+          },
+          "criticality-Tbd": {
+            "type": "string",
+            "title": "criticality - TBD"
+          },
+          "machineCategory-Tbd": {
+            "type": "string",
+            "title": "machine category - TBD",
+            "example": "guard-stop"
+          },
+          "type-Tbd": {
+            "type": "string",
+            "title": "type - TBD",
+            "description": "eg. system vs operational"
           }
         },
         "nullable": false
