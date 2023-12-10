@@ -1,0 +1,119 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "PLANT Domain Open API Schema",
+    "version": "0.0.1"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Alarm": {
+        "type": "object",
+        "properties": {
+          "sensorEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event id"
+          },
+          "sensorEventType": {
+            "type": "string",
+            "title": "sensor event type"
+          },
+          "sensorId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor id"
+          },
+          "alarmColour": {
+            "type": "string",
+            "title": "alarm colour"
+          },
+          "status": {
+            "type": "string",
+            "title": "status"
+          },
+          "warningMessage": {
+            "type": "string",
+            "title": "warning message"
+          },
+          "recoveryAction": {
+            "type": "string",
+            "title": "recovery action"
+          }
+        },
+        "nullable": false
+      },
+      "Sensor": {
+        "type": "object",
+        "properties": {
+          "sensorId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor id"
+          },
+          "sensorEventId": {
+            "type": "string",
+            "title": "sensor event id"
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "equipment id"
+          },
+          "sensorType": {
+            "type": "string",
+            "title": "sensor type"
+          },
+          "sensorConfiguration": {
+            "type": "array",
+            "title": "Sensor Configuration",
+            "items": {
+              "type": "string"
+            },
+            "nullable": false
+          }
+        },
+        "nullable": false
+      },
+      "Equipment": {
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "equipment id"
+          },
+          "equipmentModel": {
+            "type": "string",
+            "title": "equipment model"
+          },
+          "manufacturer": {
+            "type": "string",
+            "title": "manufacturer"
+          }
+        },
+        "nullable": false
+      },
+      "Sensor_Event": {
+        "type": "object",
+        "properties": {
+          "sensorEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event id"
+          },
+          "sensorEventType": {
+            "type": "string",
+            "title": "sensor event type"
+          },
+          "sensorId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor id"
+          }
+        },
+        "nullable": false
+      }
+    }
+  }
+}

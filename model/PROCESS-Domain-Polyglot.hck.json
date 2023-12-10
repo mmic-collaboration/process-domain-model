@@ -1,0 +1,932 @@
+{
+    "modelName": "PLANT Domain LDM",
+    "collections": [
+        {
+            "collectionName": "Alarm",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "sensor event id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "cb0531c4-5f56-45c9-8da0-22132d269e4c",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "foreignField": [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                    ],
+                    "parentRelationship": "13fdc110-e840-4d4f-95dc-a274515a3d92"
+                },
+                {
+                    "name": "sensor event type",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "776d28ba-7f7a-4010-8d3a-5fd8ff3ccb51",
+                    "error": {}
+                },
+                {
+                    "name": "sensor id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "e66d811f-c7b8-42f1-8c9b-22eb2957cf0b",
+                    "error": {}
+                },
+                {
+                    "name": "alarm colour",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "98a25621-5db5-4b67-a79c-08226ebf8663",
+                    "error": {}
+                },
+                {
+                    "name": "status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "4e5d12d6-c4ad-4e6d-a3da-9b0905aef43b",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "38184a78-0974-4369-8c19-3c35a9ef67ef",
+                    "name": "warning message",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "65ba1f34-8c26-477b-9078-97d2676778ad",
+                    "name": "recovery action",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5140ff40-f362-485f-8d2c-1beb15883a50"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "44c9d771-d4a8-4c6c-814e-2b342f612790",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Sensor",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "sensor id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "cc7da46d-ac5f-4055-857c-df44e31cfd33",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "596f6930-9091-4cd5-859f-0a948c0c1e73"
+                    ]
+                },
+                {
+                    "name": "sensor event id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b4915b0b-3eb7-4bbb-8e99-0020e36ffba3",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "equipment id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "08d06afb-c81c-4ad8-b952-e4126c7383ff",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                    "foreignField": [
+                        "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                        "3e06eb93-3ebd-4d72-aae1-0503356df813"
+                    ],
+                    "parentRelationship": "bd4f4e73-0796-4df6-8cca-999d834b028c"
+                },
+                {
+                    "name": "sensor type",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "923dfbd5-1185-4319-b06b-217d4d45c4e6",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "Sensor Configuration",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1
+                            },
+                            "tPrecision": 9,
+                            "primaryKey": false,
+                            "childType": "varchar",
+                            "type": "string",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "baeab1d9-b4d6-46d1-976b-9614305caa35",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "Config-0001",
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1
+                            },
+                            "tPrecision": 9,
+                            "primaryKey": false,
+                            "childType": "varchar",
+                            "type": "string",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "8da85761-a0e1-4cb7-b272-2b513bf0358d",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "Config-0002",
+                            "error": {}
+                        }
+                    ],
+                    "childType": "array",
+                    "type": "array",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "dd3c3733-a4b8-45e3-b8ec-3e6d3feb9413",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "b72b6c38-512f-4a1d-bd2d-c7281ac77e96"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Equipment",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "equipment id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "3e06eb93-3ebd-4d72-aae1-0503356df813",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "bd4f4e73-0796-4df6-8cca-999d834b028c"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "equipment model",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "9d630e00-adb7-4988-b646-5b3a21b8c19b",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "fd21901e-6bae-4bf2-b1c3-fcd9bea9909d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "name": "manufacturer",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0fdf339d-05d8-4e47-b586-b3d103245a54"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Sensor Event",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "sensor event id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                    "error": {},
+                    "childRelationships": [
+                        "13fdc110-e840-4d4f-95dc-a274515a3d92"
+                    ]
+                },
+                {
+                    "name": "sensor event type",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                    "error": {}
+                },
+                {
+                    "name": "sensor id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2ef11825-3352-4007-98a2-bc00bae9a094",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "foreignField": [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ],
+                    "parentRelationship": "596f6930-9091-4cd5-859f-0a948c0c1e73",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c54ada2d-5336-421d-8166-67aeaa6cf49a"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "PLANT Domain",
+            "type": "bucket",
+            "collectionIds": [
+                "44c9d771-d4a8-4c6c-814e-2b342f612790",
+                "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Sensor.equipment id to Equipment.equipment id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                    "3e06eb93-3ebd-4d72-aae1-0503356df813"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "08d06afb-c81c-4ad8-b952-e4126c7383ff"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+            "childCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "GUID": "bd4f4e73-0796-4df6-8cca-999d834b028c",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "8817b34b-0df6-4bbf-a4ea-78bfb0b8376c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1319.6886806294235,
+                        "y": 1968.9711829946607
+                    },
+                    {
+                        "x": 1283.6149580016863,
+                        "y": 1968.9711829946607
+                    },
+                    {
+                        "x": 1283.6149580016863,
+                        "y": 1968.790082674941
+                    },
+                    {
+                        "x": 1247.5412353739493,
+                        "y": 1968.790082674941
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "2ef11825-3352-4007-98a2-bc00bae9a094"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "596f6930-9091-4cd5-859f-0a948c0c1e73",
+            "level": "field",
+            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "childCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1678.931746322855,
+                        "y": 1970.440245551217
+                    },
+                    {
+                        "x": 1625.8102134761393,
+                        "y": 1970.440245551217
+                    },
+                    {
+                        "x": 1625.8102134761393,
+                        "y": 1968.9711829946607
+                    },
+                    {
+                        "x": 1572.6886806294235,
+                        "y": 1968.9711829946607
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Alarm.sensor event id to Sensor Event copy.sensor event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "44c9d771-d4a8-4c6c-814e-2b342f612790",
+                    "cb0531c4-5f56-45c9-8da0-22132d269e4c"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "childCollection": "44c9d771-d4a8-4c6c-814e-2b342f612790",
+            "GUID": "13fdc110-e840-4d4f-95dc-a274515a3d92",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "a1117ee8-eb01-40c9-866b-bfc05f0612c2",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1795.3061988775999,
+                        "y": 2132.632327954547
+                    },
+                    {
+                        "x": 1795.3061988775999,
+                        "y": 2013.940245551217
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "36a81f06-4d30-4fa7-a224-2ff380cbc91b": "PLANT Domain",
+        "44c9d771-d4a8-4c6c-814e-2b342f612790": "Alarm",
+        "e66d811f-c7b8-42f1-8c9b-22eb2957cf0b": "sensor id",
+        "776d28ba-7f7a-4010-8d3a-5fd8ff3ccb51": "sensor event type",
+        "cb0531c4-5f56-45c9-8da0-22132d269e4c": "sensor event id",
+        "cc7da46d-ac5f-4055-857c-df44e31cfd33": "sensor id",
+        "b4915b0b-3eb7-4bbb-8e99-0020e36ffba3": "sensor event id",
+        "923dfbd5-1185-4319-b06b-217d4d45c4e6": "sensor type",
+        "e961595d-cd47-4802-91d4-05c90e7f9ee2": "Sensor",
+        "dd3c3733-a4b8-45e3-b8ec-3e6d3feb9413": "Sensor Configuration",
+        "3e06eb93-3ebd-4d72-aae1-0503356df813": "equipment id",
+        "9d630e00-adb7-4988-b646-5b3a21b8c19b": "equipment model",
+        "fd21901e-6bae-4bf2-b1c3-fcd9bea9909d": "manufacturer",
+        "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c": "Equipment",
+        "08d06afb-c81c-4ad8-b952-e4126c7383ff": "equipment id",
+        "bd4f4e73-0796-4df6-8cca-999d834b028c": "fk Sensor.equipment id to Equipment.equipment id",
+        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae": "Sensor Event",
+        "e3092d9a-390a-42d4-9e81-fd488491f87e": "sensor event id",
+        "642911f6-b1b7-413c-a5ca-a1c0fd914352": "sensor event type",
+        "2ef11825-3352-4007-98a2-bc00bae9a094": "sensor id",
+        "596f6930-9091-4cd5-859f-0a948c0c1e73": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "98a25621-5db5-4b67-a79c-08226ebf8663": "alarm colour",
+        "4e5d12d6-c4ad-4e6d-a3da-9b0905aef43b": "status",
+        "38184a78-0974-4369-8c19-3c35a9ef67ef": "warning message",
+        "65ba1f34-8c26-477b-9078-97d2676778ad": "recovery action",
+        "13fdc110-e840-4d4f-95dc-a274515a3d92": "fk Alarm.sensor event id to Sensor Event copy.sensor event id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "76ebbb62-699c-4a7e-ad2c-52d8785f54e0"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "f115c236-0aa2-43d7-9700-92002a2efeb6"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "838a16fe-a737-4ab0-86e0-d9392fedd53c"
+    },
+    "sources": [],
+    "decorativeSymbols": [
+        {
+            "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+            "name": "New annotation",
+            "type": "annotation",
+            "disableInitialFocus": true,
+            "value": "# PLANT Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.0.1\n- date: 9-dec-2023\n\nThis is the PLANT Domain LDM for the Digital Membership data architecture."
+        }
+    ],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-09-25T11:05:29.690Z",
+    "GUID": "c430c0ee-d3ba-43ab-9a79-baf2974f8efb",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-12-09T18:41:34.712Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.12"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "44c9d771-d4a8-4c6c-814e-2b342f612790",
+                        "x": 1678.3061988775999,
+                        "y": 2132.632327954546,
+                        "width": 234,
+                        "height": 159,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "x": 1319.6886806294235,
+                        "y": 1889.4711829946607,
+                        "width": 253,
+                        "height": 159,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                        "x": 1013.5412353739492,
+                        "y": 1925.290082674941,
+                        "width": 234,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "x": 1678.931746322855,
+                        "y": 1926.940245551217,
+                        "width": 234,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 973.5412353739492,
+                        "y": 1849.4711829946607,
+                        "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "44c9d771-d4a8-4c6c-814e-2b342f612790",
+                            "size": 100,
+                            "x": 2398.089995028435,
+                            "y": 1495.7192539520024
+                        },
+                        {
+                            "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "size": 100,
+                            "x": 2103.6537191498437,
+                            "y": 1271.656472019519
+                        },
+                        {
+                            "GUID": "ee498f5b-94ed-45f0-a6fd-a3a1d1a6eb3c",
+                            "size": 100,
+                            "x": 1808.2920324427348,
+                            "y": 1325.83731729758
+                        },
+                        {
+                            "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "size": 100,
+                            "x": 2394.4313405794865,
+                            "y": 1195.483201660295
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1077.9401459854007,
+                            "y": 1265,
+                            "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+                        }
+                    ],
+                    "decorativeSymbols": [
+                        {
+                            "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+                            "x": 1243.9131115400862,
+                            "y": 1664.8284490559215,
+                            "height": 150,
+                            "width": 300
+                        }
+                    ],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [
+                    {
+                        "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+                        "x": 844.6556101827839,
+                        "y": 1489.6824696869166,
+                        "height": 237,
+                        "width": 425
+                    }
+                ],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
