@@ -1,14 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Recipe Process Event",
-    "description": "The Recipe Process Event Configuration describes the relationship between the Recipe and any Process Events which may be produced from a Production Run that uses that recipe.  Different Process Events have different properties depending on their type or the version of the recipe employed.",
+    "title": "Deviation",
     "properties": {
-        "recipe process event id": {
+        "deviation id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "053abbc9-4947-4024-80df-82c40ddb854b",
+                "id": "8b3aff81-e1a8-4e74-8215-6469051b33cb",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -18,11 +17,25 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe id": {
+        "product batch id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
                 "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation rule id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "5c3ac47a-9975-4b4f-9664-330d5ec434fe",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -44,7 +57,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe process event description": {
+        "deviation headline": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -54,37 +67,27 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe process event configuration": {
-            "type": "array",
-            "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
+        "deviation severity": {
+            "type": "string",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
             "tPrecision": 9,
-            "additionalItems": true,
-            "uniqueItems": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "minProperties": 0,
-            "maxProperties": 10,
-            "items": {
-                "type": "object",
-                "isActivated": true,
-                "autoincrement": {
-                    "step_num": 1
-                },
-                "tPrecision": 9,
-                "subtype": "map<str>",
-                "keyType": "char",
-                "keySubtype": "text",
-                "additionalProperties": false,
-                "compositePrimaryKey": false,
-                "compositeUniqueKey": false,
-                "displayName": "configuration item"
-            }
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "deviation id",
+        "product batch id",
+        "process event id",
+        "deviation severity"
+    ]
 }

@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Alarm Code",
+    "title": "Incident",
     "properties": {
-        "alarm code id": {
+        "incident id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
@@ -17,7 +17,33 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "alarm code": {
+        "process event id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "incident owner id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "89c5a21f-049f-453d-84d3-c10ee16d2478",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "incident severity": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -27,7 +53,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "alarm code description": {
+        "incident status": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -37,62 +63,8 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "alarm code severity": {
+        "incident message": {
             "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "warning message": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "recovery action": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "criticality - TBD": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "machine category - TBD": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "examples": [
-                "guard-stop"
-            ]
-        },
-        "type - TBD": {
-            "type": "string",
-            "description": "eg. system vs operational",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
@@ -103,5 +75,8 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "incident id"
+    ]
 }

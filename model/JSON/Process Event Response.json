@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Process Event",
+    "title": "Process Event Response",
     "properties": {
-        "process event id": {
+        "process response id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -17,11 +17,11 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event type id": {
+        "process event id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "2fcf03ea-1602-48bd-8894-686da66c865e",
+                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -30,11 +30,12 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe id": {
+        "process user id": {
             "type": "number",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -43,21 +44,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event status": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-            "symbols": [
-                "Y"
-            ],
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "process event timestamp": {
+        "event acknowledged timestamp": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -70,7 +57,6 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "process event id",
-        "process event status"
+        "process event id"
     ]
 }

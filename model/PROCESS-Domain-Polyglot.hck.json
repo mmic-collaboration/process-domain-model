@@ -2,11 +2,88 @@
     "modelName": "PROCESS Domain LDM",
     "collections": [
         {
-            "collectionName": "Alarm Process Event",
+            "collectionName": "Incident",
             "type": "object",
             "properties": [
                 {
                     "name": "process event id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "cb0531c4-5f56-45c9-8da0-22132d269e4c",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "foreignField": [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                    ],
+                    "parentRelationship": "aaa2ebec-53df-4e39-b874-c9c6eed4f89e",
+                    "error": {}
+                },
+                {
+                    "name": "incident owner id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "89c5a21f-049f-453d-84d3-c10ee16d2478"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "eab63551-6aad-4ad6-bd38-0e52a24a50c3",
+                    "error": {}
+                },
+                {
+                    "name": "incident severity",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "55ae070e-6422-400b-9f9a-f02489879004",
+                    "error": {}
+                },
+                {
+                    "name": "incident id",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
@@ -27,70 +104,12 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "cb0531c4-5f56-45c9-8da0-22132d269e4c",
-                    "error": {},
-                    "relationshipType": "Foreign Key",
-                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                    "foreignField": [
-                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
-                    ],
-                    "parentRelationship": "aaa2ebec-53df-4e39-b874-c9c6eed4f89e"
-                },
-                {
-                    "name": "alarm code id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1,
-                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
-                    },
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
                     "GUID": "75b39a49-6a3d-4b88-b323-9afe86c3203c",
-                    "foreignCollection": "8df340b6-e9df-414d-833e-4b5942670729",
-                    "foreignField": [
-                        "8df340b6-e9df-414d-833e-4b5942670729",
-                        "a675917b-b330-4f3e-8285-246efe40fd13"
-                    ],
-                    "error": {},
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "0966ce35-7aa5-4d7b-943f-1f6715aacf6a"
-                },
-                {
-                    "name": "process event type",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "776d28ba-7f7a-4010-8d3a-5fd8ff3ccb51",
+                    "required": true,
                     "error": {}
                 },
                 {
-                    "name": "status",
+                    "name": "incident status",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
@@ -126,7 +145,7 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "38184a78-0974-4369-8c19-3c35a9ef67ef",
-                    "name": "warning message",
+                    "name": "incident message",
                     "error": {}
                 }
             ],
@@ -170,7 +189,9 @@
                     "foreignCollection": "",
                     "foreignField": [],
                     "childRelationships": [
-                        "8ae6f948-8256-4d89-9950-652ccf5a58a7"
+                        "8ae6f948-8256-4d89-9950-652ccf5a58a7",
+                        "55bf0eca-9db3-4d14-909c-0624e695e200",
+                        "2d8e905b-ef40-4a74-a74a-f7950153ea40"
                     ],
                     "error": {}
                 },
@@ -287,21 +308,29 @@
                     "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
                     "childRelationships": [
                         "dd5d416e-91a9-409c-ad01-22219003ecc5",
-                        "aaa2ebec-53df-4e39-b874-c9c6eed4f89e"
+                        "aaa2ebec-53df-4e39-b874-c9c6eed4f89e",
+                        "f773696b-9c7c-4679-880d-dd80059e5188",
+                        "7aa8238d-01de-4ec4-ae94-b0f74d9951d0"
                     ],
+                    "required": true,
                     "error": {}
                 },
                 {
-                    "name": "process event type",
+                    "name": "process event type id",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
-                        "step_num": 1
+                        "step_num": 1,
+                        "GUID": "2fcf03ea-1602-48bd-8894-686da66c865e"
                     },
                     "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
                     "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
                     "compositeKey": [
                         "compositePrimaryKey",
                         "compositeUniqueKey"
@@ -309,6 +338,69 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                    "error": {},
+                    "childRelationships": [
+                        "1c7a70e1-8275-4870-9a76-7031d2b3b6d2"
+                    ]
+                },
+                {
+                    "name": "recipe id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "55335ce0-d5fb-4a79-a0b3-5998fcacad84",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "foreignField": [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ],
+                    "parentRelationship": "55bf0eca-9db3-4d14-909c-0624e695e200",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "process event status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "symbols": [
+                        "Y"
+                    ],
+                    "childType": "enum",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "8e0b0be7-cc2f-41b8-a9cb-5392f6888b91",
                     "error": {}
                 },
                 {
@@ -347,7 +439,7 @@
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
         },
         {
-            "collectionName": "Recipe Process Event",
+            "collectionName": "Process Event Recipe",
             "type": "object",
             "properties": [
                 {
@@ -373,10 +465,7 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "e029f33d-f254-4707-a8d5-3ebe1e1c1fe7",
-                    "error": {},
-                    "childRelationships": [
-                        "cac47482-d118-4d10-83f4-a0777e9da83a"
-                    ]
+                    "error": {}
                 },
                 {
                     "name": "recipe id",
@@ -473,9 +562,7 @@
                         "step_num": 1
                     },
                     "tPrecision": 9,
-                    "primaryKey": false,
-                    "additionalItems": true,
-                    "uniqueItems": false,
+                    "subtype": "list<str>",
                     "properties": [
                         {
                             "hackoladeMeta": {},
@@ -484,28 +571,24 @@
                                 "step_num": 1
                             },
                             "tPrecision": 9,
-                            "subtype": "map<str>",
-                            "keyType": "char",
-                            "keySubtype": "text",
                             "primaryKey": false,
-                            "properties": [],
-                            "additionalProperties": false,
-                            "childType": "map",
-                            "type": "document",
+                            "childType": "varchar",
+                            "type": "string",
                             "compositeKey": [
                                 "compositePrimaryKey",
                                 "compositeUniqueKey"
                             ],
                             "compositePrimaryKey": false,
                             "compositeUniqueKey": false,
-                            "GUID": "5dc908e0-4946-4ce7-8093-e842604a95fd",
+                            "GUID": "0ed927dd-79fd-4791-83ad-e3e727f4d982",
                             "arrayItem": true,
-                            "arrayParentType": "array",
-                            "displayName": "configuration item",
-                            "error": {}
+                            "arrayParentType": "list"
                         }
                     ],
-                    "childType": "array",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "childType": "list",
                     "type": "array",
                     "compositeKey": [
                         "compositePrimaryKey",
@@ -513,10 +596,8 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "3bdf8c2e-4bb1-4c2a-954e-07da97e23fa4",
-                    "minProperties": 0,
-                    "maxProperties": 10,
                     "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
+                    "GUID": "3bdf8c2e-4bb1-4c2a-954e-07da97e23fa4",
                     "error": {}
                 }
             ],
@@ -532,11 +613,11 @@
             "description": "The Recipe Process Event Configuration describes the relationship between the Recipe and any Process Events which may be produced from a Production Run that uses that recipe.  Different Process Events have different properties depending on their type or the version of the recipe employed."
         },
         {
-            "collectionName": "Recipe Process Event Configuration",
+            "collectionName": "Process Event Response",
             "type": "object",
             "properties": [
                 {
-                    "name": "recipe process event configuration id",
+                    "name": "process response id",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
@@ -557,64 +638,10 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "4b0f8818-dd51-459f-9b1a-42ebfcb030ba",
-                    "error": {}
-                },
-                {
-                    "name": "recipe process event id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1,
-                        "GUID": "053abbc9-4947-4024-80df-82c40ddb854b"
-                    },
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "0ae4957f-d35a-4c31-9b06-ae47e74eb262",
-                    "foreignCollection": "631cb315-4cd8-4577-9737-f07bbbd942ec",
-                    "foreignField": [
-                        "631cb315-4cd8-4577-9737-f07bbbd942ec",
-                        "e029f33d-f254-4707-a8d5-3ebe1e1c1fe7"
-                    ],
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "cac47482-d118-4d10-83f4-a0777e9da83a",
-                    "error": {}
-                },
-                {
-                    "name": "recipe id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1,
-                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
-                    },
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "e9de0f0a-656b-4aba-904d-eda9ce64f618",
+                    "GUID": "653825ef-830a-493b-bd1b-07b4c5da0aad",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
                     "error": {}
                 },
                 {
@@ -639,44 +666,60 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "2cb66625-daac-4983-b265-333e216bb5e4",
+                    "GUID": "9ee4269d-6fc8-494e-baee-0c05cc855fa1",
                     "childRelationships": [],
-                    "error": {},
-                    "foreignCollection": "",
-                    "foreignField": []
-                },
-                {
-                    "name": "recipe process event configuration name",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
+                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "foreignField": [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
                     ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "d9199d49-61f9-451c-8fbe-c8a18e092dca",
-                    "foreignCollection": "",
-                    "foreignField": [],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f773696b-9c7c-4679-880d-dd80059e5188",
+                    "required": true,
                     "error": {}
                 },
                 {
-                    "name": "recipe process event configuration value",
+                    "name": "process user id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "08eee974-3bb1-4d46-976c-ab44cedac407"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "f866a998-9fe2-4cc7-bcae-f345eec1bcf3",
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "foreignCollection": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                    "foreignField": [
+                        "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                        "07c09ac5-9315-4819-bc6b-0aef04343518"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5af5d971-ee0e-45bc-8698-ad235617ddfa",
+                    "error": {}
+                },
+                {
+                    "name": "event acknowledged timestamp",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
                         "step_num": 1
                     },
-                    "tPrecision": 9,
                     "primaryKey": false,
-                    "childType": "varchar",
+                    "childType": "timestamp_tz",
                     "type": "string",
                     "compositeKey": [
                         "compositePrimaryKey",
@@ -684,7 +727,7 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "39d61550-2393-4f3f-9dd2-e2110953e930",
+                    "GUID": "9a1096e4-dcb6-4295-911d-ff242820e28d",
                     "foreignCollection": "",
                     "foreignField": [],
                     "error": {}
@@ -693,25 +736,24 @@
             "definitions": {
                 "type": "definitions",
                 "properties": [],
-                "GUID": "a54a443b-1fd9-4c63-a45a-3d58dd784080"
+                "GUID": "d8e9b192-c3d3-4b7b-a37b-b9efea0dfdb2"
             },
             "isActivated": true,
             "additionalProperties": false,
-            "GUID": "de8f1167-74e5-45f8-b727-2d294141cbc9",
-            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
-            "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events."
+            "GUID": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
         },
         {
-            "collectionName": "Alarm Code",
+            "collectionName": "Process Event Acknowledged By",
             "type": "object",
             "properties": [
                 {
-                    "name": "alarm code id",
+                    "name": "process event acknowledged by person id",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
                         "step_num": 1,
-                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
                     },
                     "tPrecision": 9,
                     "index": true,
@@ -727,36 +769,16 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "a675917b-b330-4f3e-8285-246efe40fd13",
-                    "error": {},
+                    "GUID": "07c09ac5-9315-4819-bc6b-0aef04343518",
+                    "foreignCollection": "",
+                    "foreignField": [],
                     "childRelationships": [
-                        "0966ce35-7aa5-4d7b-943f-1f6715aacf6a"
-                    ]
-                },
-                {
-                    "name": "alarm code",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
+                        "5af5d971-ee0e-45bc-8698-ad235617ddfa"
                     ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "e4f4b9cd-a8e3-4600-ae45-8c76afd60dfe",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "error": {}
                 },
                 {
-                    "name": "alarm code description",
+                    "name": "process event acknowledged by name",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
@@ -772,31 +794,8 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "3d718683-72f6-48e3-a098-ba7abd1bdc23",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "error": {}
-                },
-                {
-                    "name": "alarm code severity",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "eedbbfb3-93a8-441c-a4f6-6474c8b2bab8",
-                    "foreignCollection": "",
-                    "foreignField": [],
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "GUID": "7373cfad-8222-491c-8997-63c23ff0ad04",
                     "error": {}
                 },
                 {
@@ -815,111 +814,828 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "GUID": "f4e73472-3480-40c0-838e-0fd2d3ef2cb7",
-                    "name": "warning message",
-                    "error": {},
-                    "foreignCollection": "",
-                    "foreignField": []
-                },
-                {
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "f749ef28-49a2-46c2-92f2-a1958321934f",
-                    "name": "recovery action",
-                    "error": {},
-                    "foreignCollection": "",
-                    "foreignField": []
-                },
-                {
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "7553a094-9d70-450f-97e6-3cf3f17b1da0",
-                    "name": "criticality - TBD",
+                    "GUID": "9142f83d-704f-463a-955d-a712079d9a1a",
                     "foreignCollection": "",
                     "foreignField": [],
-                    "error": {}
-                },
-                {
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "55c9cf3a-3059-474e-9e21-cbbc707a7a0f",
-                    "name": "machine category - TBD",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "sample": "guard-stop",
-                    "error": {}
-                },
-                {
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "46fa1ee8-bdb4-46fd-a589-9a0143836a8a",
-                    "name": "type - TBD",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "description": "eg. system vs operational",
+                    "name": "process event acknowledged by role",
                     "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
                 "properties": [],
-                "GUID": "ad082737-dae3-4aef-8650-4c21a4ee0d6b"
+                "GUID": "40386722-8ed0-474c-91f5-41d21698bd33"
             },
             "isActivated": true,
             "additionalProperties": false,
-            "GUID": "8df340b6-e9df-414d-833e-4b5942670729",
+            "GUID": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Deviation Rule",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "deviation rule id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "5c3ac47a-9975-4b4f-9664-330d5ec434fe"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2",
+                    "error": {},
+                    "childRelationships": [
+                        "08c01ba9-18a0-49e5-9903-1cad8b2766c7"
+                    ]
+                },
+                {
+                    "name": "process event type id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "78f06df0-0659-4be0-a2dc-c71bac69a666"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "759b2bdd-df35-4b70-a570-647ac8e8ac31",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "foreignField": [
+                        "38c05342-c87d-4678-9b81-9231b87b7395",
+                        "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                    ],
+                    "parentRelationship": "305e6178-6eff-4cef-8f33-ca13a282c49b",
+                    "error": {}
+                },
+                {
+                    "name": "deviation rule summary",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "07917f8e-38c7-4bc7-aa50-c057f46d3b65",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f159d610-e23b-454b-9dff-928327e6d59d"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Deviation",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "deviation id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "8b3aff81-e1a8-4e74-8215-6469051b33cb"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "7483d7c3-9f42-44ae-afcb-8453466d753a",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "07b24627-4208-46e8-83b0-b8c8508d14f2"
+                    ]
+                },
+                {
+                    "name": "deviation rule id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "5c3ac47a-9975-4b4f-9664-330d5ec434fe"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "8af8aad8-84ab-4727-973f-1f49ba521206",
+                    "foreignCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "foreignField": [
+                        "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                        "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                    ],
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "08c01ba9-18a0-49e5-9903-1cad8b2766c7"
+                },
+                {
+                    "name": "process event id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "foreignField": [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                    ],
+                    "parentRelationship": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "deviation headline",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "ccf6bdd4-92c3-487d-a26e-79f661a2bccf",
+                    "error": {}
+                },
+                {
+                    "name": "deviation severity",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "symbols": [
+                        "Y"
+                    ],
+                    "childType": "enum",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "f273ad66-c1b4-4e15-8f9f-7717509349af",
+                    "error": {}
+                },
+                {
+                    "name": "product batch id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2c1c314d-44fe-4f06-b681-733e00c267a9",
+                    "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "foreignField": [
+                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5d342984-aa89-4965-8080-f297dcb34107"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "e8f86ce8-5ef4-433c-a43a-e068201cad33"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Process Event Type",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "process event type id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "78f06df0-0659-4be0-a2dc-c71bac69a666"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "dfe4c308-7e1a-4496-9201-2cacfcef15c7",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "foreignField": [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                    ],
+                    "parentRelationship": "1c7a70e1-8275-4870-9a76-7031d2b3b6d2",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "305e6178-6eff-4cef-8f33-ca13a282c49b"
+                    ]
+                },
+                {
+                    "name": "process event type name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "symbols": [
+                        "Y"
+                    ],
+                    "childType": "enum",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "0b84f41d-f5f6-4be3-9cc3-13897f8b1b5b",
+                    "error": {}
+                },
+                {
+                    "name": "process event type description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "22e85ee9-8ea0-4cde-b0c7-f110b6614c71",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "9a79fbff-b296-4075-a456-80a823fec49e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "38c05342-c87d-4678-9b81-9231b87b7395",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "deviation Assessment",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "deviation id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "8b3aff81-e1a8-4e74-8215-6469051b33cb"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "09d26f0d-45aa-4c22-9d29-250b83ada95a",
+                    "required": true,
+                    "foreignCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "foreignField": [
+                        "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "07b24627-4208-46e8-83b0-b8c8508d14f2",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "bcc3daa2-ea9b-431c-8c72-e9cf1e705290",
+                    "name": "deviation assessment summary",
+                    "error": {}
+                },
+                {
+                    "name": "deviation severity",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "63eff17c-80d8-470f-8c32-5c7888d92a0c",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "deviation assessment outcome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "d62ba88b-53d3-4b09-9c34-7820a81867db",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "deviation assessed by id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "5bfd267c-8350-4538-8b75-57e7d48b4314",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "597ca1a2-81f0-449b-a6f9-a23206c2d803"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Production Run",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "production run id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "245296af-71fc-47ef-85f4-bf2399063f7b",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "3167e462-0898-4703-9684-092712a95da0"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "recipe id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "foreignField": [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ],
+                    "parentRelationship": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "production run code",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "1e9e8522-f8cc-4af2-82b8-a8c84fecfedb",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "production run start date-time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "timestamp_tz",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "GUID": "374324f8-20e2-44d5-9a97-a5f2bf238ce4",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "production run end date-time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "timestamp_tz",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "GUID": "75240a6f-d8e9-4633-9d66-d62ef2867373",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "a7abce5b-2689-4646-80c6-6fb57d77d4ae"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+        },
+        {
+            "collectionName": "Product Batch",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "product batch id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "9fc40ab2-4964-4256-9e51-b65bb2929fd3",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "5d342984-aa89-4965-8080-f297dcb34107"
+                    ],
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "production run id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b9303945-a19e-4f35-b788-82b736582991",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "foreignField": [
+                        "7aa25246-c096-4be0-a640-186cc28244ea",
+                        "245296af-71fc-47ef-85f4-bf2399063f7b"
+                    ],
+                    "parentRelationship": "3167e462-0898-4703-9684-092712a95da0"
+                },
+                {
+                    "name": "product batch work order id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "dc20d650-6493-4582-b053-90f24d7b00c2",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "product batch date-time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "timestamp_tz",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "GUID": "1a5dd93d-ed54-4484-a01c-a85129fa1900",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0c8a0514-7fd3-42f7-bf69-edfb94e4e3d3"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "647db0e4-11df-4372-aecc-79c937c0a6fb",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
         }
     ],
@@ -932,8 +1648,14 @@
                 "e961595d-cd47-4802-91d4-05c90e7f9ee2",
                 "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
                 "631cb315-4cd8-4577-9737-f07bbbd942ec",
-                "de8f1167-74e5-45f8-b727-2d294141cbc9",
-                "8df340b6-e9df-414d-833e-4b5942670729"
+                "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "38c05342-c87d-4678-9b81-9231b87b7395",
+                "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                "7aa25246-c096-4be0-a640-186cc28244ea",
+                "647db0e4-11df-4372-aecc-79c937c0a6fb"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -980,25 +1702,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1505.4538488353114,
-                        "y": 2047.4593904829956
+                        "x": 25108.93869614518,
+                        "y": 42622.769859191285
                     },
                     {
-                        "x": 1455.8323159885958,
-                        "y": 2047.4593904829956
+                        "x": 25108.93869614518,
+                        "y": 42571.99692688454
                     },
                     {
-                        "x": 1455.8323159885958,
-                        "y": 1898.9903279264392
+                        "x": 25244.715469217354,
+                        "y": 42571.99692688454
                     },
                     {
-                        "x": 1406.2107831418803,
-                        "y": 1898.9903279264392
+                        "x": 25244.715469217354,
+                        "y": 42521.22399457779
                     }
                 ],
                 "sides": [
-                    "left",
-                    "right"
+                    "top",
+                    "bottom"
                 ]
             }
         },
@@ -1033,126 +1755,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1857.4538488353114,
-                        "y": 2047.4593904829956
+                        "x": 25108.93869614518,
+                        "y": 42745.769859191285
                     },
                     {
-                        "x": 1909.9538488353114,
-                        "y": 2047.4593904829956
+                        "x": 25108.93869614518,
+                        "y": 42798.69752401953
                     },
                     {
-                        "x": 1909.9538488353114,
-                        "y": 1864.4593904829956
+                        "x": 25215.29186824412,
+                        "y": 42798.69752401953
                     },
                     {
-                        "x": 1962.4538488353114,
-                        "y": 1864.4593904829956
-                    }
-                ],
-                "sides": [
-                    "right",
-                    "left"
-                ]
-            }
-        },
-        {
-            "name": "fk Recipe Process Event Configuration.recipe process event id to Recipe Process Event.recipe process event id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "631cb315-4cd8-4577-9737-f07bbbd942ec",
-                    "e029f33d-f254-4707-a8d5-3ebe1e1c1fe7"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "de8f1167-74e5-45f8-b727-2d294141cbc9",
-                    "0ae4957f-d35a-4c31-9b06-ae47e74eb262"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "parentCollection": "631cb315-4cd8-4577-9737-f07bbbd942ec",
-            "childCollection": "de8f1167-74e5-45f8-b727-2d294141cbc9",
-            "GUID": "cac47482-d118-4d10-83f4-a0777e9da83a",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "3957255e-770c-4586-8973-6072b00fa619",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 1681.407324395132,
-                        "y": 2248.9593904829953
-                    },
-                    {
-                        "x": 1681.407324395132,
-                        "y": 2178.9593904829953
-                    },
-                    {
-                        "x": 1681.4538488353114,
-                        "y": 2178.9593904829953
-                    },
-                    {
-                        "x": 1681.4538488353114,
-                        "y": 2108.9593904829953
-                    }
-                ],
-                "sides": [
-                    "top",
-                    "bottom"
-                ]
-            }
-        },
-        {
-            "name": "fk Alarm Process Event.alarm code id to Alarm Code.alarm code id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "8df340b6-e9df-414d-833e-4b5942670729",
-                    "a675917b-b330-4f3e-8285-246efe40fd13"
-                ]
-            ],
-            "parentCardinality": "0..n",
-            "childField": [
-                [
-                    "44c9d771-d4a8-4c6c-814e-2b342f612790",
-                    "75b39a49-6a3d-4b88-b323-9afe86c3203c"
-                ]
-            ],
-            "childCardinality": "1",
-            "parentCollection": "8df340b6-e9df-414d-833e-4b5942670729",
-            "childCollection": "44c9d771-d4a8-4c6c-814e-2b342f612790",
-            "GUID": "0966ce35-7aa5-4d7b-943f-1f6715aacf6a",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "f40f24eb-4ae0-4ed3-8478-376c125190ad",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 2100.8283013900564,
-                        "y": 2144.651472886324
-                    },
-                    {
-                        "x": 2100.8283013900564,
-                        "y": 2194.1137750776243
-                    },
-                    {
-                        "x": 2100.915465849429,
-                        "y": 2194.1137750776243
-                    },
-                    {
-                        "x": 2100.915465849429,
-                        "y": 2243.5760772689246
+                        "x": 25215.29186824412,
+                        "y": 42851.62518884778
                     }
                 ],
                 "sides": [
@@ -1192,20 +1808,595 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2100.8283013900564,
-                        "y": 2021.6514728863242
+                        "x": 25214.63574532762,
+                        "y": 43322.75104910841
                     },
                     {
-                        "x": 2100.8283013900564,
-                        "y": 1964.8054316846599
+                        "x": 25214.63574532762,
+                        "y": 43148.6881189781
                     },
                     {
-                        "x": 2100.9538488353114,
-                        "y": 1964.8054316846599
+                        "x": 25215.29186824412,
+                        "y": 43148.6881189781
                     },
                     {
-                        "x": 2100.9538488353114,
-                        "y": 1907.9593904829956
+                        "x": 25215.29186824412,
+                        "y": 42974.62518884778
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Process Event Node.process event id to Process Event.process event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                    "9ee4269d-6fc8-494e-baee-0c05cc855fa1"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "f773696b-9c7c-4679-880d-dd80059e5188",
+            "level": "field",
+            "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "childCollection": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "68b68e9e-bf14-42ca-8317-b7ea5b086313",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 24877.700833481395,
+                        "y": 43005.65410774136
+                    },
+                    {
+                        "x": 24996.663017529423,
+                        "y": 43005.65410774136
+                    },
+                    {
+                        "x": 24996.663017529423,
+                        "y": 42913.12518884778
+                    },
+                    {
+                        "x": 25115.62520157745,
+                        "y": 42913.12518884778
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Process Event Response.process event response user id to process user.process user id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                    "07c09ac5-9315-4819-bc6b-0aef04343518"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                    "f866a998-9fe2-4cc7-bcae-f345eec1bcf3"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+            "childCollection": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+            "GUID": "5af5d971-ee0e-45bc-8698-ad235617ddfa",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "3a591fce-35f2-47f7-8409-74c69718a138",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 24632.34243740442,
+                        "y": 43058.15410774136
+                    },
+                    {
+                        "x": 24632.34243740442,
+                        "y": 43126.989619530286
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Process Event Type.process event type id to Process Event.process event type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "childCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+            "GUID": "1c7a70e1-8275-4870-9a76-7031d2b3b6d2",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "e4441da1-19d3-43f7-a254-b26105e1d00c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25537.705362777386,
+                        "y": 43197.32782876004
+                    },
+                    {
+                        "x": 25537.705362777386,
+                        "y": 43085.97650880391
+                    },
+                    {
+                        "x": 25314.958534910784,
+                        "y": 43085.97650880391
+                    },
+                    {
+                        "x": 25314.958534910784,
+                        "y": 42974.62518884778
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Alarm Process Event.process event id to Process Event.process event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419"
+                ]
+            ],
+            "childCardinality": "0..1",
+            "GUID": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
+            "level": "field",
+            "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "69f2a7f8-8421-4e57-806c-bedf4221081b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25922.940483703165,
+                        "y": 43172.31987221824
+                    },
+                    {
+                        "x": 25668.782842640307,
+                        "y": 43172.31987221824
+                    },
+                    {
+                        "x": 25668.782842640307,
+                        "y": 42913.12518884778
+                    },
+                    {
+                        "x": 25414.62520157745,
+                        "y": 42913.12518884778
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk deviation rule.process event type id to Process Event Type.process event type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "759b2bdd-df35-4b70-a570-647ac8e8ac31"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+            "childCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+            "GUID": "305e6178-6eff-4cef-8f33-ca13a282c49b",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "3fc9f9bb-459c-44e2-a3bb-ce60199f12ca",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25694.425604628963,
+                        "y": 43471.469696969696
+                    },
+                    {
+                        "x": 25694.425604628963,
+                        "y": 43377.89876286487
+                    },
+                    {
+                        "x": 25537.705362777386,
+                        "y": 43377.89876286487
+                    },
+                    {
+                        "x": 25537.705362777386,
+                        "y": 43284.32782876004
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk deviation(1).deviation id to deviation.deviation id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                    "09d26f0d-45aa-4c22-9d29-250b83ada95a"
+                ]
+            ],
+            "childCardinality": "0..1",
+            "parentCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "childCollection": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+            "GUID": "07b24627-4208-46e8-83b0-b8c8508d14f2",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f4192d36-490a-4798-bc21-ea9db17b6413",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26332.47230987036,
+                        "y": 43313.394267589276
+                    },
+                    {
+                        "x": 26332.47230987036,
+                        "y": 43278.10706990376
+                    },
+                    {
+                        "x": 26098.273817036497,
+                        "y": 43278.10706990376
+                    },
+                    {
+                        "x": 26098.273817036497,
+                        "y": 43242.81987221824
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "8af8aad8-84ab-4727-973f-1f49ba521206"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+            "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "GUID": "08c01ba9-18a0-49e5-9903-1cad8b2766c7",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "2fba59a1-7db7-4406-ad98-47b98e1ef4b6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26010.607150369833,
+                        "y": 43242.81987221824
+                    },
+                    {
+                        "x": 26010.607150369833,
+                        "y": 43357.14478459397
+                    },
+                    {
+                        "x": 25791.425604628963,
+                        "y": 43357.14478459397
+                    },
+                    {
+                        "x": 25791.425604628963,
+                        "y": 43471.469696969696
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "55335ce0-d5fb-4a79-a0b3-5998fcacad84"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "55bf0eca-9db3-4d14-909c-0624e695e200",
+            "level": "field",
+            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "childCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25314.958534910784,
+                        "y": 42851.62518884778
+                    },
+                    {
+                        "x": 25314.958534910784,
+                        "y": 42686.424591712785
+                    },
+                    {
+                        "x": 25280.38213588402,
+                        "y": 42686.424591712785
+                    },
+                    {
+                        "x": 25280.38213588402,
+                        "y": 42521.22399457779
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "3d9c1026-c5dc-4e1f-bc85-de502dbe2663"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
+            "level": "field",
+            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "childCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26057.503348005237,
+                        "y": 42671.17854003232
+                    },
+                    {
+                        "x": 25722.44274194463,
+                        "y": 42671.17854003232
+                    },
+                    {
+                        "x": 25722.44274194463,
+                        "y": 42468.72399457779
+                    },
+                    {
+                        "x": 25387.38213588402,
+                        "y": 42468.72399457779
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Deviation.product batch id to Product Batch.product batch id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "2c1c314d-44fe-4f06-b681-733e00c267a9"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+            "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "GUID": "5d342984-aa89-4965-8080-f297dcb34107",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "9fdc44aa-acad-48b9-8cff-1906e914ffa6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26054.440483703165,
+                        "y": 43101.81987221824
+                    },
+                    {
+                        "x": 26054.440483703165,
+                        "y": 43047.249206125285
+                    },
+                    {
+                        "x": 26219.503348005237,
+                        "y": 43047.249206125285
+                    },
+                    {
+                        "x": 26219.503348005237,
+                        "y": 42992.67854003232
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Product Batch.production run id to Production Run.production run id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "245296af-71fc-47ef-85f4-bf2399063f7b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "b9303945-a19e-4f35-b788-82b736582991"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+            "childCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+            "GUID": "3167e462-0898-4703-9684-092712a95da0",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "c2d4dc40-875a-4160-bade-e32aa8801945",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26219.503348005237,
+                        "y": 42869.67854003232
+                    },
+                    {
+                        "x": 26219.503348005237,
+                        "y": 42801.17854003232
+                    },
+                    {
+                        "x": 26213.503348005237,
+                        "y": 42801.17854003232
+                    },
+                    {
+                        "x": 26213.503348005237,
+                        "y": 42732.67854003232
                     }
                 ],
                 "sides": [
@@ -1219,8 +2410,7 @@
     "diagramViews": [],
     "idToNameHashTable": {
         "36a81f06-4d30-4fa7-a224-2ff380cbc91b": "PROCESS Domain",
-        "44c9d771-d4a8-4c6c-814e-2b342f612790": "Alarm Process Event",
-        "776d28ba-7f7a-4010-8d3a-5fd8ff3ccb51": "process event type",
+        "44c9d771-d4a8-4c6c-814e-2b342f612790": "Incident",
         "cb0531c4-5f56-45c9-8da0-22132d269e4c": "process event id",
         "cc7da46d-ac5f-4055-857c-df44e31cfd33": "receipe id",
         "b4915b0b-3eb7-4bbb-8e99-0020e36ffba3": "recipe title",
@@ -1228,40 +2418,77 @@
         "08d06afb-c81c-4ad8-b952-e4126c7383ff": "recipe code",
         "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae": "Process Event",
         "e3092d9a-390a-42d4-9e81-fd488491f87e": "process event id",
-        "642911f6-b1b7-413c-a5ca-a1c0fd914352": "process event type",
-        "4e5d12d6-c4ad-4e6d-a3da-9b0905aef43b": "status",
-        "38184a78-0974-4369-8c19-3c35a9ef67ef": "warning message",
+        "642911f6-b1b7-413c-a5ca-a1c0fd914352": "process event type id",
+        "4e5d12d6-c4ad-4e6d-a3da-9b0905aef43b": "incident status",
+        "38184a78-0974-4369-8c19-3c35a9ef67ef": "incident message",
         "56fcefd8-76ca-4100-8906-92e1843185c5": "process event id",
         "53b329a0-97c5-4012-bbde-3ee57882f116": "recipe process event description",
         "3fe0a92a-73e2-4283-a5c8-519649c9bbee": "recipe id",
-        "631cb315-4cd8-4577-9737-f07bbbd942ec": "Recipe Process Event",
+        "631cb315-4cd8-4577-9737-f07bbbd942ec": "Process Event Recipe",
         "8ae6f948-8256-4d89-9950-652ccf5a58a7": "fk Sensor Event.sensor id to Sensor.sensor id",
         "d55a39a2-30cf-4e90-906e-4582b81bf27a": "recipe version",
-        "2cb66625-daac-4983-b265-333e216bb5e4": "process event id",
-        "d9199d49-61f9-451c-8fbe-c8a18e092dca": "recipe process event configuration name",
-        "e9de0f0a-656b-4aba-904d-eda9ce64f618": "recipe id",
-        "de8f1167-74e5-45f8-b727-2d294141cbc9": "Recipe Process Event Configuration",
         "dd5d416e-91a9-409c-ad01-22219003ecc5": "fk Recipe Process Event.process event id to Process Event.process event id",
         "e029f33d-f254-4707-a8d5-3ebe1e1c1fe7": "recipe process event id",
-        "0ae4957f-d35a-4c31-9b06-ae47e74eb262": "recipe process event id",
-        "cac47482-d118-4d10-83f4-a0777e9da83a": "fk Recipe Process Event Configuration.recipe process event id to Recipe Process Event.recipe process event id",
-        "4b0f8818-dd51-459f-9b1a-42ebfcb030ba": "recipe process event configuration id",
-        "39d61550-2393-4f3f-9dd2-e2110953e930": "recipe process event configuration value",
         "3bdf8c2e-4bb1-4c2a-954e-07da97e23fa4": "recipe process event configuration",
-        "a675917b-b330-4f3e-8285-246efe40fd13": "alarm code id",
-        "e4f4b9cd-a8e3-4600-ae45-8c76afd60dfe": "alarm code",
-        "3d718683-72f6-48e3-a098-ba7abd1bdc23": "alarm code description",
-        "eedbbfb3-93a8-441c-a4f6-6474c8b2bab8": "alarm code severity",
-        "f4e73472-3480-40c0-838e-0fd2d3ef2cb7": "warning message",
-        "f749ef28-49a2-46c2-92f2-a1958321934f": "recovery action",
-        "8df340b6-e9df-414d-833e-4b5942670729": "Alarm Code",
-        "75b39a49-6a3d-4b88-b323-9afe86c3203c": "alarm code id",
+        "75b39a49-6a3d-4b88-b323-9afe86c3203c": "incident id",
         "65ef43e1-9936-4d5f-8a89-d6aa09a9de1e": "process event timestamp",
-        "55c9cf3a-3059-474e-9e21-cbbc707a7a0f": "machine category - TBD",
-        "46fa1ee8-bdb4-46fd-a589-9a0143836a8a": "type - TBD",
-        "7553a094-9d70-450f-97e6-3cf3f17b1da0": "criticality - TBD",
-        "0966ce35-7aa5-4d7b-943f-1f6715aacf6a": "fk Alarm Process Event.alarm code id to Alarm Code.alarm code id",
-        "aaa2ebec-53df-4e39-b874-c9c6eed4f89e": "fk Alarm Process Event.process event id to Process Event.process event id"
+        "aaa2ebec-53df-4e39-b874-c9c6eed4f89e": "fk Alarm Process Event.process event id to Process Event.process event id",
+        "653825ef-830a-493b-bd1b-07b4c5da0aad": "process response id",
+        "f866a998-9fe2-4cc7-bcae-f345eec1bcf3": "process user id",
+        "406f75d6-5517-41bc-bcf4-b8d5dfe39431": "Process Event Response",
+        "9a1096e4-dcb6-4295-911d-ff242820e28d": "event acknowledged timestamp",
+        "9ee4269d-6fc8-494e-baee-0c05cc855fa1": "process event id",
+        "f773696b-9c7c-4679-880d-dd80059e5188": "fk Process Event Node.process event id to Process Event.process event id",
+        "07c09ac5-9315-4819-bc6b-0aef04343518": "process event acknowledged by person id",
+        "7373cfad-8222-491c-8997-63c23ff0ad04": "process event acknowledged by name",
+        "9142f83d-704f-463a-955d-a712079d9a1a": "process event acknowledged by role",
+        "b2ecea93-3691-4d1f-b8a7-5e19628f7d02": "Process Event Acknowledged By",
+        "5af5d971-ee0e-45bc-8698-ad235617ddfa": "fk Process Event Response.process event response user id to process user.process user id",
+        "472d69e6-cb90-4e51-9320-cbad8f06bc57": "Deviation Rule",
+        "0e814c54-df5d-449b-a032-c0fee76bf64d": "Deviation",
+        "38c05342-c87d-4678-9b81-9231b87b7395": "Process Event Type",
+        "dfe4c308-7e1a-4496-9201-2cacfcef15c7": "process event type id",
+        "0b84f41d-f5f6-4be3-9cc3-13897f8b1b5b": "process event type name",
+        "1c7a70e1-8275-4870-9a76-7031d2b3b6d2": "fk Process Event Type.process event type id to Process Event.process event type id",
+        "22e85ee9-8ea0-4cde-b0c7-f110b6614c71": "process event type description",
+        "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419": "process event id",
+        "7aa8238d-01de-4ec4-ae94-b0f74d9951d0": "fk Alarm Process Event.process event id to Process Event.process event id",
+        "759b2bdd-df35-4b70-a570-647ac8e8ac31": "process event type id",
+        "305e6178-6eff-4cef-8f33-ca13a282c49b": "fk deviation rule.process event type id to Process Event Type.process event type id",
+        "7483d7c3-9f42-44ae-afcb-8453466d753a": "deviation id",
+        "ccf6bdd4-92c3-487d-a26e-79f661a2bccf": "deviation headline",
+        "f273ad66-c1b4-4e15-8f9f-7717509349af": "deviation severity",
+        "09d26f0d-45aa-4c22-9d29-250b83ada95a": "deviation id",
+        "d62ba88b-53d3-4b09-9c34-7820a81867db": "deviation assessment outcome",
+        "63eff17c-80d8-470f-8c32-5c7888d92a0c": "deviation severity",
+        "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64": "deviation Assessment",
+        "07b24627-4208-46e8-83b0-b8c8508d14f2": "fk deviation(1).deviation id to deviation.deviation id",
+        "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2": "deviation rule id",
+        "07917f8e-38c7-4bc7-aa50-c057f46d3b65": "deviation rule summary",
+        "8af8aad8-84ab-4727-973f-1f49ba521206": "deviation rule id",
+        "08c01ba9-18a0-49e5-9903-1cad8b2766c7": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+        "55ae070e-6422-400b-9f9a-f02489879004": "incident severity",
+        "bcc3daa2-ea9b-431c-8c72-e9cf1e705290": "deviation assessment summary",
+        "5bfd267c-8350-4538-8b75-57e7d48b4314": "deviation assessed by id",
+        "55335ce0-d5fb-4a79-a0b3-5998fcacad84": "recipe id",
+        "55bf0eca-9db3-4d14-909c-0624e695e200": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "eab63551-6aad-4ad6-bd38-0e52a24a50c3": "incident owner id",
+        "8e0b0be7-cc2f-41b8-a9cb-5392f6888b91": "process event status",
+        "245296af-71fc-47ef-85f4-bf2399063f7b": "production run id",
+        "374324f8-20e2-44d5-9a97-a5f2bf238ce4": "production run start date-time",
+        "1e9e8522-f8cc-4af2-82b8-a8c84fecfedb": "production run code",
+        "7aa25246-c096-4be0-a640-186cc28244ea": "Production Run",
+        "75240a6f-d8e9-4633-9d66-d62ef2867373": "production run end date-time",
+        "3d9c1026-c5dc-4e1f-bc85-de502dbe2663": "recipe id",
+        "2d8e905b-ef40-4a74-a74a-f7950153ea40": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "9fc40ab2-4964-4256-9e51-b65bb2929fd3": "product batch id",
+        "b9303945-a19e-4f35-b788-82b736582991": "production run id",
+        "dc20d650-6493-4582-b053-90f24d7b00c2": "product batch work order id",
+        "1a5dd93d-ed54-4484-a01c-a85129fa1900": "product batch date-time",
+        "647db0e4-11df-4372-aecc-79c937c0a6fb": "Product Batch",
+        "2c1c314d-44fe-4f06-b681-733e00c267a9": "product batch id",
+        "5d342984-aa89-4965-8080-f297dcb34107": "fk Deviation.product batch id to Product Batch.product batch id",
+        "3167e462-0898-4703-9684-092712a95da0": "fk Product Batch.production run id to Production Run.production run id"
     },
     "definitions": {
         "type": "definitions",
@@ -1282,24 +2509,17 @@
     "decorativeSymbols": [
         {
             "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
-            "name": "New annotation",
+            "name": "PROCESS Domain CDM",
             "type": "annotation",
             "disableInitialFocus": true,
-            "value": "# PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.2.1\n- date: 10-dec-2023\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture."
-        },
-        {
-            "GUID": "cb13ca1d-a75d-4efa-8a32-645aa615ac11",
-            "name": "Notes on this model",
-            "type": "annotation",
-            "value": "Potential PLANT Domain interactions:\n - link from machine config to equipment\n - link from sensor event to ",
-            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
-            "disableInitialFocus": true
+            "value": "# Digital Membership\n## PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.3.2\n- date: 5-jan-2024\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture.  This provides a specification for the data objects and their interrelationships that govern the business aspects of medicines manufacturing process with the Digital Membership.\n\nThe starting point for the definitions in this CDM is the OPC UA 10000 Specification (v.1.05.03)",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
         },
         {
             "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
             "name": "TODO",
             "type": "annotation",
-            "value": "decide if the configuration should be in an array within the join, or a separate entity",
+            "value": "Determine if the \"Process Event Recipe\".configuration should be a set of values within the join entity, or broken out in to a separate entity.  Simplify for now (as of 0.3.2).",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
             "disableInitialFocus": true
         }
@@ -1307,9 +2527,9 @@
     "dbVendor": "Polyglot",
     "appTarget": "Polyglot",
     "creationTS": "2023-09-25T11:05:29.690Z",
-    "GUID": "4408afad-3eaa-4594-8ca0-70e9b4886559",
+    "GUID": "524d374c-ae8e-4e70-8acb-4f14516b1e84",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-12-10T12:45:14.888Z",
+    "lastModifTS": "2024-01-06T12:57:26.697Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1321,25 +2541,26 @@
         "version": "6.9.12"
     },
     "hackoladeMeta": {},
-    "version": "0.2.1",
+    "version": "0.3.2",
+    "author": "timothy.galvin@atos.net",
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
                         "GUID": "44c9d771-d4a8-4c6c-814e-2b342f612790",
-                        "x": 1980.8283013900564,
-                        "y": 2021.6514728863242,
-                        "width": 240,
-                        "height": 123,
+                        "x": 25086.63574532762,
+                        "y": 43322.75104910841,
+                        "width": 256,
+                        "height": 141,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                        "x": 1192.2107831418803,
-                        "y": 1846.4903279264392,
+                        "x": 25173.38213588402,
+                        "y": 42416.22399457779,
                         "width": 214,
                         "height": 105,
                         "color": {
@@ -1348,40 +2569,100 @@
                     },
                     {
                         "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                        "x": 1962.4538488353114,
-                        "y": 1820.9593904829956,
-                        "width": 277,
-                        "height": 87,
-                        "color": {
-                            "hex": "#2196F3"
-                        }
-                    },
-                    {
-                        "GUID": "631cb315-4cd8-4577-9737-f07bbbd942ec",
-                        "x": 1505.4538488353114,
-                        "y": 1985.9593904829956,
-                        "width": 352,
+                        "x": 25115.62520157745,
+                        "y": 42851.62518884778,
+                        "width": 299,
                         "height": 123,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
-                        "GUID": "de8f1167-74e5-45f8-b727-2d294141cbc9",
-                        "x": 1499.907324395132,
-                        "y": 2248.9593904829953,
-                        "width": 363,
+                        "GUID": "631cb315-4cd8-4577-9737-f07bbbd942ec",
+                        "x": 24937.93869614518,
+                        "y": 42622.769859191285,
+                        "width": 342,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                        "x": 24542.700833481395,
+                        "y": 42953.15410774136,
+                        "width": 335,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                        "x": 24546.51809578787,
+                        "y": 43126.989619530286,
+                        "width": 369,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                        "x": 25597.425604628963,
+                        "y": 43471.469696969696,
+                        "width": 291,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "x": 25922.940483703165,
+                        "y": 43101.81987221824,
+                        "width": 263,
                         "height": 141,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
-                        "GUID": "8df340b6-e9df-414d-833e-4b5942670729",
-                        "x": 1966.9154658494288,
-                        "y": 2243.5760772689246,
-                        "width": 268,
-                        "height": 195,
+                        "GUID": "38c05342-c87d-4678-9b81-9231b87b7395",
+                        "x": 25364.705362777386,
+                        "y": 43197.32782876004,
+                        "width": 346,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                        "x": 26164.97230987036,
+                        "y": 43313.394267589276,
+                        "width": 335,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
+                        "x": 26057.503348005237,
+                        "y": 42609.67854003232,
+                        "width": 312,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "x": 26051.503348005237,
+                        "y": 42869.67854003232,
+                        "width": 336,
+                        "height": 123,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -1395,8 +2676,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 845.0633378864059,
-                        "y": 1780.9593904829956,
+                        "x": 24502.700833481395,
+                        "y": 42241.494170902,
                         "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
                     }
                 ],
@@ -1437,16 +2718,52 @@
                             "y": 1712.0487393264364
                         },
                         {
-                            "GUID": "de8f1167-74e5-45f8-b727-2d294141cbc9",
+                            "GUID": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
                             "size": 100,
-                            "x": 1661.0849401375694,
-                            "y": 1923.9902221651607
+                            "x": 1232.2107831418803,
+                            "y": 1886.4903279264392
                         },
                         {
-                            "GUID": "8df340b6-e9df-414d-833e-4b5942670729",
+                            "GUID": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
                             "size": 100,
-                            "x": 2044.6612663042129,
-                            "y": 2313.3392243178614
+                            "x": 1230.4202045672334,
+                            "y": 1882.9091707771456
+                        },
+                        {
+                            "GUID": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                            "size": 100,
+                            "x": 4507,
+                            "y": 2122.5
+                        },
+                        {
+                            "GUID": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                            "size": 100,
+                            "x": 4644,
+                            "y": 2207.5
+                        },
+                        {
+                            "GUID": "38c05342-c87d-4678-9b81-9231b87b7395",
+                            "size": 100,
+                            "x": 4537,
+                            "y": 2152.5
+                        },
+                        {
+                            "GUID": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                            "size": 100,
+                            "x": 4402.709341048276,
+                            "y": 2304.850175248546
+                        },
+                        {
+                            "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
+                            "size": 100,
+                            "x": 2997.5033480052366,
+                            "y": 1780.7088430626263
+                        },
+                        {
+                            "GUID": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "size": 100,
+                            "x": 25939.503348005237,
+                            "y": 42787.67854003232
                         }
                     ],
                     "buckets": [
@@ -1465,13 +2782,6 @@
                             "width": 300
                         },
                         {
-                            "GUID": "cb13ca1d-a75d-4efa-8a32-645aa615ac11",
-                            "x": 1175,
-                            "y": 1732,
-                            "height": 150,
-                            "width": 300
-                        },
-                        {
                             "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
                             "x": 991.2120861225317,
                             "y": 2288.471182994661,
@@ -1486,47 +2796,17 @@
                 "decorativeSymbols": [
                     {
                         "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
-                        "x": 844.6556101827839,
-                        "y": 1489.6824696869166,
-                        "height": 237,
-                        "width": 425
-                    },
-                    {
-                        "GUID": "cb13ca1d-a75d-4efa-8a32-645aa615ac11",
-                        "x": 885.0633378864059,
-                        "y": 2079.490327926439,
-                        "height": 111,
-                        "width": 425,
-                        "color": {
-                            "hsl": {
-                                "h": 199.53488372093022,
-                                "s": 0.18297872340425528,
-                                "l": 0.46078431372549017,
-                                "a": 1
-                            },
-                            "hex": "#607d8b",
-                            "rgb": {
-                                "r": 96,
-                                "g": 125,
-                                "b": 139,
-                                "a": 1
-                            },
-                            "hsv": {
-                                "h": 199.53488372093022,
-                                "s": 0.3093525179856115,
-                                "v": 0.5450980392156862,
-                                "a": 1
-                            },
-                            "oldHue": 187.04225352112678,
-                            "source": "hex"
-                        }
+                        "x": 25952.00105473966,
+                        "y": 42281.494170902,
+                        "height": 282,
+                        "width": 593
                     },
                     {
                         "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
-                        "x": 1283.2435512261375,
-                        "y": 2251.490327926439,
-                        "height": 97,
-                        "width": 208,
+                        "x": 24618.508786595878,
+                        "y": 43357.466597653285,
+                        "height": 114,
+                        "width": 288,
                         "color": {
                             "hsl": {
                                 "h": 0,
@@ -1553,7 +2833,12 @@
                     }
                 ],
                 "nestedCollectionsLayout": "horizontal",
-                "options": [],
+                "options": [
+                    {
+                        "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "autoWidth": true
+                    }
+                ],
                 "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
