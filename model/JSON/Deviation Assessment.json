@@ -64,6 +64,7 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
+        "deviation assessed by id",
         "deviation id"
     ]
 }

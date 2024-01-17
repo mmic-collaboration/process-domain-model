@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Process Event Response",
+    "title": "Manufacturing Process Person",
     "properties": {
-        "process response id": {
+        "manufacturing process person id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
@@ -17,39 +17,24 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "process user id": {
-            "type": "number",
+        "manufacturing process person name": {
+            "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
-                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
                 "step_num": 1
             },
             "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "event acknowledged timestamp": {
+        "manufacturing process person role": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
+            "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
@@ -57,6 +42,6 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "process event id"
+        "manufacturing process person id"
     ]
 }

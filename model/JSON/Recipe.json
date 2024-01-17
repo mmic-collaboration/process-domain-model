@@ -17,6 +17,20 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
+        "product id": {
+            "type": "number",
+            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
         "recipe version": {
             "type": "number",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
@@ -56,5 +70,9 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "receipe id",
+        "product id"
+    ]
 }

@@ -17,19 +17,6 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "production run id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
         "product batch work order id": {
             "type": "number",
             "isActivated": true,

@@ -17,6 +17,19 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
+        "product batch id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
         "recipe id": {
             "type": "number",
             "isActivated": true,
@@ -67,5 +80,11 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "production run id",
+        "product batch id",
+        "recipe id",
+        "production run start date-time"
+    ]
 }
