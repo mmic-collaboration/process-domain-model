@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Alarm Process Event",
+    "title": "Recipe",
     "properties": {
-        "process event id": {
+        "receipe id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -17,11 +17,12 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "alarm code id": {
+        "product id": {
             "type": "number",
+            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
             "isActivated": true,
             "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -30,7 +31,21 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event type": {
+        "recipe version": {
+            "type": "number",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "recipe title": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -40,27 +55,24 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "status": {
-            "type": "string",
+        "recipe code": {
+            "type": "number",
             "isActivated": true,
             "autoincrement": {
+                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
                 "step_num": 1
             },
             "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "warning message": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "receipe id",
+        "product id"
+    ]
 }

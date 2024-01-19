@@ -1,13 +1,27 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Equipment",
+    "title": "Deviation Rule",
     "properties": {
-        "equipment id": {
+        "deviation rule id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "id": "5c3ac47a-9975-4b4f-9664-330d5ec434fe",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "process event type id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "78f06df0-0659-4be0-a2dc-c71bac69a666",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -16,17 +30,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "equipment model": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "manufacturer": {
+        "deviation rule summary": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -38,5 +42,9 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "deviation rule id",
+        "process event type id"
+    ]
 }

@@ -2,43 +2,46 @@
   "openapi": "3.0.3",
   "info": {
     "title": "PROCESS Domain Open API Schema",
-    "version": "0.2.1"
+    "contact": {
+      "email": "timothy.galvin@atos.net"
+    },
+    "version": "0.3.2"
   },
   "paths": {},
   "components": {
     "schemas": {
-      "Alarm_Process_Event": {
+      "Incident": {
         "type": "object",
+        "required": [
+          "incidentId"
+        ],
         "properties": {
-          "sensorEventId": {
+          "processEventId": {
             "type": "integer",
             "format": "int32",
-            "title": "sensor event id"
+            "title": "process event id"
           },
-          "sensorEventType": {
-            "type": "string",
-            "title": "sensor event type"
-          },
-          "sensorId": {
+          "incidentOwnerId": {
             "type": "integer",
             "format": "int32",
-            "title": "sensor id"
+            "title": "incident owner id"
           },
-          "alarmColour": {
+          "incidentSeverity": {
             "type": "string",
-            "title": "alarm colour"
+            "title": "incident severity"
           },
-          "status": {
-            "type": "string",
-            "title": "status"
+          "incidentId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "incident id"
           },
-          "warningMessage": {
+          "incidentStatus": {
             "type": "string",
-            "title": "warning message"
+            "title": "incident status"
           },
-          "recoveryAction": {
+          "incidentMessage": {
             "type": "string",
-            "title": "recovery action"
+            "title": "incident message"
           }
         },
         "nullable": false
@@ -46,56 +49,65 @@
       "Recipe": {
         "type": "object",
         "properties": {
-          "sensorId": {
+          "receipeId": {
             "type": "integer",
             "format": "int32",
-            "title": "sensor id"
+            "title": "receipe id"
           },
-          "sensorEventId": {
-            "type": "string",
-            "title": "sensor event id"
-          },
-          "equipmentId": {
+          "recipeVersion": {
             "type": "integer",
             "format": "int32",
-            "title": "equipment id"
+            "title": "recipe version",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "sensorType": {
+          "recipeTitle": {
             "type": "string",
-            "title": "sensor type"
+            "title": "recipe title"
           },
-          "sensorConfiguration": {
-            "type": "array",
-            "title": "Sensor Configuration",
-            "items": {
-              "type": "string"
-            },
-            "nullable": false
+          "recipeCode": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe code"
           }
         },
         "nullable": false
       },
       "Process_Event": {
         "type": "object",
+        "required": [
+          "processEventId",
+          "processEventStatus"
+        ],
         "properties": {
-          "sensorEventId": {
+          "processEventId": {
             "type": "integer",
             "format": "int32",
-            "title": "sensor event id"
+            "title": "process event id"
           },
-          "sensorEventType": {
+          "processEventTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event type id"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe id"
+          },
+          "processEventStatus": {
             "type": "string",
-            "title": "sensor event type"
+            "title": "process event status",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
           },
-          "sensorId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "sensor id"
+          "processEventTimestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "process event timestamp"
           }
         },
         "nullable": false
       },
-      "Recipe_Process_Event": {
+      "Process_Event_Recipe": {
         "type": "object",
         "description": "The Recipe Process Event Configuration describes the relationship between the Recipe and any Process Events which may be produced from a Production Run that uses that recipe.  Different Process Events have different properties depending on their type or the version of the recipe employed.",
         "properties": {
@@ -131,82 +143,234 @@
         },
         "nullable": false
       },
-      "Recipe_Process_Event_Configuration": {
+      "Process_Event_Response": {
         "type": "object",
-        "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
+        "required": [
+          "processEventId"
+        ],
         "properties": {
-          "recipeProcessEventConfigurationId": {
+          "processResponseId": {
             "type": "integer",
             "format": "int32",
-            "title": "recipe process event configuration id"
-          },
-          "recipeProcessEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe process event id"
-          },
-          "recipeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe id"
+            "title": "process response id"
           },
           "processEventId": {
             "type": "integer",
             "format": "int32",
             "title": "process event id"
           },
-          "recipeProcessEventConfigurationName": {
-            "type": "string",
-            "title": "recipe process event configuration name"
+          "processUserId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process user id",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "recipeProcessEventConfigurationValue": {
+          "eventAcknowledgedTimestamp": {
             "type": "string",
-            "title": "recipe process event configuration value"
+            "format": "date-time",
+            "title": "event acknowledged timestamp"
           }
         },
         "nullable": false
       },
-      "Alarm_Code": {
+      "Process_Event_Acknowledged_By": {
         "type": "object",
         "properties": {
-          "alarmCodeId": {
+          "processEventAcknowledgedByPersonId": {
             "type": "integer",
             "format": "int32",
-            "title": "alarm code id"
+            "title": "process event acknowledged by person id"
           },
-          "alarmCode": {
+          "processEventAcknowledgedByName": {
             "type": "string",
-            "title": "alarm code"
+            "title": "process event acknowledged by name",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "alarmCodeDescription": {
+          "processEventAcknowledgedByRole": {
             "type": "string",
-            "title": "alarm code description"
+            "title": "process event acknowledged by role"
+          }
+        },
+        "nullable": false
+      },
+      "Deviation_Rule": {
+        "type": "object",
+        "required": [
+          "processEventTypeId"
+        ],
+        "properties": {
+          "deviationRuleId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation rule id"
           },
-          "alarmCodeSeverity": {
-            "type": "string",
-            "title": "alarm code severity"
+          "processEventTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event type id"
           },
-          "warningMessage": {
+          "deviationRuleSummary": {
             "type": "string",
-            "title": "warning message"
+            "title": "deviation rule summary"
+          }
+        },
+        "nullable": false
+      },
+      "Deviation": {
+        "type": "object",
+        "required": [
+          "deviationId",
+          "processEventId",
+          "deviationSeverity",
+          "productBatchId"
+        ],
+        "properties": {
+          "deviationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation id"
           },
-          "recoveryAction": {
-            "type": "string",
-            "title": "recovery action"
+          "deviationRuleId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation rule id"
           },
-          "criticality-Tbd": {
-            "type": "string",
-            "title": "criticality - TBD"
+          "processEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event id"
           },
-          "machineCategory-Tbd": {
+          "deviationHeadline": {
             "type": "string",
-            "title": "machine category - TBD",
-            "example": "guard-stop"
+            "title": "deviation headline"
           },
-          "type-Tbd": {
+          "deviationSeverity": {
             "type": "string",
-            "title": "type - TBD",
-            "description": "eg. system vs operational"
+            "title": "deviation severity",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+          },
+          "productBatchId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch id"
+          }
+        },
+        "nullable": false
+      },
+      "Process_Event_Type": {
+        "type": "object",
+        "required": [
+          "processEventTypeId",
+          "processEventTypeName"
+        ],
+        "properties": {
+          "processEventTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "process event type id"
+          },
+          "processEventTypeName": {
+            "type": "string",
+            "title": "process event type name",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+          },
+          "processEventTypeDescription": {
+            "type": "string",
+            "title": "process event type description"
+          }
+        },
+        "nullable": false
+      },
+      "deviation_Assessment": {
+        "type": "object",
+        "required": [
+          "deviationId"
+        ],
+        "properties": {
+          "deviationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation id"
+          },
+          "deviationAssessmentSummary": {
+            "type": "string",
+            "title": "deviation assessment summary"
+          },
+          "deviationSeverity": {
+            "type": "string",
+            "title": "deviation severity"
+          },
+          "deviationAssessmentOutcome": {
+            "type": "string",
+            "title": "deviation assessment outcome"
+          },
+          "deviationAssessedById": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation assessed by id"
+          }
+        },
+        "nullable": false
+      },
+      "Production_Run": {
+        "type": "object",
+        "properties": {
+          "productionRunId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "production run id"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "recipe id"
+          },
+          "productionRunCode": {
+            "type": "integer",
+            "format": "int32",
+            "title": "production run code"
+          },
+          "productionRunStartDate-time": {
+            "type": "string",
+            "format": "date-time",
+            "title": "production run start date-time",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+          },
+          "productionRunEndDate-time": {
+            "type": "string",
+            "format": "date-time",
+            "title": "production run end date-time",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+          }
+        },
+        "nullable": false
+      },
+      "Product_Batch": {
+        "type": "object",
+        "required": [
+          "productBatchId"
+        ],
+        "properties": {
+          "productBatchId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch id"
+          },
+          "productionRunId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "production run id"
+          },
+          "productBatchWorkOrderId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch work order id"
+          },
+          "productBatchDate-time": {
+            "type": "string",
+            "format": "date-time",
+            "title": "product batch date-time",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           }
         },
         "nullable": false

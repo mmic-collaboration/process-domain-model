@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "deviation Assessment",
+    "properties": {
+        "deviation assessed by id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "8b3aff81-e1a8-4e74-8215-6469051b33cb",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation assessment summary": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation severity": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation assessment outcome": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "deviation assessed by id",
+        "deviation id"
+    ]
+}

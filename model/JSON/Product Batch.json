@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Process Event",
+    "title": "Product Batch",
     "properties": {
-        "process event id": {
+        "product batch id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -17,8 +17,22 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event type": {
+        "product batch work order id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "product batch date-time": {
             "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
@@ -26,17 +40,11 @@
             "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
-        },
-        "process event timestamp": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "product batch id"
+    ]
 }

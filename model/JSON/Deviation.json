@@ -1,9 +1,23 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Sensor",
+    "title": "Deviation",
     "properties": {
-        "sensor id": {
+        "deviation id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "8b3aff81-e1a8-4e74-8215-6469051b33cb",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "product batch id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
@@ -12,25 +26,16 @@
             },
             "tPrecision": 9,
             "index": true,
+            "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "sensor event id": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "equipment id": {
+        "deviation rule id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
+                "id": "5c3ac47a-9975-4b4f-9664-330d5ec434fe",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -39,7 +44,20 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "sensor type": {
+        "process event id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "deviation headline": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -49,43 +67,27 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "Sensor Configuration": {
-            "type": "array",
+        "deviation severity": {
+            "type": "string",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
             "tPrecision": 9,
-            "additionalItems": true,
-            "uniqueItems": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "items": [
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0001"
-                },
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0002"
-                }
-            ]
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "deviation id",
+        "product batch id",
+        "process event id",
+        "deviation severity"
+    ]
 }

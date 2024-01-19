@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Recipe",
+    "title": "Manufacturing Process Person",
     "properties": {
-        "receipe id": {
+        "manufacturing process person id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
@@ -17,21 +17,18 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe version": {
-            "type": "number",
+        "manufacturing process person name": {
+            "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
-                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
                 "step_num": 1
             },
             "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe title": {
+        "manufacturing process person role": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -40,21 +37,11 @@
             "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
-        },
-        "recipe code": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "manufacturing process person id"
+    ]
 }
