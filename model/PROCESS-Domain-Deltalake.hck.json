@@ -1,0 +1,3926 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+            "type": "reference",
+            "$ref": "#external/definitions/Recipe",
+            "refType": "polyglot",
+            "ref": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "e961595d-cd47-4802-91d4-05c90e7f9ee2"
+            ],
+            "isActivated": true,
+            "collectionName": "Recipe",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "091e6427-5cd7-425f-9388-dabf025afbe7"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "cc7da46d-ac5f-4055-857c-df44e31cfd33",
+                        "childRelationships": [
+                            "d5053b8c-68cb-4e67-9c8d-b32ca31c2253",
+                            "046694ab-3ef9-4b27-acd3-786389b95b2b"
+                        ]
+                    },
+                    {
+                        "GUID": "eb8e8371-337c-4968-96d0-ba5d66b3e552",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                        "foreignField": [
+                            "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "parentRelationship": "cd350850-8d8e-4bff-9a9b-846dc26faff2"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+            "type": "reference",
+            "$ref": "#external/definitions/Process Event",
+            "refType": "polyglot",
+            "ref": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae"
+            ],
+            "isActivated": true,
+            "collectionName": "Process Event",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "ef130e11-40e1-40e9-9efb-82fca37e941d"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                        "childRelationships": [
+                            "edb170d9-5ee0-49da-9944-8b8f71203d34",
+                            "23c838bb-cb9b-45ef-8bba-237eea3af83d"
+                        ]
+                    },
+                    {
+                        "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                        "childRelationships": [
+                            "fd2b4b5b-da58-4767-af3f-ac69f8ad3cd2"
+                        ]
+                    },
+                    {
+                        "GUID": "55335ce0-d5fb-4a79-a0b3-5998fcacad84",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                        "foreignField": [
+                            "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "parentRelationship": "d5053b8c-68cb-4e67-9c8d-b32ca31c2253"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "b644e060-587e-42df-9686-29da76abb1d3",
+            "type": "reference",
+            "$ref": "#external/definitions/Process Response",
+            "refType": "polyglot",
+            "ref": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "406f75d6-5517-41bc-bcf4-b8d5dfe39431"
+            ],
+            "isActivated": true,
+            "collectionName": "Process Response",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "f67162b3-87b8-473d-bc02-b35e7657af4a"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "9ee4269d-6fc8-494e-baee-0c05cc855fa1",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                        "foreignField": [
+                            "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "parentRelationship": "edb170d9-5ee0-49da-9944-8b8f71203d34"
+                    },
+                    {
+                        "GUID": "f866a998-9fe2-4cc7-bcae-f345eec1bcf3",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+                        "foreignField": [
+                            "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+                            "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                            "07c09ac5-9315-4819-bc6b-0aef04343518"
+                        ],
+                        "parentRelationship": "3e39b740-d911-480c-900c-1ef92fbbf6e5"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+            "type": "reference",
+            "$ref": "#external/definitions/Manufacturing Process Person",
+            "refType": "polyglot",
+            "ref": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "b2ecea93-3691-4d1f-b8a7-5e19628f7d02"
+            ],
+            "isActivated": true,
+            "collectionName": "Manufacturing Process Person",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "af551250-a121-44f4-8e33-064d8b8c9608"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "07c09ac5-9315-4819-bc6b-0aef04343518",
+                        "childRelationships": [
+                            "3e39b740-d911-480c-900c-1ef92fbbf6e5"
+                        ]
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "f6a20f1c-8191-4ec0-8e83-26350725b086",
+            "type": "reference",
+            "$ref": "#external/definitions/Deviation Rule",
+            "refType": "polyglot",
+            "ref": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "472d69e6-cb90-4e51-9320-cbad8f06bc57"
+            ],
+            "isActivated": true,
+            "collectionName": "Deviation Rule",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "9e8321d0-223f-4e07-8ade-eb280874d4b2"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "759b2bdd-df35-4b70-a570-647ac8e8ac31",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "c4a582b5-8550-49ff-90ec-30354533f8da",
+                        "foreignField": [
+                            "c4a582b5-8550-49ff-90ec-30354533f8da",
+                            "38c05342-c87d-4678-9b81-9231b87b7395",
+                            "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                        ],
+                        "parentRelationship": "659b2f68-352c-4d3f-ae0f-694a5dd63cf0"
+                    },
+                    {
+                        "GUID": "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2",
+                        "childRelationships": [
+                            "312c54f3-afbd-4236-9dac-c8473349efdf"
+                        ]
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "2594c051-8995-48e6-a280-ba1b136d09f5",
+            "type": "reference",
+            "$ref": "#external/definitions/Deviation",
+            "refType": "polyglot",
+            "ref": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "0e814c54-df5d-449b-a032-c0fee76bf64d"
+            ],
+            "isActivated": true,
+            "collectionName": "Deviation",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "04bc3279-c4b2-4fab-be27-39cd7b563910"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                        "foreignField": [
+                            "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "parentRelationship": "23c838bb-cb9b-45ef-8bba-237eea3af83d"
+                    },
+                    {
+                        "GUID": "7483d7c3-9f42-44ae-afcb-8453466d753a",
+                        "childRelationships": [
+                            "54614d61-bc25-451d-8d95-8c5d30673b5a"
+                        ]
+                    },
+                    {
+                        "GUID": "8af8aad8-84ab-4727-973f-1f49ba521206",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                        "foreignField": [
+                            "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                            "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                            "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                        ],
+                        "parentRelationship": "312c54f3-afbd-4236-9dac-c8473349efdf"
+                    },
+                    {
+                        "GUID": "2c1c314d-44fe-4f06-b681-733e00c267a9",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                        "foreignField": [
+                            "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "parentRelationship": "9d8f3c7d-81cf-4eea-b22e-71ac7fb4b2e7"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "c4a582b5-8550-49ff-90ec-30354533f8da",
+            "type": "reference",
+            "$ref": "#external/definitions/Process Event Type",
+            "refType": "polyglot",
+            "ref": "38c05342-c87d-4678-9b81-9231b87b7395",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "38c05342-c87d-4678-9b81-9231b87b7395"
+            ],
+            "isActivated": true,
+            "collectionName": "Process Event Type",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "e64e05de-2300-4c94-b173-f0877ae56889"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "dfe4c308-7e1a-4496-9201-2cacfcef15c7",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                        "foreignField": [
+                            "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                        ],
+                        "parentRelationship": "fd2b4b5b-da58-4767-af3f-ac69f8ad3cd2",
+                        "childRelationships": [
+                            "659b2f68-352c-4d3f-ae0f-694a5dd63cf0"
+                        ]
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "01a452c4-3d88-4736-ace8-6bcb3fdab893",
+            "type": "reference",
+            "$ref": "#external/definitions/Deviation Assessment",
+            "refType": "polyglot",
+            "ref": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64"
+            ],
+            "isActivated": true,
+            "collectionName": "Deviation Assessment",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "51e3d3a5-a115-443a-80de-a4893cd2ced3"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "09d26f0d-45aa-4c22-9d29-250b83ada95a",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "2594c051-8995-48e6-a280-ba1b136d09f5",
+                        "foreignField": [
+                            "2594c051-8995-48e6-a280-ba1b136d09f5",
+                            "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                            "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                        ],
+                        "parentRelationship": "54614d61-bc25-451d-8d95-8c5d30673b5a"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+            "type": "reference",
+            "$ref": "#external/definitions/Production Run",
+            "refType": "polyglot",
+            "ref": "7aa25246-c096-4be0-a640-186cc28244ea",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "7aa25246-c096-4be0-a640-186cc28244ea"
+            ],
+            "isActivated": true,
+            "collectionName": "Production Run",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "45c6c4ab-0912-465e-bbf9-9841ea30c5b3"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                        "foreignField": [
+                            "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "parentRelationship": "046694ab-3ef9-4b27-acd3-786389b95b2b"
+                    },
+                    {
+                        "GUID": "eed84ece-13d1-4acf-a932-7ac48ecbb95f",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                        "foreignField": [
+                            "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "parentRelationship": "a8f9d33c-2f11-491f-99f1-4b55410ab5db"
+                    }
+                ]
+            },
+            "additionalProperties": false
+        },
+        {
+            "GUID": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+            "type": "reference",
+            "$ref": "#external/definitions/Product Batch",
+            "refType": "polyglot",
+            "ref": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "647db0e4-11df-4372-aecc-79c937c0a6fb"
+            ],
+            "isActivated": true,
+            "collectionName": "Product Batch",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "ae85a738-45da-47a0-b0cf-71cb976280a5"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "9fc40ab2-4964-4256-9e51-b65bb2929fd3",
+                        "childRelationships": [
+                            "9d8f3c7d-81cf-4eea-b22e-71ac7fb4b2e7",
+                            "a8f9d33c-2f11-491f-99f1-4b55410ab5db",
+                            "cd350850-8d8e-4bff-9a9b-846dc26faff2"
+                        ]
+                    }
+                ]
+            },
+            "additionalProperties": false
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "name": "PROCESS Domain",
+            "type": "reference",
+            "$ref": "#external/definitions/PROCESS Domain",
+            "refType": "polyglot",
+            "ref": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+            ],
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                "b644e060-587e-42df-9686-29da76abb1d3",
+                "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+                "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                "2594c051-8995-48e6-a280-ba1b136d09f5",
+                "c4a582b5-8550-49ff-90ec-30354533f8da",
+                "01a452c4-3d88-4736-ace8-6bcb3fdab893",
+                "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+                "e6fe59f3-3446-4d5e-a136-1bd526e8faee"
+            ]
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Process Event Node.process event id to Process Event.process event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "b644e060-587e-42df-9686-29da76abb1d3",
+                    "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                    "9ee4269d-6fc8-494e-baee-0c05cc855fa1"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+            "childCollection": "b644e060-587e-42df-9686-29da76abb1d3",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "68b68e9e-bf14-42ca-8317-b7ea5b086313",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 24978.700833481395,
+                        "y": 42913.65410774136
+                    },
+                    {
+                        "x": 25075.163017529423,
+                        "y": 42913.65410774136
+                    },
+                    {
+                        "x": 25075.163017529423,
+                        "y": 42913.12518884778
+                    },
+                    {
+                        "x": 25171.62520157745,
+                        "y": 42913.12518884778
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Process Event Node.process event id to Process Event.process event id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "f773696b-9c7c-4679-880d-dd80059e5188"
+            ],
+            "ref": "f773696b-9c7c-4679-880d-dd80059e5188",
+            "GUID": "edb170d9-5ee0-49da-9944-8b8f71203d34"
+        },
+        {
+            "name": "fk Process Event Response.process event response user id to process user.process user id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+                    "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                    "07c09ac5-9315-4819-bc6b-0aef04343518"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "b644e060-587e-42df-9686-29da76abb1d3",
+                    "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                    "f866a998-9fe2-4cc7-bcae-f345eec1bcf3"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+            "childCollection": "b644e060-587e-42df-9686-29da76abb1d3",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "3a591fce-35f2-47f7-8409-74c69718a138",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 24786.824355015695,
+                        "y": 42966.15410774136
+                    },
+                    {
+                        "x": 24786.824355015695,
+                        "y": 43048.989619530286
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Process Event Response.process event response user id to process user.process user id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "5af5d971-ee0e-45bc-8698-ad235617ddfa"
+            ],
+            "ref": "5af5d971-ee0e-45bc-8698-ad235617ddfa",
+            "GUID": "3e39b740-d911-480c-900c-1ef92fbbf6e5"
+        },
+        {
+            "name": "fk Process Event Type.process event type id to Process Event.process event type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "c4a582b5-8550-49ff-90ec-30354533f8da",
+                    "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+            "childCollection": "c4a582b5-8550-49ff-90ec-30354533f8da",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "e4441da1-19d3-43f7-a254-b26105e1d00c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25321.705362777386,
+                        "y": 43077.32782876004
+                    },
+                    {
+                        "x": 25321.705362777386,
+                        "y": 43025.97650880391
+                    },
+                    {
+                        "x": 25321.12520157745,
+                        "y": 43025.97650880391
+                    },
+                    {
+                        "x": 25321.12520157745,
+                        "y": 42974.62518884778
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Process Event Type.process event type id to Process Event.process event type id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "1c7a70e1-8275-4870-9a76-7031d2b3b6d2"
+            ],
+            "ref": "1c7a70e1-8275-4870-9a76-7031d2b3b6d2",
+            "GUID": "fd2b4b5b-da58-4767-af3f-ac69f8ad3cd2"
+        },
+        {
+            "name": "fk Alarm Process Event.process event id to Process Event.process event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "2594c051-8995-48e6-a280-ba1b136d09f5",
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419"
+                ]
+            ],
+            "childCardinality": "0..1",
+            "parentCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+            "childCollection": "2594c051-8995-48e6-a280-ba1b136d09f5",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "69f2a7f8-8421-4e57-806c-bedf4221081b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25676.940483703165,
+                        "y": 43070.31987221824
+                    },
+                    {
+                        "x": 25573.782842640307,
+                        "y": 43070.31987221824
+                    },
+                    {
+                        "x": 25573.782842640307,
+                        "y": 42913.12518884778
+                    },
+                    {
+                        "x": 25470.62520157745,
+                        "y": 42913.12518884778
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Alarm Process Event.process event id to Process Event.process event id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "7aa8238d-01de-4ec4-ae94-b0f74d9951d0"
+            ],
+            "ref": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
+            "GUID": "23c838bb-cb9b-45ef-8bba-237eea3af83d"
+        },
+        {
+            "name": "fk deviation rule.process event type id to Process Event Type.process event type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c4a582b5-8550-49ff-90ec-30354533f8da",
+                    "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                    "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "759b2bdd-df35-4b70-a570-647ac8e8ac31"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "c4a582b5-8550-49ff-90ec-30354533f8da",
+            "childCollection": "f6a20f1c-8191-4ec0-8e83-26350725b086",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "3fc9f9bb-459c-44e2-a3bb-ce60199f12ca",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25622.758937962295,
+                        "y": 43293.469696969696
+                    },
+                    {
+                        "x": 25622.758937962295,
+                        "y": 43228.89876286487
+                    },
+                    {
+                        "x": 25321.705362777386,
+                        "y": 43228.89876286487
+                    },
+                    {
+                        "x": 25321.705362777386,
+                        "y": 43164.32782876004
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk deviation rule.process event type id to Process Event Type.process event type id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "305e6178-6eff-4cef-8f33-ca13a282c49b"
+            ],
+            "ref": "305e6178-6eff-4cef-8f33-ca13a282c49b",
+            "GUID": "659b2f68-352c-4d3f-ae0f-694a5dd63cf0"
+        },
+        {
+            "name": "fk deviation(1).deviation id to deviation.deviation id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "2594c051-8995-48e6-a280-ba1b136d09f5",
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "01a452c4-3d88-4736-ace8-6bcb3fdab893",
+                    "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                    "09d26f0d-45aa-4c22-9d29-250b83ada95a"
+                ]
+            ],
+            "childCardinality": "0..1",
+            "parentCollection": "2594c051-8995-48e6-a280-ba1b136d09f5",
+            "childCollection": "01a452c4-3d88-4736-ace8-6bcb3fdab893",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f4192d36-490a-4798-bc21-ea9db17b6413",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26036.97230987036,
+                        "y": 43185.894267589276
+                    },
+                    {
+                        "x": 25994.456396786765,
+                        "y": 43185.894267589276
+                    },
+                    {
+                        "x": 25994.456396786765,
+                        "y": 43070.31987221824
+                    },
+                    {
+                        "x": 25951.940483703165,
+                        "y": 43070.31987221824
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk deviation(1).deviation id to deviation.deviation id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "07b24627-4208-46e8-83b0-b8c8508d14f2"
+            ],
+            "ref": "07b24627-4208-46e8-83b0-b8c8508d14f2",
+            "GUID": "54614d61-bc25-451d-8d95-8c5d30673b5a"
+        },
+        {
+            "name": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                    "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "2594c051-8995-48e6-a280-ba1b136d09f5",
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "8af8aad8-84ab-4727-973f-1f49ba521206"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "f6a20f1c-8191-4ec0-8e83-26350725b086",
+            "childCollection": "2594c051-8995-48e6-a280-ba1b136d09f5",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "2fba59a1-7db7-4406-ad98-47b98e1ef4b6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25814.440483703165,
+                        "y": 43140.81987221824
+                    },
+                    {
+                        "x": 25814.440483703165,
+                        "y": 43217.14478459397
+                    },
+                    {
+                        "x": 25720.09227129563,
+                        "y": 43217.14478459397
+                    },
+                    {
+                        "x": 25720.09227129563,
+                        "y": 43293.469696969696
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "08c01ba9-18a0-49e5-9903-1cad8b2766c7"
+            ],
+            "ref": "08c01ba9-18a0-49e5-9903-1cad8b2766c7",
+            "GUID": "312c54f3-afbd-4236-9dac-c8473349efdf"
+        },
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "55335ce0-d5fb-4a79-a0b3-5998fcacad84"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+            "childCollection": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25321.12520157745,
+                        "y": 42851.62518884778
+                    },
+                    {
+                        "x": 25321.12520157745,
+                        "y": 42799.424591712785
+                    },
+                    {
+                        "x": 25320.38213588402,
+                        "y": 42799.424591712785
+                    },
+                    {
+                        "x": 25320.38213588402,
+                        "y": 42747.22399457779
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Sensor Event.sensor id to Sensor.sensor id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "55bf0eca-9db3-4d14-909c-0624e695e200"
+            ],
+            "ref": "55bf0eca-9db3-4d14-909c-0624e695e200",
+            "GUID": "d5053b8c-68cb-4e67-9c8d-b32ca31c2253"
+        },
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "3d9c1026-c5dc-4e1f-bc85-de502dbe2663"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+            "childCollection": "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25969.503348005237,
+                        "y": 42666.17854003232
+                    },
+                    {
+                        "x": 25704.44274194463,
+                        "y": 42666.17854003232
+                    },
+                    {
+                        "x": 25704.44274194463,
+                        "y": 42665.22399457779
+                    },
+                    {
+                        "x": 25439.38213588402,
+                        "y": 42665.22399457779
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Sensor Event.sensor id to Sensor.sensor id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "2d8e905b-ef40-4a74-a74a-f7950153ea40"
+            ],
+            "ref": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
+            "GUID": "046694ab-3ef9-4b27-acd3-786389b95b2b"
+        },
+        {
+            "name": "fk Deviation.product batch id to Product Batch.product batch id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "2594c051-8995-48e6-a280-ba1b136d09f5",
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "2c1c314d-44fe-4f06-b681-733e00c267a9"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+            "childCollection": "2594c051-8995-48e6-a280-ba1b136d09f5",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "9fdc44aa-acad-48b9-8cff-1906e914ffa6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25814.440483703165,
+                        "y": 42999.81987221824
+                    },
+                    {
+                        "x": 25814.440483703165,
+                        "y": 42947.249206125285
+                    },
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42947.249206125285
+                    },
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42894.67854003232
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Deviation.product batch id to Product Batch.product batch id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "5d342984-aa89-4965-8080-f297dcb34107"
+            ],
+            "ref": "5d342984-aa89-4965-8080-f297dcb34107",
+            "GUID": "9d8f3c7d-81cf-4eea-b22e-71ac7fb4b2e7"
+        },
+        {
+            "name": "fk Production Run.product batch id to Product Batch.product batch id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "eed84ece-13d1-4acf-a932-7ac48ecbb95f"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+            "childCollection": "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "be888c29-b504-4e35-90e1-ce2abfcb8466",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42736.67854003232
+                    },
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42772.17854003232
+                    },
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42772.17854003232
+                    },
+                    {
+                        "x": 26137.503348005237,
+                        "y": 42807.67854003232
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Production Run.product batch id to Product Batch.product batch id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "292fa66a-7584-43af-8008-8067b1b624aa"
+            ],
+            "ref": "292fa66a-7584-43af-8008-8067b1b624aa",
+            "GUID": "a8f9d33c-2f11-491f-99f1-4b55410ab5db"
+        },
+        {
+            "name": "fk Production Run.product batch id to Product Batch.product batch id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "eb8e8371-337c-4968-96d0-ba5d66b3e552"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+            "childCollection": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "be888c29-b504-4e35-90e1-ce2abfcb8466",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25439.38213588402,
+                        "y": 42706.22399457779
+                    },
+                    {
+                        "x": 25707.44274194463,
+                        "y": 42706.22399457779
+                    },
+                    {
+                        "x": 25707.44274194463,
+                        "y": 42851.17854003232
+                    },
+                    {
+                        "x": 25975.503348005237,
+                        "y": 42851.17854003232
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "isActivated": true,
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Production Run.product batch id to Product Batch.product batch id",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "b143ec9c-1029-4398-961c-434f4c7a1d20"
+            ],
+            "ref": "b143ec9c-1029-4398-961c-434f4c7a1d20",
+            "GUID": "cd350850-8d8e-4bff-9a9b-846dc26faff2"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "d7f2e379-e479-4faa-9838-91dee682ffa0": "Recipe",
+        "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2": "Process Event",
+        "b644e060-587e-42df-9686-29da76abb1d3": "Process Response",
+        "b27f4e70-f0e0-4e15-be67-03578ff8d2a3": "Manufacturing Process Person",
+        "f6a20f1c-8191-4ec0-8e83-26350725b086": "Deviation Rule",
+        "2594c051-8995-48e6-a280-ba1b136d09f5": "Deviation",
+        "c4a582b5-8550-49ff-90ec-30354533f8da": "Process Event Type",
+        "01a452c4-3d88-4736-ace8-6bcb3fdab893": "Deviation Assessment",
+        "663dcfe4-85b2-47c1-9ea0-22820d64132c": "Production Run",
+        "e6fe59f3-3446-4d5e-a136-1bd526e8faee": "Product Batch",
+        "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3": "PROCESS Domain",
+        "9139ea7c-ef14-4594-a7b7-edd071f93746": "PROCESS Domain CDM",
+        "4fa2554e-cc45-443e-b30e-82da04e65140": "TODO",
+        "edb170d9-5ee0-49da-9944-8b8f71203d34": "fk Process Event Node.process event id to Process Event.process event id",
+        "3e39b740-d911-480c-900c-1ef92fbbf6e5": "fk Process Event Response.process event response user id to process user.process user id",
+        "fd2b4b5b-da58-4767-af3f-ac69f8ad3cd2": "fk Process Event Type.process event type id to Process Event.process event type id",
+        "23c838bb-cb9b-45ef-8bba-237eea3af83d": "fk Alarm Process Event.process event id to Process Event.process event id",
+        "659b2f68-352c-4d3f-ae0f-694a5dd63cf0": "fk deviation rule.process event type id to Process Event Type.process event type id",
+        "54614d61-bc25-451d-8d95-8c5d30673b5a": "fk deviation(1).deviation id to deviation.deviation id",
+        "312c54f3-afbd-4236-9dac-c8473349efdf": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+        "d5053b8c-68cb-4e67-9c8d-b32ca31c2253": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "046694ab-3ef9-4b27-acd3-786389b95b2b": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "9d8f3c7d-81cf-4eea-b22e-71ac7fb4b2e7": "fk Deviation.product batch id to Product Batch.product batch id",
+        "a8f9d33c-2f11-491f-99f1-4b55410ab5db": "fk Production Run.product batch id to Product Batch.product batch id",
+        "cd350850-8d8e-4bff-9a9b-846dc26faff2": "fk Production Run.product batch id to Product Batch.product batch id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "91505acc-9d6c-4111-9396-7f57380b440e"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Recipe",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "receipe id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "cc7da46d-ac5f-4055-857c-df44e31cfd33",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "eb8e8371-337c-4968-96d0-ba5d66b3e552",
+                        "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "foreignField": [
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "required": true,
+                        "relationshipType": "Foreign Key",
+                        "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "recipe version",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d55a39a2-30cf-4e90-906e-4582b81bf27a",
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "recipe title",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "b4915b0b-3eb7-4bbb-8e99-0020e36ffba3",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "3d065ff0-022e-4938-81e3-5878d9c7f1e9"
+                            },
+                            "GUID": "bf0f6134-4cf7-4838-a140-88bebb552cb8"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "recipe code",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "08d06afb-c81c-4ad8-b952-e4126c7383ff",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "b72b6c38-512f-4a1d-bd2d-c7281ac77e96"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Recipe",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "d7f2e379-e479-4faa-9838-91dee682ffa0"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Process Event",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event type id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "recipe id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "55335ce0-d5fb-4a79-a0b3-5998fcacad84",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "foreignField": [
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event status",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "GUID": "8e0b0be7-cc2f-41b8-a9cb-5392f6888b91",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "ce11b3e2-02ea-487b-8a10-c7bf6bf9db01"
+                            },
+                            "GUID": "89dc661f-66e8-475b-bc1c-5d7b37787dca"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event timestamp",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "65ef43e1-9936-4d5f-8a89-d6aa09a9de1e",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "ce8cd8a6-6bfe-4ab8-a521-aa9dc324f910"
+                            },
+                            "GUID": "90e85eb7-43de-4faa-bfff-e847193ce484"
+                        },
+                        "mode": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "c54ada2d-5336-421d-8166-67aeaa6cf49a"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Process Event",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Process Response",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process response id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "653825ef-830a-493b-bd1b-07b4c5da0aad",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "required": true,
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "9ee4269d-6fc8-494e-baee-0c05cc855fa1",
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "event acknowledged by person id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "f866a998-9fe2-4cc7-bcae-f345eec1bcf3",
+                        "description": "The event acknowledge by person id is the unique identifier of the person who has acknowledged this Process Event.",
+                        "foreignCollection": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                        "foreignField": [
+                            "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                            "07c09ac5-9315-4819-bc6b-0aef04343518"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "event acknowledged timestamp",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "9a1096e4-dcb6-4295-911d-ff242820e28d",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "90581b9a-bdf0-48da-86ea-021fecdcc04c"
+                            },
+                            "GUID": "71b05bbb-eca8-4a00-8ddf-d4966f2482c0"
+                        },
+                        "mode": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "d8e9b192-c3d3-4b7b-a37b-b9efea0dfdb2"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Process Response",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "b644e060-587e-42df-9686-29da76abb1d3"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Manufacturing Process Person",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "manufacturing process person id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "07c09ac5-9315-4819-bc6b-0aef04343518",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "manufacturing process person name",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "GUID": "7373cfad-8222-491c-8997-63c23ff0ad04",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "28c61815-edb3-4a2c-8b19-ccbbff4688e5"
+                            },
+                            "GUID": "7ef99212-56bf-4400-8446-980a538758b7"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "9142f83d-704f-463a-955d-a712079d9a1a",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "name": "manufacturing process person role",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "e01ffc1d-0584-4898-9acb-68329ff18401"
+                            },
+                            "GUID": "280f527d-99da-48a1-b7e3-0c7559d5c6ac"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "40386722-8ed0-474c-91f5-41d21698bd33"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Manufacturing Process Person",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "b27f4e70-f0e0-4e15-be67-03578ff8d2a3"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Deviation Rule",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation rule id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event type id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "759b2bdd-df35-4b70-a570-647ac8e8ac31",
+                        "required": true,
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+                        "foreignField": [
+                            "38c05342-c87d-4678-9b81-9231b87b7395",
+                            "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                        ],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation rule summary",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "07917f8e-38c7-4bc7-aa50-c057f46d3b65",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "9e2d11b3-cd3a-443f-948c-2a748d0c60ae"
+                            },
+                            "GUID": "cc9e7444-4f44-4b65-8d9c-66c2d818ee5f"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "f159d610-e23b-454b-9dff-928327e6d59d"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Deviation Rule",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "f6a20f1c-8191-4ec0-8e83-26350725b086"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Deviation",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "7483d7c3-9f42-44ae-afcb-8453466d753a",
+                        "required": true,
+                        "sample": 10123,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation rule id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "8af8aad8-84ab-4727-973f-1f49ba521206",
+                        "foreignCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                        "foreignField": [
+                            "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                            "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "sample": 1234,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "required": true,
+                        "GUID": "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419",
+                        "relationshipType": "Foreign Key",
+                        "sample": 99999999,
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation headline",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "ccf6bdd4-92c3-487d-a26e-79f661a2bccf",
+                        "sample": "Air Pressure Low PS1035",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "13489acd-1875-4e61-b85d-362c3b4ab1fa"
+                            },
+                            "GUID": "0e58786c-b998-4398-9655-4a09f98e732e"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation severity",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "GUID": "f273ad66-c1b4-4e15-8f9f-7717509349af",
+                        "enum": [
+                            "CRITICAL",
+                            "MAJOR",
+                            "MINOR"
+                        ],
+                        "sample": "MAJOR",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "dd7da980-5340-42eb-a112-4721e1cd2791"
+                            },
+                            "GUID": "fbae1c2b-152e-4cd6-81eb-e79516932cea"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product batch id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "2c1c314d-44fe-4f06-b681-733e00c267a9",
+                        "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "foreignField": [
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "required": true,
+                        "relationshipType": "Foreign Key",
+                        "sample": 12345678,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "e8f86ce8-5ef4-433c-a43a-e068201cad33"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Deviation",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "2594c051-8995-48e6-a280-ba1b136d09f5"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Process Event Type",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event type id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "dfe4c308-7e1a-4496-9201-2cacfcef15c7",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                        ],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event type name",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "GUID": "0b84f41d-f5f6-4be3-9cc3-13897f8b1b5b",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "53a01324-4a44-4bda-aff5-d5fa3c3420e7"
+                            },
+                            "GUID": "3900767f-b207-4fed-bb5d-b2c49185f4b4"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "process event type description",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "22e85ee9-8ea0-4cde-b0c7-f110b6614c71",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "0cd67eb4-6478-4e95-b5f2-cbbb15c18725"
+                            },
+                            "GUID": "0e6b260b-eb58-423c-a839-b9bfecb7880e"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "9a79fbff-b296-4075-a456-80a823fec49e"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "38c05342-c87d-4678-9b81-9231b87b7395",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Process Event Type",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "c4a582b5-8550-49ff-90ec-30354533f8da"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Deviation Assessment",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "09d26f0d-45aa-4c22-9d29-250b83ada95a",
+                        "required": true,
+                        "foreignCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "foreignField": [
+                            "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                            "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "sample": 10123,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "bcc3daa2-ea9b-431c-8c72-e9cf1e705290",
+                        "name": "deviation assessment summary",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "b547777d-f195-48b7-9dd1-11cae6f19451"
+                            },
+                            "GUID": "1f34420f-8f77-49de-82f5-0867e1bd4ca2"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "string",
+                        "subtype": "string",
+                        "childType": "text",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation assessment outcome",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "GUID": "d62ba88b-53d3-4b09-9c34-7820a81867db",
+                        "enum": [
+                            "PASS",
+                            "FAIL"
+                        ],
+                        "sample": "PASS",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "522d420d-5cae-4e68-9a4b-aa6c227af4a1"
+                            },
+                            "GUID": "c9966e27-d685-42c9-8343-3b8a31c5bbf2"
+                        },
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "deviation assessed by id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "5bfd267c-8350-4538-8b75-57e7d48b4314",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "required": true,
+                        "sample": 4567890,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "597ca1a2-81f0-449b-a6f9-a23206c2d803"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Deviation Assessment",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "01a452c4-3d88-4736-ace8-6bcb3fdab893"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Production Run",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "production run id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "245296af-71fc-47ef-85f4-bf2399063f7b",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product batch id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "eed84ece-13d1-4acf-a932-7ac48ecbb95f",
+                        "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "foreignField": [
+                            "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                            "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                        ],
+                        "required": true,
+                        "relationshipType": "Foreign Key",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "recipe id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "foreignField": [
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "production run code",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "1e9e8522-f8cc-4af2-82b8-a8c84fecfedb",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "production run start date-time",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "GUID": "374324f8-20e2-44d5-9a97-a5f2bf238ce4",
+                        "required": true,
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "f3b9dddc-4918-4558-8f35-0280ccfedf78"
+                            },
+                            "GUID": "f88dbb39-cd40-46e6-b43b-643e1b669e81"
+                        },
+                        "mode": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "production run end date-time",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "GUID": "75240a6f-d8e9-4633-9d66-d62ef2867373",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "cc2b4c40-b20c-429b-9294-627f70d3a455"
+                            },
+                            "GUID": "e1bfc9ba-68a9-4d15-9ed4-bc613ef0e3f2"
+                        },
+                        "mode": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "a7abce5b-2689-4646-80c6-6fb57d77d4ae"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Production Run",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "663dcfe4-85b2-47c1-9ea0-22820d64132c"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Product Batch",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product batch id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "9fc40ab2-4964-4256-9e51-b65bb2929fd3",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "required": true,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product batch work order id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "dc20d650-6493-4582-b053-90f24d7b00c2",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "timestamp",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "product batch date-time",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "GUID": "1a5dd93d-ed54-4484-a01c-a85129fa1900",
+                        "generatedDefaultValue": {
+                            "identity": {
+                                "step_num": 1,
+                                "GUID": "5349fa39-56ea-41e5-a745-efe6c429c039"
+                            },
+                            "GUID": "66df8e05-88d1-46b2-8d86-a5f1c3cf9539"
+                        },
+                        "mode": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "0c8a0514-7fd3-42f7-bf69-edfb94e4e3d3"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/Product Batch",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "e6fe59f3-3446-4d5e-a136-1bd526e8faee"
+                    ]
+                ]
+            },
+            {
+                "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+                "name": "PROCESS Domain CDM",
+                "type": "annotation",
+                "disableInitialFocus": true,
+                "value": "# Digital Membership\n## PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.3.4\n- date: 20-jan-2024\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture.  This provides a specification for the data objects and their interrelationships that govern the business aspects of medicines manufacturing process with the Digital Membership.\n\nThe starting point for the definitions in this CDM is the OPC UA 10000 Specification (v.1.05.03)",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "decorativeSymbol",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/PROCESS Domain CDM",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "9139ea7c-ef14-4594-a7b7-edd071f93746"
+                    ]
+                ]
+            },
+            {
+                "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
+                "name": "TODO",
+                "type": "annotation",
+                "value": "Determine if the \"Process Event Recipe\".configuration should be a set of values within the join entity, or broken out in to a separate entity.  Simplify for now (as of 0.3.2).",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "disableInitialFocus": true,
+                "definitionEntityType": "decorativeSymbol",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain/TODO",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "4fa2554e-cc45-443e-b30e-82da04e65140"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Process Event Node.process event id to Process Event.process event id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                        "9ee4269d-6fc8-494e-baee-0c05cc855fa1"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "GUID": "f773696b-9c7c-4679-880d-dd80059e5188",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "childCollection": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "68b68e9e-bf14-42ca-8317-b7ea5b086313",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 24978.700833481395,
+                            "y": 42913.65410774136
+                        },
+                        {
+                            "x": 25075.163017529423,
+                            "y": 42913.65410774136
+                        },
+                        {
+                            "x": 25075.163017529423,
+                            "y": 42913.12518884778
+                        },
+                        {
+                            "x": 25171.62520157745,
+                            "y": 42913.12518884778
+                        }
+                    ],
+                    "sides": [
+                        "right",
+                        "left"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Process Event Node.process event id to Process Event.process event id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "edb170d9-5ee0-49da-9944-8b8f71203d34"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Process Event Response.process event response user id to process user.process user id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                        "07c09ac5-9315-4819-bc6b-0aef04343518"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                        "f866a998-9fe2-4cc7-bcae-f345eec1bcf3"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "parentCollection": "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                "childCollection": "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                "GUID": "5af5d971-ee0e-45bc-8698-ad235617ddfa",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "3a591fce-35f2-47f7-8409-74c69718a138",
+                    "autoPositioning": false,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 24786.824355015695,
+                            "y": 42966.15410774136
+                        },
+                        {
+                            "x": 24786.824355015695,
+                            "y": 43048.989619530286
+                        }
+                    ],
+                    "sides": [
+                        "bottom",
+                        "top"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Process Event Response.process event response user id to process user.process user id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "3e39b740-d911-480c-900c-1ef92fbbf6e5"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Process Event Type.process event type id to Process Event.process event type id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                    ]
+                ],
+                "parentCardinality": "0..n",
+                "childField": [
+                    [
+                        "38c05342-c87d-4678-9b81-9231b87b7395",
+                        "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                    ]
+                ],
+                "childCardinality": "1",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "childCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+                "GUID": "1c7a70e1-8275-4870-9a76-7031d2b3b6d2",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "e4441da1-19d3-43f7-a254-b26105e1d00c",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25321.705362777386,
+                            "y": 43077.32782876004
+                        },
+                        {
+                            "x": 25321.705362777386,
+                            "y": 43025.97650880391
+                        },
+                        {
+                            "x": 25321.12520157745,
+                            "y": 43025.97650880391
+                        },
+                        {
+                            "x": 25321.12520157745,
+                            "y": 42974.62518884778
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Process Event Type.process event type id to Process Event.process event type id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "fd2b4b5b-da58-4767-af3f-ac69f8ad3cd2"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Alarm Process Event.process event id to Process Event.process event id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419"
+                    ]
+                ],
+                "childCardinality": "0..1",
+                "GUID": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "69f2a7f8-8421-4e57-806c-bedf4221081b",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25676.940483703165,
+                            "y": 43070.31987221824
+                        },
+                        {
+                            "x": 25573.782842640307,
+                            "y": 43070.31987221824
+                        },
+                        {
+                            "x": 25573.782842640307,
+                            "y": 42913.12518884778
+                        },
+                        {
+                            "x": 25470.62520157745,
+                            "y": 42913.12518884778
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Alarm Process Event.process event id to Process Event.process event id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "23c838bb-cb9b-45ef-8bba-237eea3af83d"
+                    ]
+                ]
+            },
+            {
+                "name": "fk deviation rule.process event type id to Process Event Type.process event type id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "38c05342-c87d-4678-9b81-9231b87b7395",
+                        "dfe4c308-7e1a-4496-9201-2cacfcef15c7"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                        "759b2bdd-df35-4b70-a570-647ac8e8ac31"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "parentCollection": "38c05342-c87d-4678-9b81-9231b87b7395",
+                "childCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                "GUID": "305e6178-6eff-4cef-8f33-ca13a282c49b",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "3fc9f9bb-459c-44e2-a3bb-ce60199f12ca",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25622.758937962295,
+                            "y": 43293.469696969696
+                        },
+                        {
+                            "x": 25622.758937962295,
+                            "y": 43228.89876286487
+                        },
+                        {
+                            "x": 25321.705362777386,
+                            "y": 43228.89876286487
+                        },
+                        {
+                            "x": 25321.705362777386,
+                            "y": 43164.32782876004
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk deviation rule.process event type id to Process Event Type.process event type id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "659b2f68-352c-4d3f-ae0f-694a5dd63cf0"
+                    ]
+                ]
+            },
+            {
+                "name": "fk deviation(1).deviation id to deviation.deviation id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "7483d7c3-9f42-44ae-afcb-8453466d753a"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                        "09d26f0d-45aa-4c22-9d29-250b83ada95a"
+                    ]
+                ],
+                "childCardinality": "0..1",
+                "parentCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "childCollection": "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                "GUID": "07b24627-4208-46e8-83b0-b8c8508d14f2",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "f4192d36-490a-4798-bc21-ea9db17b6413",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 26036.97230987036,
+                            "y": 43185.894267589276
+                        },
+                        {
+                            "x": 25994.456396786765,
+                            "y": 43185.894267589276
+                        },
+                        {
+                            "x": 25994.456396786765,
+                            "y": 43070.31987221824
+                        },
+                        {
+                            "x": 25951.940483703165,
+                            "y": 43070.31987221824
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk deviation(1).deviation id to deviation.deviation id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "54614d61-bc25-451d-8d95-8c5d30673b5a"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                        "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "8af8aad8-84ab-4727-973f-1f49ba521206"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "parentCollection": "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "GUID": "08c01ba9-18a0-49e5-9903-1cad8b2766c7",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "2fba59a1-7db7-4406-ad98-47b98e1ef4b6",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25814.440483703165,
+                            "y": 43140.81987221824
+                        },
+                        {
+                            "x": 25814.440483703165,
+                            "y": 43217.14478459397
+                        },
+                        {
+                            "x": 25720.09227129563,
+                            "y": 43217.14478459397
+                        },
+                        {
+                            "x": 25720.09227129563,
+                            "y": 43293.469696969696
+                        }
+                    ],
+                    "sides": [
+                        "bottom",
+                        "top"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "312c54f3-afbd-4236-9dac-c8473349efdf"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "55335ce0-d5fb-4a79-a0b3-5998fcacad84"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "GUID": "55bf0eca-9db3-4d14-909c-0624e695e200",
+                "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "childCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25321.12520157745,
+                            "y": 42851.62518884778
+                        },
+                        {
+                            "x": 25321.12520157745,
+                            "y": 42799.424591712785
+                        },
+                        {
+                            "x": 25320.38213588402,
+                            "y": 42799.424591712785
+                        },
+                        {
+                            "x": 25320.38213588402,
+                            "y": 42747.22399457779
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "d5053b8c-68cb-4e67-9c8d-b32ca31c2253"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "7aa25246-c096-4be0-a640-186cc28244ea",
+                        "3d9c1026-c5dc-4e1f-bc85-de502dbe2663"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "GUID": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
+                "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "childCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25969.503348005237,
+                            "y": 42666.17854003232
+                        },
+                        {
+                            "x": 25704.44274194463,
+                            "y": 42666.17854003232
+                        },
+                        {
+                            "x": 25704.44274194463,
+                            "y": 42665.22399457779
+                        },
+                        {
+                            "x": 25439.38213588402,
+                            "y": 42665.22399457779
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "046694ab-3ef9-4b27-acd3-786389b95b2b"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Deviation.product batch id to Product Batch.product batch id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                        "2c1c314d-44fe-4f06-b681-733e00c267a9"
+                    ]
+                ],
+                "childCardinality": "0..n",
+                "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                "GUID": "5d342984-aa89-4965-8080-f297dcb34107",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "9fdc44aa-acad-48b9-8cff-1906e914ffa6",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25814.440483703165,
+                            "y": 42999.81987221824
+                        },
+                        {
+                            "x": 25814.440483703165,
+                            "y": 42947.249206125285
+                        },
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42947.249206125285
+                        },
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42894.67854003232
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Deviation.product batch id to Product Batch.product batch id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "9d8f3c7d-81cf-4eea-b22e-71ac7fb4b2e7"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Production Run.product batch id to Product Batch.product batch id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "7aa25246-c096-4be0-a640-186cc28244ea",
+                        "eed84ece-13d1-4acf-a932-7ac48ecbb95f"
+                    ]
+                ],
+                "childCardinality": "1..n",
+                "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                "childCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+                "GUID": "292fa66a-7584-43af-8008-8067b1b624aa",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "be888c29-b504-4e35-90e1-ce2abfcb8466",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42736.67854003232
+                        },
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42772.17854003232
+                        },
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42772.17854003232
+                        },
+                        {
+                            "x": 26137.503348005237,
+                            "y": 42807.67854003232
+                        }
+                    ],
+                    "sides": [
+                        "bottom",
+                        "top"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "a8f9d33c-2f11-491f-99f1-4b55410ab5db"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Production Run.product batch id to Product Batch.product batch id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "eb8e8371-337c-4968-96d0-ba5d66b3e552"
+                    ]
+                ],
+                "childCardinality": "1..n",
+                "GUID": "b143ec9c-1029-4398-961c-434f4c7a1d20",
+                "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                "childCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "be888c29-b504-4e35-90e1-ce2abfcb8466",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 25439.38213588402,
+                            "y": 42706.22399457779
+                        },
+                        {
+                            "x": 25707.44274194463,
+                            "y": 42706.22399457779
+                        },
+                        {
+                            "x": 25707.44274194463,
+                            "y": 42851.17854003232
+                        },
+                        {
+                            "x": 25975.503348005237,
+                            "y": 42851.17854003232
+                        }
+                    ],
+                    "sides": [
+                        "right",
+                        "left"
+                    ]
+                },
+                "isActivated": true,
+                "definitionEntityType": "relationship",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "cd350850-8d8e-4bff-9a9b-846dc26faff2"
+                    ]
+                ]
+            },
+            {
+                "name": "PROCESS Domain",
+                "type": "bucket",
+                "collectionIds": [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "406f75d6-5517-41bc-bcf4-b8d5dfe39431",
+                    "b2ecea93-3691-4d1f-b8a7-5e19628f7d02",
+                    "472d69e6-cb90-4e51-9320-cbad8f06bc57",
+                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
+                    "38c05342-c87d-4678-9b81-9231b87b7395",
+                    "ba7e5ea6-1d25-4b14-ada5-28d50cc34c64",
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb"
+                ],
+                "backgroundColor": {
+                    "r": 216,
+                    "g": 0,
+                    "b": 115,
+                    "a": 1
+                },
+                "show": true,
+                "isActivated": true,
+                "indexes": [],
+                "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "bucket",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PROCESS Domain",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "eca56ddc-550a-449c-8e75-370f0cce2434"
+    },
+    "sources": [],
+    "decorativeSymbols": [
+        {
+            "GUID": "9139ea7c-ef14-4594-a7b7-edd071f93746",
+            "name": "PROCESS Domain CDM",
+            "refType": "polyglot",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0"
+            ],
+            "type": "reference",
+            "ref": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "value": "# Digital Membership\n## PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.3.4\n- date: 20-jan-2024\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture.  This provides a specification for the data objects and their interrelationships that govern the business aspects of medicines manufacturing process with the Digital Membership.\n\nThe starting point for the definitions in this CDM is the OPC UA 10000 Specification (v.1.05.03)",
+            "disableInitialFocus": true
+        },
+        {
+            "GUID": "4fa2554e-cc45-443e-b30e-82da04e65140",
+            "name": "TODO",
+            "refType": "polyglot",
+            "refIdPath": [
+                "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+                "d8a2ebcd-a1f5-475d-a73f-42e8ad9b9363",
+                "543d46a3-fbbf-4e09-8d42-2783a3a069d8"
+            ],
+            "type": "reference",
+            "ref": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
+            "bucketId": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3",
+            "value": "Determine if the \"Process Event Recipe\".configuration should be a set of values within the join entity, or broken out in to a separate entity.  Simplify for now (as of 0.3.2).",
+            "disableInitialFocus": true
+        }
+    ],
+    "dbVersion": "Runtime 14",
+    "dbVendor": "Delta Lake",
+    "appTarget": "DeltaLake",
+    "creationTS": "2024-01-31T08:31:37.952Z",
+    "GUID": "d98f7d0e-0395-484f-a108-308c1c43f7cb",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "2164970b-e818-4449-b324-a13e4c35a36d",
+            "polyglotModelName": "PROCESS-Domain-Polyglot.hck",
+            "polyglotModelPath": "PROCESS-Domain-Polyglot.hck.json",
+            "normalization": true
+        }
+    ],
+    "lastModifTS": "2024-01-31T08:32:35.728Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "DeltaLake",
+        "pluginVersion": "0.1.119",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.2.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "d7f2e379-e479-4faa-9838-91dee682ffa0",
+                        "x": 25201.38213588402,
+                        "y": 42624.22399457779,
+                        "width": 238,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "6ed56ecb-408b-4ecf-8bb2-2eb527a695a2",
+                        "x": 25171.62520157745,
+                        "y": 42851.62518884778,
+                        "width": 299,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "b644e060-587e-42df-9686-29da76abb1d3",
+                        "x": 24634.700833481395,
+                        "y": 42861.15410774136,
+                        "width": 344,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "b27f4e70-f0e0-4e15-be67-03578ff8d2a3",
+                        "x": 24630.51809578787,
+                        "y": 43048.989619530286,
+                        "width": 366,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "f6a20f1c-8191-4ec0-8e83-26350725b086",
+                        "x": 25525.425604628963,
+                        "y": 43293.469696969696,
+                        "width": 292,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "2594c051-8995-48e6-a280-ba1b136d09f5",
+                        "x": 25676.940483703165,
+                        "y": 42999.81987221824,
+                        "width": 275,
+                        "height": 141,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "c4a582b5-8550-49ff-90ec-30354533f8da",
+                        "x": 25148.705362777386,
+                        "y": 43077.32782876004,
+                        "width": 346,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "01a452c4-3d88-4736-ace8-6bcb3fdab893",
+                        "x": 26036.97230987036,
+                        "y": 43133.394267589276,
+                        "width": 335,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "663dcfe4-85b2-47c1-9ea0-22820d64132c",
+                        "x": 25969.503348005237,
+                        "y": 42595.67854003232,
+                        "width": 336,
+                        "height": 141,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "e6fe59f3-3446-4d5e-a136-1bd526e8faee",
+                        "x": 25975.503348005237,
+                        "y": 42807.67854003232,
+                        "width": 324,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 24420.00105473966,
+                        "y": 42407.494170902,
+                        "GUID": "1d2ee1fa-8f8a-40bb-8e70-ee4e82a41ac3"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [
+                    {
+                        "GUID": "9139ea7c-ef14-4594-a7b7-edd071f93746",
+                        "x": 24460.00105473966,
+                        "y": 42447.494170902,
+                        "height": 358,
+                        "width": 425
+                    },
+                    {
+                        "GUID": "4fa2554e-cc45-443e-b30e-82da04e65140",
+                        "x": 24640.508786595878,
+                        "y": 43281.466597653285,
+                        "height": 114,
+                        "width": 288,
+                        "color": {
+                            "hsl": {
+                                "h": 0,
+                                "s": 0.4910714285714286,
+                                "l": 0.4392156862745098,
+                                "a": 1
+                            },
+                            "hex": "#a73939",
+                            "rgb": {
+                                "r": 167,
+                                "g": 57,
+                                "b": 57,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 0,
+                                "s": 0.6586826347305389,
+                                "v": 0.6549019607843137,
+                                "a": 1
+                            },
+                            "oldHue": 199.53488372093022,
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

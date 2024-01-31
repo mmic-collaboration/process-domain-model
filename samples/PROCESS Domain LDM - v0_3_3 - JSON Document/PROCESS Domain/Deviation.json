@@ -1,0 +1,8 @@
+{
+    "deviation id": 10123,
+    "product batch id": 12345678,
+    "deviation rule id": 1234,
+    "process event id": 99999999,
+    "deviation headline": "Air Pressure Low PS1035",
+    "deviation severity": "MAJOR"
+}

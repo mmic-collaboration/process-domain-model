@@ -68,7 +68,8 @@
                 "f773696b-9c7c-4679-880d-dd80059e5188"
             ],
             "ref": "f773696b-9c7c-4679-880d-dd80059e5188",
-            "GUID": "8295f8d8-4d24-4146-8153-54507ce1e93c"
+            "GUID": "8295f8d8-4d24-4146-8153-54507ce1e93c",
+            "isActivated": true
         },
         {
             "name": "fk Process Event Response.process event response user id to process user.process user id",
@@ -126,7 +127,8 @@
                 "5af5d971-ee0e-45bc-8698-ad235617ddfa"
             ],
             "ref": "5af5d971-ee0e-45bc-8698-ad235617ddfa",
-            "GUID": "c6adc94d-5d6a-4302-afeb-8aee9436c6de"
+            "GUID": "c6adc94d-5d6a-4302-afeb-8aee9436c6de",
+            "isActivated": true
         },
         {
             "name": "fk Process Event Type.process event type id to Process Event.process event type id",
@@ -192,7 +194,8 @@
                 "1c7a70e1-8275-4870-9a76-7031d2b3b6d2"
             ],
             "ref": "1c7a70e1-8275-4870-9a76-7031d2b3b6d2",
-            "GUID": "e8971dd8-cce2-4623-a92b-cae721251c98"
+            "GUID": "e8971dd8-cce2-4623-a92b-cae721251c98",
+            "isActivated": true
         },
         {
             "name": "fk Alarm Process Event.process event id to Process Event.process event id",
@@ -258,7 +261,8 @@
                 "7aa8238d-01de-4ec4-ae94-b0f74d9951d0"
             ],
             "ref": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
-            "GUID": "ca34dd43-c387-400a-9ff3-40f3624cb065"
+            "GUID": "ca34dd43-c387-400a-9ff3-40f3624cb065",
+            "isActivated": true
         },
         {
             "name": "fk deviation rule.process event type id to Process Event Type.process event type id",
@@ -324,7 +328,8 @@
                 "305e6178-6eff-4cef-8f33-ca13a282c49b"
             ],
             "ref": "305e6178-6eff-4cef-8f33-ca13a282c49b",
-            "GUID": "d665d66f-9b2b-4e89-92d9-cf199a3da45c"
+            "GUID": "d665d66f-9b2b-4e89-92d9-cf199a3da45c",
+            "isActivated": true
         },
         {
             "name": "fk deviation(1).deviation id to deviation.deviation id",
@@ -390,7 +395,8 @@
                 "07b24627-4208-46e8-83b0-b8c8508d14f2"
             ],
             "ref": "07b24627-4208-46e8-83b0-b8c8508d14f2",
-            "GUID": "9689e715-9e89-4c6a-8820-16f1948fd17a"
+            "GUID": "9689e715-9e89-4c6a-8820-16f1948fd17a",
+            "isActivated": true
         },
         {
             "name": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
@@ -456,7 +462,8 @@
                 "08c01ba9-18a0-49e5-9903-1cad8b2766c7"
             ],
             "ref": "08c01ba9-18a0-49e5-9903-1cad8b2766c7",
-            "GUID": "e75d77a0-b6a8-4cba-86c8-7f6617a42a04"
+            "GUID": "e75d77a0-b6a8-4cba-86c8-7f6617a42a04",
+            "isActivated": true
         },
         {
             "name": "fk Sensor Event.sensor id to Sensor.sensor id",
@@ -522,7 +529,8 @@
                 "55bf0eca-9db3-4d14-909c-0624e695e200"
             ],
             "ref": "55bf0eca-9db3-4d14-909c-0624e695e200",
-            "GUID": "0d30fb3d-7c7d-4a3f-8433-73aa1dda17ed"
+            "GUID": "0d30fb3d-7c7d-4a3f-8433-73aa1dda17ed",
+            "isActivated": true
         },
         {
             "name": "fk Sensor Event.sensor id to Sensor.sensor id",
@@ -588,7 +596,8 @@
                 "2d8e905b-ef40-4a74-a74a-f7950153ea40"
             ],
             "ref": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
-            "GUID": "1116c46f-7b37-4002-9104-8f81682ffe79"
+            "GUID": "1116c46f-7b37-4002-9104-8f81682ffe79",
+            "isActivated": true
         },
         {
             "name": "fk Deviation.product batch id to Product Batch.product batch id",
@@ -654,7 +663,8 @@
                 "5d342984-aa89-4965-8080-f297dcb34107"
             ],
             "ref": "5d342984-aa89-4965-8080-f297dcb34107",
-            "GUID": "4ae0b6b0-8378-4830-b6ab-0e83f0db1d1a"
+            "GUID": "4ae0b6b0-8378-4830-b6ab-0e83f0db1d1a",
+            "isActivated": true
         },
         {
             "name": "fk Production Run.product batch id to Product Batch.product batch id",
@@ -720,7 +730,8 @@
                 "292fa66a-7584-43af-8008-8067b1b624aa"
             ],
             "ref": "292fa66a-7584-43af-8008-8067b1b624aa",
-            "GUID": "bd79496f-a250-437a-ace8-01e4a34ca16c"
+            "GUID": "bd79496f-a250-437a-ace8-01e4a34ca16c",
+            "isActivated": true
         },
         {
             "name": "fk Production Run.product batch id to Product Batch.product batch id",
@@ -786,7 +797,8 @@
                 "b143ec9c-1029-4398-961c-434f4c7a1d20"
             ],
             "ref": "b143ec9c-1029-4398-961c-434f4c7a1d20",
-            "GUID": "efa93b11-46b0-49df-be4a-fbf7133b0999"
+            "GUID": "efa93b11-46b0-49df-be4a-fbf7133b0999",
+            "isActivated": true
         }
     ],
     "users": [],
@@ -809,9 +821,9 @@
         "f19d1fcd-1169-4885-9faa-02c14b1a3c36": "Deviation Rule",
         "87c55210-e6cc-4aa8-8fe8-2dd1ac2403c1": "Deviation",
         "34d1be4b-9027-4ebc-934d-9e82f3a7b068": "Process Event Type",
-        "383c15e1-5009-4dd0-ad17-4b0e44f71d71": "deviation Assessment",
+        "383c15e1-5009-4dd0-ad17-4b0e44f71d71": "Deviation Assessment",
         "461642f8-a655-4ad4-80e8-84913c082273": "Production Run",
-        "d03b2972-6afa-4433-8008-f36a29d30fa5": "Product Batch",
+        "d03b2972-6afa-4433-8008-f36a29d30fa5": "productBatch",
         "8295f8d8-4d24-4146-8153-54507ce1e93c": "fk Process Event Node.process event id to Process Event.process event id",
         "c6adc94d-5d6a-4302-afeb-8aee9436c6de": "fk Process Event Response.process event response user id to process user.process user id",
         "e8971dd8-cce2-4623-a92b-cae721251c98": "fk Process Event Type.process event type id to Process Event.process event type id",
@@ -886,6 +898,9 @@
                                 }
                             ]
                         },
+                        "code": "recipe",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -936,6 +951,9 @@
                                 }
                             ]
                         },
+                        "code": "processEvent",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -983,6 +1001,9 @@
                                 }
                             ]
                         },
+                        "code": "processResponse",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -1013,6 +1034,9 @@
                                 }
                             ]
                         },
+                        "code": "manufacturingProcessPerson",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -1035,6 +1059,13 @@
                             "name": "Deviation Rule",
                             "properties": [
                                 {
+                                    "GUID": "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2",
+                                    "childRelationships": [
+                                        "e75d77a0-b6a8-4cba-86c8-7f6617a42a04"
+                                    ],
+                                    "error": {}
+                                },
+                                {
                                     "GUID": "759b2bdd-df35-4b70-a570-647ac8e8ac31",
                                     "relationshipType": "Foreign Key",
                                     "foreignCollection": "34d1be4b-9027-4ebc-934d-9e82f3a7b068",
@@ -1045,16 +1076,12 @@
                                     ],
                                     "parentRelationship": "d665d66f-9b2b-4e89-92d9-cf199a3da45c",
                                     "error": {}
-                                },
-                                {
-                                    "GUID": "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2",
-                                    "childRelationships": [
-                                        "e75d77a0-b6a8-4cba-86c8-7f6617a42a04"
-                                    ],
-                                    "error": {}
                                 }
                             ]
                         },
+                        "code": "deviationRule",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -1121,6 +1148,9 @@
                                 }
                             ]
                         },
+                        "code": "deviation",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
@@ -1159,11 +1189,14 @@
                                 }
                             ]
                         },
+                        "code": "processEventType",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
                         "GUID": "383c15e1-5009-4dd0-ad17-4b0e44f71d71",
-                        "name": "deviation Assessment",
+                        "name": "Deviation Assessment",
                         "type": "reference",
                         "$ref": "#external/definitions/deviation Assessment",
                         "refType": "polyglot",
@@ -1194,7 +1227,13 @@
                                 }
                             ]
                         },
-                        "error": {}
+                        "code": "deviationAssessment",
+                        "required": false,
+                        "additionalProperties": false,
+                        "error": {
+                            "name": false,
+                            "code": false
+                        }
                     },
                     {
                         "GUID": "461642f8-a655-4ad4-80e8-84913c082273",
@@ -1216,18 +1255,6 @@
                             "name": "Production Run",
                             "properties": [
                                 {
-                                    "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
-                                    "relationshipType": "Foreign Key",
-                                    "foreignCollection": "872d34c7-1f7f-4c86-b37e-f2ad75293514",
-                                    "foreignField": [
-                                        "872d34c7-1f7f-4c86-b37e-f2ad75293514",
-                                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
-                                    ],
-                                    "parentRelationship": "1116c46f-7b37-4002-9104-8f81682ffe79",
-                                    "error": {}
-                                },
-                                {
                                     "GUID": "eed84ece-13d1-4acf-a932-7ac48ecbb95f",
                                     "relationshipType": "Foreign Key",
                                     "foreignCollection": "d03b2972-6afa-4433-8008-f36a29d30fa5",
@@ -1238,14 +1265,29 @@
                                     ],
                                     "parentRelationship": "bd79496f-a250-437a-ace8-01e4a34ca16c",
                                     "error": {}
+                                },
+                                {
+                                    "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
+                                    "relationshipType": "Foreign Key",
+                                    "foreignCollection": "872d34c7-1f7f-4c86-b37e-f2ad75293514",
+                                    "foreignField": [
+                                        "872d34c7-1f7f-4c86-b37e-f2ad75293514",
+                                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                                    ],
+                                    "parentRelationship": "1116c46f-7b37-4002-9104-8f81682ffe79",
+                                    "error": {}
                                 }
                             ]
                         },
+                        "code": "productionRun",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     },
                     {
                         "GUID": "d03b2972-6afa-4433-8008-f36a29d30fa5",
-                        "name": "Product Batch",
+                        "name": "productBatch",
                         "type": "reference",
                         "$ref": "#external/definitions/Product Batch",
                         "refType": "polyglot",
@@ -1273,6 +1315,9 @@
                                 }
                             ]
                         },
+                        "code": "productBatch",
+                        "required": false,
+                        "additionalProperties": false,
                         "error": {}
                     }
                 ],
@@ -1502,7 +1547,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -1613,10 +1657,9 @@
                 "code": "recipe",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Recipe",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1626,7 +1669,9 @@
                         "872d34c7-1f7f-4c86-b37e-f2ad75293514"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Recipe"
             },
             {
                 "name": "Process Event",
@@ -1635,7 +1680,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -1740,10 +1784,9 @@
                 "code": "processEvent",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Process Event",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1753,7 +1796,9 @@
                         "72f89b84-a61d-425e-98c2-41dd0de71b3c"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Process Event"
             },
             {
                 "name": "Process Response",
@@ -1762,7 +1807,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -1861,10 +1905,9 @@
                 "code": "processResponse",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Process Response",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1874,7 +1917,9 @@
                         "9f450e8d-f393-4581-850c-bf077f23d3c0"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Process Response"
             },
             {
                 "name": "Manufacturing Process Person",
@@ -1883,7 +1928,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -1948,10 +1992,9 @@
                 "code": "manufacturingProcessPerson",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Manufacturing Process Person",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1961,7 +2004,9 @@
                         "5bfe5783-fc23-4e74-a6a2-60430b719d01"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Manufacturing Process Person"
             },
             {
                 "name": "Deviation Rule",
@@ -1970,7 +2015,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2041,10 +2085,9 @@
                 "code": "deviationRule",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Deviation Rule",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2054,7 +2097,9 @@
                         "f19d1fcd-1169-4885-9faa-02c14b1a3c36"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Deviation Rule"
             },
             {
                 "name": "Deviation",
@@ -2063,7 +2108,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2081,6 +2125,7 @@
                         "mode": "int32",
                         "GUID": "7483d7c3-9f42-44ae-afcb-8453466d753a",
                         "required": true,
+                        "sample": 10123,
                         "code": "deviationId",
                         "error": {}
                     },
@@ -2104,6 +2149,7 @@
                             "1a77cc30-5d15-4f2a-b118-83d8ed1f5aa2"
                         ],
                         "relationshipType": "Foreign Key",
+                        "sample": 1234,
                         "code": "deviationRuleId",
                         "error": {}
                     },
@@ -2120,14 +2166,15 @@
                         "exclusiveMinimum": false,
                         "exclusiveMaximum": false,
                         "mode": "int32",
+                        "required": true,
                         "GUID": "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419",
                         "relationshipType": "Foreign Key",
+                        "sample": 99999999,
                         "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
                         "foreignField": [
                             "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
                             "e3092d9a-390a-42d4-9e81-fd488491f87e"
                         ],
-                        "required": true,
                         "code": "processEventId",
                         "error": {}
                     },
@@ -2141,6 +2188,7 @@
                         },
                         "isActivated": true,
                         "GUID": "ccf6bdd4-92c3-487d-a26e-79f661a2bccf",
+                        "sample": "Air Pressure Low PS1035",
                         "code": "deviationHeadline",
                         "error": {}
                     },
@@ -2156,6 +2204,12 @@
                         "required": true,
                         "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
                         "GUID": "f273ad66-c1b4-4e15-8f9f-7717509349af",
+                        "enum": [
+                            "CRITICAL",
+                            "MAJOR",
+                            "MINOR"
+                        ],
+                        "sample": "MAJOR",
                         "code": "deviationSeverity",
                         "error": {}
                     },
@@ -2180,6 +2234,7 @@
                         ],
                         "required": true,
                         "relationshipType": "Foreign Key",
+                        "sample": 12345678,
                         "code": "productBatchId",
                         "error": {}
                     }
@@ -2196,10 +2251,9 @@
                 "code": "deviation",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Deviation",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2209,7 +2263,9 @@
                         "87c55210-e6cc-4aa8-8fe8-2dd1ac2403c1"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Deviation"
             },
             {
                 "name": "Process Event Type",
@@ -2218,7 +2274,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2286,10 +2341,9 @@
                 "code": "processEventType",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Process Event Type",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2299,16 +2353,17 @@
                         "34d1be4b-9027-4ebc-934d-9e82f3a7b068"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Process Event Type"
             },
             {
-                "name": "deviation Assessment",
+                "name": "Deviation Assessment",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2332,6 +2387,7 @@
                             "7483d7c3-9f42-44ae-afcb-8453466d753a"
                         ],
                         "relationshipType": "Foreign Key",
+                        "sample": 10123,
                         "code": "deviationId",
                         "error": {}
                     },
@@ -2352,29 +2408,19 @@
                         "primaryKey": false,
                         "nullable": false,
                         "type": "string",
-                        "name": "deviation severity",
-                        "hackoladeMeta": {
-                            "namingConvention": "code"
-                        },
-                        "isActivated": true,
-                        "GUID": "63eff17c-80d8-470f-8c32-5c7888d92a0c",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "code": "deviationSeverity",
-                        "error": {}
-                    },
-                    {
-                        "primaryKey": false,
-                        "nullable": false,
-                        "type": "string",
                         "name": "deviation assessment outcome",
                         "hackoladeMeta": {
                             "namingConvention": "code"
                         },
                         "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
                         "GUID": "d62ba88b-53d3-4b09-9c34-7820a81867db",
-                        "foreignCollection": "",
-                        "foreignField": [],
+                        "enum": [
+                            "PASS",
+                            "FAIL"
+                        ],
+                        "sample": "PASS",
                         "code": "deviationAssessmentOutcome",
                         "error": {}
                     },
@@ -2395,6 +2441,7 @@
                         "foreignCollection": "",
                         "foreignField": [],
                         "required": true,
+                        "sample": 4567890,
                         "code": "deviationAssessedById",
                         "error": {}
                     }
@@ -2411,10 +2458,9 @@
                 "code": "deviationAssessment",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/deviation Assessment",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2424,7 +2470,9 @@
                         "383c15e1-5009-4dd0-ad17-4b0e44f71d71"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/deviation Assessment"
             },
             {
                 "name": "Production Run",
@@ -2433,7 +2481,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2571,10 +2618,9 @@
                 "code": "productionRun",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Production Run",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2584,7 +2630,9 @@
                         "461642f8-a655-4ad4-80e8-84913c082273"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Production Run"
             },
             {
                 "name": "Product Batch",
@@ -2593,7 +2641,6 @@
                 },
                 "isActivated": true,
                 "schemeType": "apiKey",
-                "required": false,
                 "primaryKey": false,
                 "properties": [
                     {
@@ -2665,10 +2712,9 @@
                 "code": "productBatch",
                 "description": "",
                 "comments": "",
+                "required": false,
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PROCESS Domain/Product Batch",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -2678,7 +2724,9 @@
                         "d03b2972-6afa-4433-8008-f36a29d30fa5"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PROCESS Domain/Product Batch"
             },
             {
                 "name": "fk Process Event Node.process event id to Process Event.process event id",
@@ -2731,19 +2779,20 @@
                         "left"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Process Event Node.process event id to Process Event.process event id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "8295f8d8-4d24-4146-8153-54507ce1e93c"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Process Event Node.process event id to Process Event.process event id"
             },
             {
                 "name": "fk Process Event Response.process event response user id to process user.process user id",
@@ -2788,19 +2837,20 @@
                         "top"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Process Event Response.process event response user id to process user.process user id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "c6adc94d-5d6a-4302-afeb-8aee9436c6de"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Process Event Response.process event response user id to process user.process user id"
             },
             {
                 "name": "fk Process Event Type.process event type id to Process Event.process event type id",
@@ -2853,19 +2903,20 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Process Event Type.process event type id to Process Event.process event type id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "e8971dd8-cce2-4623-a92b-cae721251c98"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Process Event Type.process event type id to Process Event.process event type id"
             },
             {
                 "name": "fk Alarm Process Event.process event id to Process Event.process event id",
@@ -2918,19 +2969,20 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Alarm Process Event.process event id to Process Event.process event id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "ca34dd43-c387-400a-9ff3-40f3624cb065"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Alarm Process Event.process event id to Process Event.process event id"
             },
             {
                 "name": "fk deviation rule.process event type id to Process Event Type.process event type id",
@@ -2983,19 +3035,20 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk deviation rule.process event type id to Process Event Type.process event type id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "d665d66f-9b2b-4e89-92d9-cf199a3da45c"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk deviation rule.process event type id to Process Event Type.process event type id"
             },
             {
                 "name": "fk deviation(1).deviation id to deviation.deviation id",
@@ -3028,18 +3081,18 @@
                     "shape": [
                         {
                             "x": 26036.97230987036,
-                            "y": 43194.894267589276
+                            "y": 43185.894267589276
                         },
                         {
-                            "x": 25988.456396786765,
-                            "y": 43194.894267589276
+                            "x": 25994.456396786765,
+                            "y": 43185.894267589276
                         },
                         {
-                            "x": 25988.456396786765,
+                            "x": 25994.456396786765,
                             "y": 43070.31987221824
                         },
                         {
-                            "x": 25939.940483703165,
+                            "x": 25951.940483703165,
                             "y": 43070.31987221824
                         }
                     ],
@@ -3048,19 +3101,20 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk deviation(1).deviation id to deviation.deviation id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "9689e715-9e89-4c6a-8820-16f1948fd17a"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk deviation(1).deviation id to deviation.deviation id"
             },
             {
                 "name": "fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
@@ -3092,11 +3146,11 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 25808.440483703165,
+                            "x": 25814.440483703165,
                             "y": 43140.81987221824
                         },
                         {
-                            "x": 25808.440483703165,
+                            "x": 25814.440483703165,
                             "y": 43217.14478459397
                         },
                         {
@@ -3113,19 +3167,20 @@
                         "top"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Deviation.deviation rule id to Deviation Rule.deviation rule id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "e75d77a0-b6a8-4cba-86c8-7f6617a42a04"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Deviation.deviation rule id to Deviation Rule.deviation rule id"
             },
             {
                 "name": "fk Sensor Event.sensor id to Sensor.sensor id",
@@ -3178,19 +3233,20 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "0d30fb3d-7c7d-4a3f-8433-73aa1dda17ed"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id"
             },
             {
                 "name": "fk Sensor Event.sensor id to Sensor.sensor id",
@@ -3243,19 +3299,20 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "1116c46f-7b37-4002-9104-8f81682ffe79"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id"
             },
             {
                 "name": "fk Deviation.product batch id to Product Batch.product batch id",
@@ -3287,11 +3344,11 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 25808.440483703165,
+                            "x": 25814.440483703165,
                             "y": 42999.81987221824
                         },
                         {
-                            "x": 25808.440483703165,
+                            "x": 25814.440483703165,
                             "y": 42947.249206125285
                         },
                         {
@@ -3308,19 +3365,20 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Deviation.product batch id to Product Batch.product batch id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "4ae0b6b0-8378-4830-b6ab-0e83f0db1d1a"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Deviation.product batch id to Product Batch.product batch id"
             },
             {
                 "name": "fk Production Run.product batch id to Product Batch.product batch id",
@@ -3373,19 +3431,20 @@
                         "top"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "bd79496f-a250-437a-ace8-01e4a34ca16c"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id"
             },
             {
                 "name": "fk Production Run.product batch id to Product Batch.product batch id",
@@ -3438,19 +3497,20 @@
                         "left"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PROCESS-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id",
-                "fileType": "hackoladeSchema",
+                "isActivated": true,
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "efa93b11-46b0-49df-be4a-fbf7133b0999"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PROCESS-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Production Run.product batch id to Product Batch.product batch id"
             }
         ],
         "GUID": "c6bd47c7-856a-407e-9277-8a85e100bace"
@@ -3485,16 +3545,16 @@
     ],
     "title": "PROCESS Domain Open API Schema",
     "modelVersion": "0.3.3",
-    "lastModifTS": "2024-01-17T08:35:58.489Z",
-    "persistenceSchemaVersion": "6",
+    "lastModifTS": "2024-01-31T09:03:10.638Z",
+    "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "OpenAPI",
-        "pluginVersion": "0.1.63",
+        "pluginVersion": "0.1.68",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.9.12"
+        "version": "7.2.0"
     },
     "contact": {
         "GUID": "33cdab2a-32cf-40b3-b5f3-f9a82bc46919",
