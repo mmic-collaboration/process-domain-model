@@ -1,32 +1,90 @@
-[
-    {
-        "deviation assessed by id": 4567890,
-        "deviation id": 10123,
-        "deviation assessment summary": "Lorem",
-        "deviation assessment outcome": "PASS"
-    },
-    {
-        "deviation assessed by id": 4567890,
-        "deviation id": 10123,
-        "deviation assessment summary": "Lorem",
-        "deviation assessment outcome": "PASS"
-    },
-    {
-        "deviation assessed by id": 4567890,
-        "deviation id": 10123,
-        "deviation assessment summary": "Lorem",
-        "deviation assessment outcome": "PASS"
-    },
-    {
-        "deviation assessed by id": 4567890,
-        "deviation id": 10123,
-        "deviation assessment summary": "Lorem",
-        "deviation assessment outcome": "PASS"
-    },
-    {
-        "deviation assessed by id": 4567890,
-        "deviation id": 10123,
-        "deviation assessment summary": "Lorem",
-        "deviation assessment outcome": "PASS"
+{
+    "OpenAPI-Deviations-0.3.3-Sample0001": [{
+            "Deviation": {
+                "deviationId": 10123,
+                "deviationRuleId": 1234,
+                "processEventId": 99999999,
+                "deviationHeadline": "Air Pressure Low PS1035",
+                "deviationSeverity": "MAJOR",
+                "productBatchId": 12345678,
+                "Deviation Assessment": {
+                    "deviationId": 10123,
+                    "deviationAssessmentSummary": "string",
+                    "deviationAssessmentOutcome": "PASS",
+                    "deviationAssessedById": 4567890
+                },
+                "Process Response": {
+                    "processResponseId": 12345678,
+                    "processEventId": 99999999,
+                    "eventAcknowledgedByPersonId": 12345678,
+                    "eventAcknowledgedTimestamp": "2024-01-31T16:25:27.508Z"
+                },
+                "Production Run": {
+                    "productionRunId": 0,
+                    "productBatchId": 0,
+                    "recipeId": 0,
+                    "productionRunCode": 0,
+                    "productionRunStartDate-time": "2024-01-31T16:27:45.086Z",
+                    "productionRunEndDate-time": "2024-01-31T16:27:45.086Z"
+                }
+            },
+            "Deviation": {
+                "deviationId": 10123,
+                "deviationRuleId": 1234,
+                "processEventId": 99999999,
+                "deviationHeadline": "Air Pressure Low PS1035",
+                "deviationSeverity": "MAJOR",
+                "productBatchId": 12345678,
+                "Deviation Assessment": {
+                    "deviationId": 10123,
+                    "deviationAssessmentSummary": "string",
+                    "deviationAssessmentOutcome": "PASS",
+                    "deviationAssessedById": 4567890
+                },
+                "Process Response": {
+                    "processResponseId": 12345678,
+                    "processEventId": 99999999,
+                    "eventAcknowledgedByPersonId": 12345678,
+                    "eventAcknowledgedTimestamp": "2024-01-31T16:25:27.508Z"
+                },
+                "Production Run": {
+                    "productionRunId": 0,
+                    "productBatchId": 0,
+                    "recipeId": 0,
+                    "productionRunCode": 0,
+                    "productionRunStartDate-time": "2024-01-31T16:27:45.086Z",
+                    "productionRunEndDate-time": "2024-01-31T16:27:45.086Z"
+                }
+            },
+            "Deviation": {
+                "deviationId": 10123,
+                "deviationRuleId": 1234,
+                "processEventId": 99999999,
+                "deviationHeadline": "Air Pressure Low PS1035",
+                "deviationSeverity": "MAJOR",
+                "productBatchId": 12345678,
+                "Deviation Assessment": {
+                    "deviationId": 10123,
+                    "deviationAssessmentSummary": "string",
+                    "deviationAssessmentOutcome": "PASS",
+                    "deviationAssessedById": 4567890
+                },
+                "Process Response": {
+                    "processResponseId": 12345678,
+                    "processEventId": 99999999,
+                    "eventAcknowledgedByPersonId": 12345678,
+                    "eventAcknowledgedTimestamp": "2024-01-31T16:25:27.508Z"
+                },
+                "Production Run": {
+                    "productionRunId": 0,
+                    "productBatchId": 0,
+                    "recipeId": 0,
+                    "productionRunCode": 0,
+                    "productionRunStartDate-time": "2024-01-31T16:27:45.086Z",
+                    "productionRunEndDate-time": "2024-01-31T16:27:45.086Z"
+                }
+            }
+
+        }]
     }
-]
+}

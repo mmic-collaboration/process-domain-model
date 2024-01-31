@@ -1247,6 +1247,30 @@
                     "foreignCollection": "",
                     "foreignField": [],
                     "error": {}
+                },
+                {
+                    "name": "product batch number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                    "GUID": "5534168b-fbb5-4b50-b2a4-37e49a313ee4",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "alternateKey": false,
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -1651,11 +1675,11 @@
                         "y": 43217.14478459397
                     },
                     {
-                        "x": 25720.09227129563,
+                        "x": 25671.425604628963,
                         "y": 43217.14478459397
                     },
                     {
-                        "x": 25720.09227129563,
+                        "x": 25671.425604628963,
                         "y": 43293.469696969696
                     }
                 ],
@@ -1810,15 +1834,15 @@
                     },
                     {
                         "x": 25814.440483703165,
-                        "y": 42947.249206125285
+                        "y": 42952.249206125285
                     },
                     {
                         "x": 26137.503348005237,
-                        "y": 42947.249206125285
+                        "y": 42952.249206125285
                     },
                     {
                         "x": 26137.503348005237,
-                        "y": 42894.67854003232
+                        "y": 42904.67854003232
                     }
                 ],
                 "sides": [
@@ -1922,11 +1946,11 @@
                     },
                     {
                         "x": 25707.44274194463,
-                        "y": 42851.17854003232
+                        "y": 42856.17854003232
                     },
                     {
                         "x": 25975.503348005237,
-                        "y": 42851.17854003232
+                        "y": 42856.17854003232
                     }
                 ],
                 "sides": [
@@ -2004,7 +2028,8 @@
         "eed84ece-13d1-4acf-a932-7ac48ecbb95f": "product batch id",
         "292fa66a-7584-43af-8008-8067b1b624aa": "fk Production Run.product batch id to Product Batch.product batch id",
         "eb8e8371-337c-4968-96d0-ba5d66b3e552": "product id",
-        "b143ec9c-1029-4398-961c-434f4c7a1d20": "fk Production Run.product batch id to Product Batch.product batch id"
+        "b143ec9c-1029-4398-961c-434f4c7a1d20": "fk Production Run.product batch id to Product Batch.product batch id",
+        "5534168b-fbb5-4b50-b2a4-37e49a313ee4": "product batch number"
     },
     "definitions": {
         "type": "definitions",
@@ -2045,7 +2070,7 @@
     "creationTS": "2023-09-25T11:05:29.690Z",
     "GUID": "524d374c-ae8e-4e70-8acb-4f14516b1e84",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-31T08:33:14.972Z",
+    "lastModifTS": "2024-01-31T15:52:44.200Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2158,7 +2183,7 @@
                         "x": 25975.503348005237,
                         "y": 42807.67854003232,
                         "width": 324,
-                        "height": 87,
+                        "height": 97,
                         "color": {
                             "hex": "#2196F3"
                         }
