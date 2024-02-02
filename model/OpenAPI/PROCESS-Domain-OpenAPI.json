@@ -5,54 +5,29 @@
     "contact": {
       "email": "timothy.galvin@atos.net"
     },
-    "version": "0.3.2"
+    "version": "0.3.4"
   },
   "paths": {},
   "components": {
     "schemas": {
-      "Incident": {
+      "recipe": {
         "type": "object",
+        "title": "Recipe",
         "required": [
-          "incidentId"
+          "receipeId",
+          "productId"
         ],
-        "properties": {
-          "processEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event id"
-          },
-          "incidentOwnerId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "incident owner id"
-          },
-          "incidentSeverity": {
-            "type": "string",
-            "title": "incident severity"
-          },
-          "incidentId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "incident id"
-          },
-          "incidentStatus": {
-            "type": "string",
-            "title": "incident status"
-          },
-          "incidentMessage": {
-            "type": "string",
-            "title": "incident message"
-          }
-        },
-        "nullable": false
-      },
-      "Recipe": {
-        "type": "object",
         "properties": {
           "receipeId": {
             "type": "integer",
             "format": "int32",
             "title": "receipe id"
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product id",
+            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)"
           },
           "recipeVersion": {
             "type": "integer",
@@ -72,8 +47,9 @@
         },
         "nullable": false
       },
-      "Process_Event": {
+      "processEvent": {
         "type": "object",
+        "title": "Process Event",
         "required": [
           "processEventId",
           "processEventStatus"
@@ -107,44 +83,9 @@
         },
         "nullable": false
       },
-      "Process_Event_Recipe": {
+      "processResponse": {
         "type": "object",
-        "description": "The Recipe Process Event Configuration describes the relationship between the Recipe and any Process Events which may be produced from a Production Run that uses that recipe.  Different Process Events have different properties depending on their type or the version of the recipe employed.",
-        "properties": {
-          "recipeProcessEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe process event id"
-          },
-          "recipeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe id"
-          },
-          "processEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event id"
-          },
-          "recipeProcessEventDescription": {
-            "type": "string",
-            "title": "recipe process event description"
-          },
-          "recipeProcessEventConfiguration": {
-            "type": "array",
-            "title": "recipe process event configuration",
-            "description": "The Recipe Process Event Configuration is a name/value pair that describes the configuration of a Process Event, derived from Recipe that the Process Event's Production Run.  It is part of a set of configurations that contain information that the Production Run needs to communicate through its Process Events.",
-            "items": {
-              "type": "object",
-              "nullable": false
-            },
-            "nullable": false
-          }
-        },
-        "nullable": false
-      },
-      "Process_Event_Response": {
-        "type": "object",
+        "title": "Process Response",
         "required": [
           "processEventId"
         ],
@@ -159,11 +100,11 @@
             "format": "int32",
             "title": "process event id"
           },
-          "processUserId": {
+          "eventAcknowledgedByPersonId": {
             "type": "integer",
             "format": "int32",
-            "title": "process user id",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+            "title": "event acknowledged by person id",
+            "description": "The event acknowledge by person id is the unique identifier of the person who has acknowledged this Process Event."
           },
           "eventAcknowledgedTimestamp": {
             "type": "string",
@@ -173,29 +114,35 @@
         },
         "nullable": false
       },
-      "Process_Event_Acknowledged_By": {
+      "manufacturingProcessPerson": {
         "type": "object",
+        "title": "Manufacturing Process Person",
+        "required": [
+          "manufacturingProcessPersonId"
+        ],
         "properties": {
-          "processEventAcknowledgedByPersonId": {
+          "manufacturingProcessPersonId": {
             "type": "integer",
             "format": "int32",
-            "title": "process event acknowledged by person id"
+            "title": "manufacturing process person id"
           },
-          "processEventAcknowledgedByName": {
+          "manufacturingProcessPersonName": {
             "type": "string",
-            "title": "process event acknowledged by name",
+            "title": "manufacturing process person name",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "processEventAcknowledgedByRole": {
+          "manufacturingProcessPersonRole": {
             "type": "string",
-            "title": "process event acknowledged by role"
+            "title": "manufacturing process person role"
           }
         },
         "nullable": false
       },
-      "Deviation_Rule": {
+      "deviationRule": {
         "type": "object",
+        "title": "Deviation Rule",
         "required": [
+          "deviationRuleId",
           "processEventTypeId"
         ],
         "properties": {
@@ -216,8 +163,9 @@
         },
         "nullable": false
       },
-      "Deviation": {
+      "deviation": {
         "type": "object",
+        "title": "Deviation",
         "required": [
           "deviationId",
           "processEventId",
@@ -228,37 +176,49 @@
           "deviationId": {
             "type": "integer",
             "format": "int32",
-            "title": "deviation id"
+            "title": "deviation id",
+            "example": 10123
           },
           "deviationRuleId": {
             "type": "integer",
             "format": "int32",
-            "title": "deviation rule id"
+            "title": "deviation rule id",
+            "example": 1234
           },
           "processEventId": {
             "type": "integer",
             "format": "int32",
-            "title": "process event id"
+            "title": "process event id",
+            "example": 99999999
           },
           "deviationHeadline": {
             "type": "string",
-            "title": "deviation headline"
+            "title": "deviation headline",
+            "example": "Air Pressure Low PS1035"
           },
           "deviationSeverity": {
             "type": "string",
             "title": "deviation severity",
-            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+            "enum": [
+              "CRITICAL",
+              "MAJOR",
+              "MINOR"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "example": "MAJOR"
           },
           "productBatchId": {
             "type": "integer",
             "format": "int32",
-            "title": "product batch id"
+            "title": "product batch id",
+            "example": 12345678
           }
         },
         "nullable": false
       },
-      "Process_Event_Type": {
+      "processEventType": {
         "type": "object",
+        "title": "Process Event Type",
         "required": [
           "processEventTypeId",
           "processEventTypeName"
@@ -281,44 +241,63 @@
         },
         "nullable": false
       },
-      "deviation_Assessment": {
+      "deviationAssessment": {
         "type": "object",
+        "title": "deviation Assessment",
         "required": [
-          "deviationId"
+          "deviationId",
+          "deviationAssessmentOutcome",
+          "deviationAssessedById"
         ],
         "properties": {
           "deviationId": {
             "type": "integer",
             "format": "int32",
-            "title": "deviation id"
+            "title": "deviation id",
+            "example": 10123
           },
           "deviationAssessmentSummary": {
             "type": "string",
             "title": "deviation assessment summary"
           },
-          "deviationSeverity": {
-            "type": "string",
-            "title": "deviation severity"
-          },
           "deviationAssessmentOutcome": {
             "type": "string",
-            "title": "deviation assessment outcome"
+            "title": "deviation assessment outcome",
+            "enum": [
+              "PASS",
+              "FAIL"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "example": "PASS"
           },
           "deviationAssessedById": {
             "type": "integer",
             "format": "int32",
-            "title": "deviation assessed by id"
+            "title": "deviation assessed by id",
+            "example": 4567890
           }
         },
         "nullable": false
       },
-      "Production_Run": {
+      "productionRun": {
         "type": "object",
+        "title": "Production Run",
+        "required": [
+          "productionRunId",
+          "productBatchId",
+          "recipeId",
+          "productionRunStartDate-time"
+        ],
         "properties": {
           "productionRunId": {
             "type": "integer",
             "format": "int32",
             "title": "production run id"
+          },
+          "productBatchId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch id"
           },
           "recipeId": {
             "type": "integer",
@@ -345,8 +324,9 @@
         },
         "nullable": false
       },
-      "Product_Batch": {
+      "productBatch": {
         "type": "object",
+        "title": "Product Batch",
         "required": [
           "productBatchId"
         ],
@@ -355,11 +335,6 @@
             "type": "integer",
             "format": "int32",
             "title": "product batch id"
-          },
-          "productionRunId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "production run id"
           },
           "productBatchWorkOrderId": {
             "type": "integer",
@@ -370,6 +345,11 @@
             "type": "string",
             "format": "date-time",
             "title": "product batch date-time",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+          },
+          "productBatchNumber": {
+            "type": "string",
+            "title": "product batch number",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           }
         },

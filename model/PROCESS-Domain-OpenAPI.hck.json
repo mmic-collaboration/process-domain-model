@@ -2698,6 +2698,22 @@
                         "format": "date-time",
                         "code": "productBatchDate-time",
                         "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "nullable": false,
+                        "type": "string",
+                        "name": "product batch number",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+                        "GUID": "5534168b-fbb5-4b50-b2a4-37e49a313ee4",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "code": "productBatchNumber",
+                        "error": {}
                     }
                 ],
                 "additionalProperties": false,
@@ -3154,11 +3170,11 @@
                             "y": 43217.14478459397
                         },
                         {
-                            "x": 25720.09227129563,
+                            "x": 25671.425604628963,
                             "y": 43217.14478459397
                         },
                         {
-                            "x": 25720.09227129563,
+                            "x": 25671.425604628963,
                             "y": 43293.469696969696
                         }
                     ],
@@ -3349,15 +3365,15 @@
                         },
                         {
                             "x": 25814.440483703165,
-                            "y": 42947.249206125285
+                            "y": 42952.249206125285
                         },
                         {
                             "x": 26137.503348005237,
-                            "y": 42947.249206125285
+                            "y": 42952.249206125285
                         },
                         {
                             "x": 26137.503348005237,
-                            "y": 42894.67854003232
+                            "y": 42904.67854003232
                         }
                     ],
                     "sides": [
@@ -3485,11 +3501,11 @@
                         },
                         {
                             "x": 25707.44274194463,
-                            "y": 42851.17854003232
+                            "y": 42856.17854003232
                         },
                         {
                             "x": 25975.503348005237,
-                            "y": 42851.17854003232
+                            "y": 42856.17854003232
                         }
                     ],
                     "sides": [
@@ -3544,8 +3560,8 @@
         }
     ],
     "title": "PROCESS Domain Open API Schema",
-    "modelVersion": "0.3.3",
-    "lastModifTS": "2024-01-31T09:03:10.638Z",
+    "modelVersion": "0.3.4",
+    "lastModifTS": "2024-02-02T15:50:06.871Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
