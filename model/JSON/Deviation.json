@@ -4,58 +4,54 @@
     "title": "Deviation",
     "properties": {
         "deviation id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "8b3aff81-e1a8-4e74-8215-6469051b33cb",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                10123
+            ]
         },
         "product batch id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                12345678
+            ]
         },
         "deviation rule id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "5c3ac47a-9975-4b4f-9664-330d5ec434fe",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                1234
+            ]
         },
         "process event id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                99999999
+            ]
         },
         "deviation headline": {
             "type": "string",
@@ -65,7 +61,10 @@
             },
             "tPrecision": 9,
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                "Air Pressure Low PS1035"
+            ]
         },
         "deviation severity": {
             "type": "string",
@@ -79,7 +78,28 @@
                 "Y"
             ],
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "enum": [
+                "CRITICAL",
+                "MAJOR",
+                "MINOR"
+            ],
+            "examples": [
+                "MAJOR"
+            ]
+        },
+        "batch release condition id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                4567890
+            ]
         }
     },
     "isActivated": true,
@@ -88,6 +108,7 @@
         "deviation id",
         "product batch id",
         "process event id",
-        "deviation severity"
+        "deviation severity",
+        "batch release condition id"
     ]
 }

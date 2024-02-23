@@ -4,12 +4,8 @@
     "title": "Manufacturing Process Person",
     "properties": {
         "manufacturing process person id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,

@@ -1,15 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Production Run",
+    "title": "Unit Process",
     "properties": {
-        "production run id": {
-            "type": "number",
+        "unit process id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
@@ -17,46 +13,51 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
+        "job id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
         "product batch id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe id": {
-            "type": "number",
+        "station id": {
+            "type": "string",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "work master id": {
+            "type": "integer",
+            "isActivated": true,
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "production run code": {
-            "type": "number",
+        "unit process code": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "production run start date-time": {
+        "unit process start date-time": {
             "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
@@ -67,7 +68,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "production run end date-time": {
+        "unit process end date-time": {
             "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
@@ -82,9 +83,10 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "production run id",
+        "unit process id",
+        "job id",
         "product batch id",
-        "recipe id",
-        "production run start date-time"
+        "work master id",
+        "unit process start date-time"
     ]
 }

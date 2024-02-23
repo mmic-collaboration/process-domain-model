@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Deviation Assessment",
+    "title": "batch release condition",
     "properties": {
-        "deviation assessment id": {
+        "batch release condition id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -12,13 +12,11 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "alternateKey": false,
-            "unique": true,
             "examples": [
                 4567890
             ]
         },
-        "deviation id": {
+        "product batch id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -26,23 +24,10 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "examples": [
-                10123
-            ]
+            "alternateKey": false
         },
-        "deviation assessed by id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "examples": [
-                4567890
-            ]
-        },
-        "deviation assessment summary": {
+        "batch release condition description": {
+            "$id": "batch release condition d",
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -52,7 +37,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "deviation assessment outcome": {
+        "batch release condition outcome": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -67,25 +52,31 @@
             "compositeUniqueKey": false,
             "enum": [
                 "PASS",
-                "FAIL"
+                "FAIL",
+                "INCONCLUSIVE"
             ],
             "examples": [
                 "PASS"
             ]
         },
-        "assessment completed status": {
-            "type": "boolean",
+        "release condition rule id": {
+            "type": "integer",
             "isActivated": true,
+            "tPrecision": 9,
             "index": true,
-            "alternateKey": false,
+            "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "deviation assessment id",
-        "deviation id"
+        "batch release condition id",
+        "product batch id",
+        "batch release condition description",
+        "batch release condition outcome",
+        "release condition rule id"
     ]
 }

@@ -4,12 +4,8 @@
     "title": "Process Response",
     "properties": {
         "process response id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
@@ -18,12 +14,8 @@
             "compositeUniqueKey": false
         },
         "process event id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
@@ -31,13 +23,9 @@
             "compositeUniqueKey": false
         },
         "event acknowledged by person id": {
-            "type": "number",
+            "type": "integer",
             "description": "The event acknowledge by person id is the unique identifier of the person who has acknowledged this Process Event.",
             "isActivated": true,
-            "autoincrement": {
-                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",

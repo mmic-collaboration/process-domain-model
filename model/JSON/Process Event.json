@@ -4,12 +4,8 @@
     "title": "Process Event",
     "properties": {
         "process event id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
@@ -18,30 +14,23 @@
             "compositeUniqueKey": false
         },
         "process event type id": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "2fcf03ea-1602-48bd-8894-686da66c865e",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe id": {
-            "type": "number",
+        "unit process id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
         "process event status": {
             "type": "string",
@@ -71,6 +60,7 @@
     "additionalProperties": false,
     "required": [
         "process event id",
+        "unit process id",
         "process event status"
     ]
 }

@@ -1,15 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Recipe",
+    "title": "Work Master",
     "properties": {
-        "receipe id": {
-            "type": "number",
+        "work master id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
@@ -18,13 +14,9 @@
             "compositeUniqueKey": false
         },
         "product id": {
-            "type": "number",
+            "type": "integer",
             "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
             "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
@@ -32,13 +24,9 @@
             "compositeUniqueKey": false
         },
         "recipe version": {
-            "type": "number",
+            "type": "integer",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
-            "autoincrement": {
-                "id": "08eee974-3bb1-4d46-976c-ab44cedac407",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
@@ -56,12 +44,8 @@
             "compositeUniqueKey": false
         },
         "recipe code": {
-            "type": "number",
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "fefd1f92-3bdb-40b9-b0fe-bdffca3d707c",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
@@ -72,7 +56,7 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "receipe id",
+        "work master id",
         "product id"
     ]
 }

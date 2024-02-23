@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Deviation Assessment",
+    "title": "Job",
     "properties": {
-        "deviation assessment id": {
+        "job id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -12,38 +12,29 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "alternateKey": false,
-            "unique": true,
-            "examples": [
-                4567890
-            ]
+            "alternateKey": false
         },
-        "deviation id": {
+        "work master id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "examples": [
-                10123
-            ]
+            "compositeUniqueKey": false
         },
-        "deviation assessed by id": {
+        "production run code": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "examples": [
-                4567890
-            ]
+            "compositeUniqueKey": false
         },
-        "deviation assessment summary": {
+        "production run start date-time": {
             "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
@@ -52,32 +43,14 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "deviation assessment outcome": {
+        "production run end date-time": {
             "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
             "tPrecision": 9,
-            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-            "symbols": [
-                "Y"
-            ],
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "enum": [
-                "PASS",
-                "FAIL"
-            ],
-            "examples": [
-                "PASS"
-            ]
-        },
-        "assessment completed status": {
-            "type": "boolean",
-            "isActivated": true,
-            "index": true,
-            "alternateKey": false,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
@@ -85,7 +58,8 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "deviation assessment id",
-        "deviation id"
+        "job id",
+        "work master id",
+        "production run start date-time"
     ]
 }

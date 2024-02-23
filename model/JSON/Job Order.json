@@ -1,50 +1,43 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Deviation Rule",
+    "title": "Job Order",
     "properties": {
-        "deviation rule id": {
-            "type": "number",
+        "job order id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "5c3ac47a-9975-4b4f-9664-330d5ec434fe",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
-        "process event type id": {
-            "type": "number",
+        "work request id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "id": "78f06df0-0659-4be0-a2dc-c71bac69a666",
-                "step_num": 1
-            },
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "deviation rule summary": {
-            "type": "string",
+        "work schedule id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
             "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "deviation rule id",
-        "process event type id"
+        "job order id",
+        "work schedule id"
     ]
 }

@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Product Batch",
+    "title": "Job Response",
     "properties": {
-        "product batch id": {
+        "job response id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -11,9 +11,10 @@
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
-        "product batch work order id": {
+        "job order id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -22,7 +23,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "product batch product id": {
+        "work request id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -32,25 +33,22 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "product batch date-time": {
-            "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+        "job id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
             "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
-        "product batch number": {
-            "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+        "work schedule id": {
+            "type": "integer",
             "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
             "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
             "alternateKey": false
@@ -59,6 +57,8 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "product batch id"
+        "job response id",
+        "job id",
+        "work schedule id"
     ]
 }
