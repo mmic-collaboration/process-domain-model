@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Job Order",
+    "title": "Lab Job Order",
     "properties": {
-        "job order id": {
+        "lab job order id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -14,16 +14,7 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "work request id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "work schedule id": {
+        "job order id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -35,9 +26,5 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false,
-    "required": [
-        "job order id",
-        "work schedule id"
-    ]
+    "additionalProperties": false
 }

@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Job",
+    "title": "Lab Sample Test",
     "properties": {
-        "job id": {
+        "lab sample test id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -12,9 +12,29 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
+            "alternateKey": false,
+            "unique": true
+        },
+        "lab test id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "lab sample id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "work master id": {
+        "process event type id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -23,34 +43,12 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "production run code": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "production run start date-time": {
+        "lab test sample timestamp": {
             "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "production run end date-time": {
-            "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
@@ -58,8 +56,8 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "job id",
-        "work master id",
-        "production run start date-time"
+        "lab sample test id",
+        "lab test id",
+        "lab sample id"
     ]
 }

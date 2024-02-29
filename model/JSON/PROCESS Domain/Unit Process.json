@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Product Batch",
+    "title": "Unit Process",
     "properties": {
-        "product batch id": {
+        "unit process id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -13,16 +13,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "product batch work order id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "product batch product id": {
+        "job id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -32,7 +23,41 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "product batch date-time": {
+        "product batch id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "station id": {
+            "type": "string",
+            "isActivated": true,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "work master id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "unit process code": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "unit process start timestamp": {
             "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
@@ -43,7 +68,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "product batch number": {
+        "unit process end timestamp": {
             "type": "string",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
@@ -52,13 +77,16 @@
             },
             "tPrecision": 9,
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "product batch id"
+        "unit process id",
+        "job id",
+        "product batch id",
+        "work master id",
+        "unit process start timestamp"
     ]
 }

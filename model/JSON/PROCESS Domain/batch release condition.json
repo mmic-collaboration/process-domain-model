@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Unit Process",
+    "title": "batch release condition",
     "properties": {
-        "unit process id": {
+        "batch release condition id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -11,9 +11,12 @@
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "examples": [
+                4567890
+            ]
         },
-        "job id": {
+        "release condition rule id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -30,36 +33,12 @@
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
-        "station id": {
+        "batch release condition description": {
+            "$id": "batch release condition d",
             "type": "string",
-            "isActivated": true,
-            "alternateKey": false,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "work master id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "unit process code": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "unit process start date-time": {
-            "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
@@ -68,25 +47,36 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "unit process end date-time": {
+        "batch release condition outcome": {
             "type": "string",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
             "tPrecision": 9,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "enum": [
+                "PASS",
+                "FAIL",
+                "INCONCLUSIVE"
+            ],
+            "examples": [
+                "PASS"
+            ]
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "unit process id",
-        "job id",
+        "batch release condition id",
+        "release condition rule id",
         "product batch id",
-        "work master id",
-        "unit process start date-time"
+        "batch release condition description",
+        "batch release condition outcome"
     ]
 }

@@ -13,7 +13,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "deviation rule summary": {
+        "release condition rule summary": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -44,11 +44,22 @@
             "alternateKey": false,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
+        },
+        "work master id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "release condition rule id"
+        "release condition rule id",
+        "work master id"
     ]
 }

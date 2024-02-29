@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Work Master",
+    "title": "Job",
     "properties": {
-        "work master id": {
+        "job id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -11,11 +11,11 @@
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "compositeUniqueKey": false,
+            "alternateKey": false
         },
-        "product id": {
+        "work master id": {
             "type": "integer",
-            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
@@ -23,9 +23,8 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe version": {
+        "job run code": {
             "type": "integer",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
@@ -33,8 +32,9 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe title": {
+        "job start date-time": {
             "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
@@ -43,12 +43,14 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "recipe code": {
-            "type": "integer",
+        "job end date-time": {
+            "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
             "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
             "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
@@ -56,7 +58,8 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
+        "job id",
         "work master id",
-        "product id"
+        "job start date-time"
     ]
 }

@@ -21,12 +21,25 @@
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
-            "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
+            "alternateKey": false,
             "examples": [
                 12345678
+            ]
+        },
+        "batch release condition id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                4567890
             ]
         },
         "deviation rule id": {
@@ -87,19 +100,6 @@
             "examples": [
                 "MAJOR"
             ]
-        },
-        "batch release condition id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false,
-            "examples": [
-                4567890
-            ]
         }
     },
     "isActivated": true,
@@ -107,8 +107,8 @@
     "required": [
         "deviation id",
         "product batch id",
+        "batch release condition id",
         "process event id",
-        "deviation severity",
-        "batch release condition id"
+        "deviation severity"
     ]
 }

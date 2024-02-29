@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "batch release condition",
+    "title": "Work Master",
     "properties": {
-        "batch release condition id": {
+        "work master id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -11,23 +11,29 @@
             "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "examples": [
-                4567890
-            ]
+            "compositeUniqueKey": false
         },
-        "product batch id": {
+        "product id": {
             "type": "integer",
+            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false
+            "compositeUniqueKey": false
         },
-        "batch release condition description": {
-            "$id": "batch release condition d",
+        "work master version": {
+            "type": "integer",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "work master title": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -37,46 +43,20 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "batch release condition outcome": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-            "symbols": [
-                "Y"
-            ],
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "enum": [
-                "PASS",
-                "FAIL",
-                "INCONCLUSIVE"
-            ],
-            "examples": [
-                "PASS"
-            ]
-        },
-        "release condition rule id": {
+        "work master code": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
             "index": true,
             "mode": "int32",
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "batch release condition id",
-        "product batch id",
-        "batch release condition description",
-        "batch release condition outcome",
-        "release condition rule id"
+        "work master id",
+        "product id"
     ]
 }

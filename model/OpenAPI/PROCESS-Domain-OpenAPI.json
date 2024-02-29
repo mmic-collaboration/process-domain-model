@@ -1,15 +1,49 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "PROCESS Domain Open API Schema",
-    "contact": {
-      "email": "timothy.galvin@atos.net"
-    },
-    "version": "0.5.2"
+    "title": "",
+    "version": "0.6.1"
   },
   "paths": {},
   "components": {
     "schemas": {
+      "workMaster": {
+        "type": "object",
+        "title": "Work Master",
+        "required": [
+          "workMasterId",
+          "productId"
+        ],
+        "properties": {
+          "workMasterId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master id"
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product id",
+            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)"
+          },
+          "workMasterVersion": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master version",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+          },
+          "workMasterTitle": {
+            "type": "string",
+            "title": "work master title"
+          },
+          "workMasterCode": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master code"
+          }
+        },
+        "nullable": false
+      },
       "processEvent": {
         "type": "object",
         "title": "Process Event",
@@ -28,11 +62,6 @@
             "type": "integer",
             "format": "int32",
             "title": "process event type id"
-          },
-          "recipeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe id"
           },
           "unitProcessId": {
             "type": "integer",
@@ -112,10 +141,10 @@
         "title": "Deviation",
         "required": [
           "deviationId",
-          "processEventId",
-          "deviationSeverity",
           "productBatchId",
-          "batchReleaseConditionId"
+          "batchReleaseConditionId",
+          "processEventId",
+          "deviationSeverity"
         ],
         "properties": {
           "deviationId": {
@@ -123,6 +152,18 @@
             "format": "int32",
             "title": "deviation id",
             "example": 10123
+          },
+          "productBatchId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch id",
+            "example": 12345678
+          },
+          "batchReleaseConditionId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "batch release condition id",
+            "example": 4567890
           },
           "deviationRuleId": {
             "type": "integer",
@@ -151,18 +192,6 @@
             ],
             "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
             "example": "MAJOR"
-          },
-          "productBatchId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "product batch id",
-            "example": 12345678
-          },
-          "batchReleaseConditionId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "batch release condition id",
-            "example": 4567890
           }
         },
         "nullable": false
@@ -194,36 +223,34 @@
       },
       "batchReleaseCondition": {
         "type": "object",
-        "title": "deviation Assessment",
+        "title": "batch release condition",
         "required": [
-          "deviationId",
+          "releaseConditionRuleId",
           "productBatchId",
-          "batchReleaseConditionDescription",
           "batchReleaseConditionId",
-          "batchReleaseConditionOutcome",
-          "releaseConditionRuleId"
+          "batchReleaseConditionDescription",
+          "batchReleaseConditionOutcome"
         ],
         "properties": {
-          "deviationId": {
+          "releaseConditionRuleId": {
             "type": "integer",
             "format": "int32",
-            "title": "deviation id",
-            "example": 10123
+            "title": "release condition rule id"
           },
           "productBatchId": {
             "type": "integer",
             "format": "int32",
             "title": "product batch id"
           },
-          "batchReleaseConditionDescription": {
-            "type": "string",
-            "title": "batch release condition description"
-          },
           "batchReleaseConditionId": {
             "type": "integer",
             "format": "int32",
             "title": "batch release condition id",
             "example": 4567890
+          },
+          "batchReleaseConditionDescription": {
+            "type": "string",
+            "title": "batch release condition description"
           },
           "batchReleaseConditionOutcome": {
             "type": "string",
@@ -235,24 +262,19 @@
             ],
             "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
             "example": "PASS"
-          },
-          "releaseConditionRuleId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "release condition rule id"
           }
         },
         "nullable": false
       },
       "unitProcess": {
         "type": "object",
-        "title": "Production Run",
+        "title": "Unit Process",
         "required": [
           "unitProcessId",
           "jobId",
           "productBatchId",
           "workMasterId",
-          "unitProcessStartDate-time"
+          "unitProcessStartTimestamp"
         ],
         "properties": {
           "unitProcessId": {
@@ -284,16 +306,16 @@
             "format": "int32",
             "title": "unit process code"
           },
-          "unitProcessStartDate-time": {
+          "unitProcessStartTimestamp": {
             "type": "string",
             "format": "date-time",
-            "title": "unit process start date-time",
+            "title": "unit process start timestamp",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "unitProcessEndDate-time": {
+          "unitProcessEndTimestamp": {
             "type": "string",
             "format": "date-time",
-            "title": "unit process end date-time",
+            "title": "unit process end timestamp",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           }
         },
@@ -321,53 +343,20 @@
             "format": "int32",
             "title": "product batch product id"
           },
-          "productBatchDate-time": {
+          "productBatchTimestamp": {
             "type": "string",
             "format": "date-time",
-            "title": "product batch date-time",
+            "title": "product batch timestamp",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
           "productBatchNumber": {
             "type": "string",
             "title": "product batch number",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
-          }
-        },
-        "nullable": false
-      },
-      "workMaster": {
-        "type": "object",
-        "title": "Work Master",
-        "required": [
-          "workMasterId",
-          "productId"
-        ],
-        "properties": {
-          "workMasterId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "work master id"
           },
-          "productId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "product id",
-            "description": "The product id of the Recipe is the unique identifier of the specific Product  that will result from following this Recipe. \n\n(Note: Product is part of the PRODUCT domain, which is to be defined as of v0.3.3 of this model)"
-          },
-          "recipeVersion": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe version",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
-          },
-          "recipeTitle": {
+          "batchReportUri": {
             "type": "string",
-            "title": "recipe title"
-          },
-          "recipeCode": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe code"
+            "title": "batch report uri"
           }
         },
         "nullable": false
@@ -378,7 +367,7 @@
         "required": [
           "jobId",
           "workMasterId",
-          "productionRunStartDate-time"
+          "jobStartDate-time"
         ],
         "properties": {
           "jobId": {
@@ -391,21 +380,21 @@
             "format": "int32",
             "title": "work master id"
           },
-          "productionRunCode": {
+          "jobRunCode": {
             "type": "integer",
             "format": "int32",
-            "title": "production run code"
+            "title": "job run code"
           },
-          "productionRunStartDate-time": {
+          "jobStartDate-time": {
             "type": "string",
             "format": "date-time",
-            "title": "production run start date-time",
+            "title": "job start date-time",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           },
-          "productionRunEndDate-time": {
+          "jobEndDate-time": {
             "type": "string",
             "format": "date-time",
-            "title": "production run end date-time",
+            "title": "job end date-time",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
           }
         },
@@ -415,30 +404,30 @@
         "type": "object",
         "title": "Job Response",
         "required": [
-          "jobResponseId",
           "jobId",
+          "jobResponseId",
           "workScheduleId"
         ],
         "properties": {
+          "jobId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job id"
+          },
           "jobOrderId": {
             "type": "integer",
             "format": "int32",
             "title": "job order id"
-          },
-          "workRequestId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "work request id"
           },
           "jobResponseId": {
             "type": "integer",
             "format": "int32",
             "title": "job response id"
           },
-          "jobId": {
+          "workRequestId": {
             "type": "integer",
             "format": "int32",
-            "title": "job id"
+            "title": "work request id"
           },
           "workScheduleId": {
             "type": "integer",
@@ -448,9 +437,9 @@
         },
         "nullable": false
       },
-      "deviationAssessment(1)": {
+      "deviationAssessment": {
         "type": "object",
-        "title": "Deviation Assessment(1)",
+        "title": "Deviation Assessment",
         "required": [
           "deviationId",
           "deviationAssessmentId"
@@ -499,7 +488,6 @@
         "type": "object",
         "title": "Job Order",
         "required": [
-          "jobOrderId",
           "workScheduleId"
         ],
         "properties": {
@@ -507,6 +495,11 @@
             "type": "integer",
             "format": "int32",
             "title": "job order id"
+          },
+          "jobId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job id"
           },
           "workRequestId": {
             "type": "integer",
@@ -561,7 +554,8 @@
         "type": "object",
         "title": "Release Condition Rule",
         "required": [
-          "releaseConditionRuleId"
+          "releaseConditionRuleId",
+          "workMasterId"
         ],
         "properties": {
           "releaseConditionRuleId": {
@@ -569,9 +563,9 @@
             "format": "int32",
             "title": "release condition rule id"
           },
-          "deviationRuleSummary": {
+          "releaseConditionRuleSummary": {
             "type": "string",
-            "title": "deviation rule summary"
+            "title": "release condition rule summary"
           },
           "releaseConditionRuleLogic": {
             "type": "string",
@@ -581,6 +575,11 @@
             "type": "object",
             "title": "release condition rule arguments",
             "nullable": false
+          },
+          "workMasterId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master id"
           }
         },
         "nullable": false
@@ -591,6 +590,7 @@
         "required": [
           "labTestResultId",
           "labTestId",
+          "deviationId",
           "labTestResultOutcome"
         ],
         "properties": {
@@ -604,10 +604,11 @@
             "format": "int32",
             "title": "lab test id"
           },
-          "processEventTypeId": {
+          "deviationId": {
             "type": "integer",
             "format": "int32",
-            "title": "process event type id"
+            "title": "deviation id",
+            "example": 10123
           },
           "recipeId": {
             "type": "integer",
@@ -684,6 +685,10 @@
       "labProductBatch": {
         "type": "object",
         "title": "Lab Product Batch",
+        "required": [
+          "productBatchId",
+          "labProductBatchId"
+        ],
         "properties": {
           "productBatchId": {
             "type": "integer",
@@ -694,6 +699,11 @@
             "type": "integer",
             "format": "int32",
             "title": "lab product batch id"
+          },
+          "batchSampleTakenTimestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "batch sample taken timestamp"
           }
         },
         "nullable": false
@@ -754,7 +764,7 @@
       },
       "labJobOrderSample": {
         "type": "object",
-        "title": "labJobOrderSample",
+        "title": "Lab Job Order Sample",
         "required": [
           "labJobOrderSampleId",
           "labJobOrderId",
@@ -775,6 +785,61 @@
             "type": "integer",
             "format": "int32",
             "title": "lab sample id"
+          }
+        },
+        "nullable": false
+      },
+      "labJobResponse": {
+        "type": "object",
+        "title": "Lab Job Response",
+        "required": [
+          "jobResponseId",
+          "labJobOrderId",
+          "labJobResponseId"
+        ],
+        "properties": {
+          "jobResponseId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job response id"
+          },
+          "labJobOrderId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "lab job order id"
+          },
+          "labJobResponseId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "lab job response id"
+          }
+        },
+        "nullable": false
+      },
+      "labTestFailure": {
+        "type": "object",
+        "title": "labTestFailure",
+        "required": [
+          "labTestResultId",
+          "labTestId",
+          "deviationId"
+        ],
+        "properties": {
+          "labTestResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "lab test result id"
+          },
+          "labTestId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "lab test id"
+          },
+          "deviationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "deviation id",
+            "example": 10123
           }
         },
         "nullable": false
