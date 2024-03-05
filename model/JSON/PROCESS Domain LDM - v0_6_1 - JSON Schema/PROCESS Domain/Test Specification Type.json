@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Test Specification Type",
+    "properties": {
+        "test specification type id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test specification type summary": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test specification type name": {
+            "type": "string",
+            "isActivated": true,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "enum": [
+                "JobStepProcedure",
+                "Equipment",
+                "Qualification",
+                "Material",
+                "PhysicalAsset"
+            ]
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "test specification type id"
+    ]
+}

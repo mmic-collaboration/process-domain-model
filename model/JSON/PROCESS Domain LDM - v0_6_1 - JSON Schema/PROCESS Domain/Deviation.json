@@ -1,0 +1,159 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Deviation",
+    "properties": {
+        "deviation id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                10123
+            ]
+        },
+        "test result id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "process event id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                99999999
+            ]
+        },
+        "product batch id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                12345678
+            ]
+        },
+        "batch release condition id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                4567890
+            ]
+        },
+        "batch release test specification id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "result description": {
+            "type": "string",
+            "isActivated": true,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test date": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                10123
+            ]
+        },
+        "result": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "result unit of measure": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "expiration": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "deviation severity": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "enum": [
+                "CRITICAL",
+                "MAJOR",
+                "MINOR"
+            ],
+            "examples": [
+                "MAJOR"
+            ]
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "deviation id",
+        "test result id",
+        "process event id",
+        "product batch id",
+        "batch release condition id",
+        "batch release test specification id",
+        "deviation severity"
+    ]
+}

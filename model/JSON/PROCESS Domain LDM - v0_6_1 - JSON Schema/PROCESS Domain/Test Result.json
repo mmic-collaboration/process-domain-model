@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Test Result",
+    "properties": {
+        "test result id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "result description": {
+            "type": "string",
+            "isActivated": true,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test date": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false,
+            "examples": [
+                10123
+            ]
+        },
+        "result": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "result unit of measure": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "expiration": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "test result id"
+    ]
+}

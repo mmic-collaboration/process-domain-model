@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Job",
+    "properties": {
+        "job id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "work master id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job run code": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job start date-time": {
+            "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job end date-time": {
+            "type": "string",
+            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision.",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "physical assets": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "personnel": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "material lots": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "equipment": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job steps": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "job id",
+        "work master id",
+        "job start date-time"
+    ]
+}

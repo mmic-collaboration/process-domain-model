@@ -1,0 +1,113 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Batch Release Test Specification",
+    "properties": {
+        "batch release test specification id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test specification id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "work master id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "product batch id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "batch release test specification summary": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "batch release release test specification function": {
+            "type": "string",
+            "isActivated": true,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "enum": [
+                "is",
+                "isnot",
+                "greaterthan",
+                "lessthan",
+                "contains",
+                "equals",
+                "notequals"
+            ]
+        },
+        "release condition rule arguments": {
+            "type": "array",
+            "isActivated": true,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "items": [
+                {
+                    "type": "string",
+                    "isActivated": true,
+                    "alternateKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "displayName": "arg1"
+                },
+                {
+                    "type": "string",
+                    "isActivated": true,
+                    "alternateKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "displayName": "arg2"
+                }
+            ]
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "batch release test specification id",
+        "test specification id",
+        "work master id",
+        "product batch id",
+        "batch release release test specification function"
+    ]
+}
