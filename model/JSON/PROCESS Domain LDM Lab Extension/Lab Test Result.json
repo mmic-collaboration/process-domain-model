@@ -13,6 +13,16 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
+        "test result id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
         "lab test id": {
             "type": "integer",
             "isActivated": true,
@@ -23,29 +33,7 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "deviation id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false,
-            "examples": [
-                10123
-            ]
-        },
-        "recipe id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "lab test result outcome": {
+        "lab test result": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -71,14 +59,42 @@
             },
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
+        },
+        "result": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "expiration": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "result unit of measure": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
         "lab test result id",
+        "test result id",
         "lab test id",
-        "deviation id",
-        "lab test result outcome"
+        "lab test result"
     ]
 }

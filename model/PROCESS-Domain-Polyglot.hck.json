@@ -5459,7 +5459,7 @@
     "creationTS": "2023-09-25T11:05:29.690Z",
     "GUID": "524d374c-ae8e-4e70-8acb-4f14516b1e84",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-03-05T08:46:26.335Z",
+    "lastModifTS": "2024-03-05T09:07:33.220Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -5471,7 +5471,7 @@
         "version": "7.2.0"
     },
     "hackoladeMeta": {},
-    "version": "0.6.1",
+    "version": "0.7.0",
     "author": "timothy.galvin@atos.net",
     "settings": {
         "centralPane": {

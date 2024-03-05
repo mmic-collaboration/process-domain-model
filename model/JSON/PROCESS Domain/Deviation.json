@@ -16,6 +16,28 @@
                 10123
             ]
         },
+        "test result id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "process event id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                99999999
+            ]
+        },
         "product batch id": {
             "type": "integer",
             "isActivated": true,
@@ -42,7 +64,7 @@
                 4567890
             ]
         },
-        "deviation rule id": {
+        "batch release test specification id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -50,11 +72,16 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "examples": [
-                1234
-            ]
+            "alternateKey": false
         },
-        "process event id": {
+        "result description": {
+            "type": "string",
+            "isActivated": true,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test date": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -62,22 +89,38 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
+            "alternateKey": false,
             "examples": [
-                99999999
+                10123
             ]
         },
-        "deviation headline": {
+        "result": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "result unit of measure": {
+            "type": "object",
+            "isActivated": true,
+            "enabled": true,
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "expiration": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
-            "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "examples": [
-                "Air Pressure Low PS1035"
-            ]
+            "alternateKey": false
         },
         "deviation severity": {
             "type": "string",
@@ -106,9 +149,11 @@
     "additionalProperties": false,
     "required": [
         "deviation id",
+        "test result id",
+        "process event id",
         "product batch id",
         "batch release condition id",
-        "process event id",
+        "batch release test specification id",
         "deviation severity"
     ]
 }

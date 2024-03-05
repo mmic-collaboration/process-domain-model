@@ -34,15 +34,6 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "process event type id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
         "lab test sample timestamp": {
             "type": "string",
             "isActivated": true,

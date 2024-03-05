@@ -13,24 +13,6 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "process event type id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "recipe id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
         "lab test result timestamp": {
             "type": "string",
             "isActivated": true,

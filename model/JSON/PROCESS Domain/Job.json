@@ -53,6 +53,51 @@
             "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
+        },
+        "physical assets": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "personnel": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "material lots": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "equipment": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job steps": {
+            "type": "array",
+            "isActivated": true,
+            "subtype": "set<object>",
+            "additionalProperties": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,

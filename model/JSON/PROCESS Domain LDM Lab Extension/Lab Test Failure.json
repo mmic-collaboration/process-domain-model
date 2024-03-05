@@ -13,16 +13,6 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "lab test id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "alternateKey": false
-        },
         "deviation id": {
             "type": "integer",
             "isActivated": true,
@@ -41,7 +31,6 @@
     "additionalProperties": false,
     "required": [
         "lab test result id",
-        "lab test id",
         "deviation id"
     ]
 }

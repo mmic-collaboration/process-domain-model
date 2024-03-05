@@ -22,7 +22,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "unit process id": {
+        "job step id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -60,7 +60,7 @@
     "additionalProperties": false,
     "required": [
         "process event id",
-        "unit process id",
+        "job step id",
         "process event status"
     ]
 }
