@@ -13,6 +13,16 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
+        "job step procedure id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
         "job id": {
             "type": "integer",
             "isActivated": true,
@@ -84,6 +94,7 @@
     "additionalProperties": false,
     "required": [
         "job step id",
+        "job step procedure id",
         "job id",
         "product batch id",
         "work master id",

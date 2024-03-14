@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Job Step Response Specification",
+    "properties": {
+        "job step response specification id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "job step procedure id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "job step title": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "work master code": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "test specification type id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "job step response specification id",
+        "job step procedure id",
+        "test specification type id"
+    ]
+}

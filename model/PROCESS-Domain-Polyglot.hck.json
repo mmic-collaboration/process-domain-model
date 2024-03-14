@@ -27,7 +27,6 @@
                     "foreignCollection": "",
                     "foreignField": [],
                     "childRelationships": [
-                        "2d8e905b-ef40-4a74-a74a-f7950153ea40",
                         "74bdebba-4faf-47a8-8cdc-98584a380ac8",
                         "9ee6def2-fa80-4e5c-95d8-1494ea309b64"
                     ],
@@ -762,6 +761,40 @@
                     "error": {}
                 },
                 {
+                    "name": "job step procedure id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "8c646715-ecef-4e0a-886f-2e3f61f623ca",
+                    "foreignCollection": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                    "foreignField": [
+                        "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                        "d4b949e7-6f5e-40fc-a12d-b6658b2a8026"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5315eed9-493b-4be2-9eaa-6841907302a1",
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
                     "name": "job id",
                     "hackoladeMeta": {},
                     "isActivated": true,
@@ -860,13 +893,6 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "3d9c1026-c5dc-4e1f-bc85-de502dbe2663",
-                    "relationshipType": "Foreign Key",
-                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                    "foreignField": [
-                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
-                    ],
-                    "parentRelationship": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
                     "required": true,
                     "error": {}
                 },
@@ -3188,7 +3214,8 @@
                     "compositeUniqueKey": false,
                     "GUID": "a27ade01-6a85-4fed-a8ca-22936754fcfd",
                     "childRelationships": [
-                        "fe94ba4b-1b19-4533-a285-12b1b3bdcae4"
+                        "fe94ba4b-1b19-4533-a285-12b1b3bdcae4",
+                        "508f5546-966d-4e9a-8acb-dc06397c54d5"
                     ],
                     "required": true,
                     "foreignCollection": "",
@@ -3427,6 +3454,253 @@
             "GUID": "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
             "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Job Step Procedure",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "job step procedure id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "d4b949e7-6f5e-40fc-a12d-b6658b2a8026",
+                    "foreignCollection": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                    "foreignField": [
+                        "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                        "2b0b7fd4-a14f-4ec7-8530-99dfaf298ca8"
+                    ],
+                    "childRelationships": [
+                        "5315eed9-493b-4be2-9eaa-6841907302a1"
+                    ],
+                    "required": true,
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2f782633-9198-4267-9289-119b89e00e18"
+                },
+                {
+                    "name": "work master id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b20f51a8-b1d5-45cb-b77b-ffa625f2ade5",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "job step procedure title",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "dcec743a-cd6e-42b7-845b-7eec6b7069d5",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "d40cf809-177d-4f9a-b365-46103a97acc6"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Job Step Response Specification",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "job step response specification id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "fc87b77a-2b9b-4cba-9ab5-abc5e99af031",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "job step procedure id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2b0b7fd4-a14f-4ec7-8530-99dfaf298ca8",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "2f782633-9198-4267-9289-119b89e00e18"
+                    ],
+                    "required": true,
+                    "alternateKey": false,
+                    "error": {}
+                },
+                {
+                    "name": "job step title",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "c0f6a394-ff65-42ac-a300-080c0670169f",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "work master code",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "79c3cf30-a11b-439d-80c8-fb5fc86df1cd",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "test specification type id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "7dbd80aa-93f4-43ee-95dd-e20b0e3743df",
+                    "childRelationships": [],
+                    "required": true,
+                    "foreignCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                    "foreignField": [
+                        "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                        "a27ade01-6a85-4fed-a8ca-22936754fcfd"
+                    ],
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "508f5546-966d-4e9a-8acb-dc06397c54d5"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c1edd818-3581-466c-b154-0ff89caad85c"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -3448,7 +3722,9 @@
                 "1feb59b5-650e-4ef3-8daf-7d2f118b08ab",
                 "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
                 "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1"
+                "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
+                "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                "ea6a12b9-40b4-4128-bf9d-76e728259ba1"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -3601,60 +3877,6 @@
             "isActivated": true
         },
         {
-            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "7aa25246-c096-4be0-a640-186cc28244ea",
-                    "3d9c1026-c5dc-4e1f-bc85-de502dbe2663"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "GUID": "2d8e905b-ef40-4a74-a74a-f7950153ea40",
-            "level": "field",
-            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-            "childCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 26420.382135884014,
-                        "y": 42614.58763094136
-                    },
-                    {
-                        "x": 26420.382135884014,
-                        "y": 42341.799752153514
-                    },
-                    {
-                        "x": 26224.094257096138,
-                        "y": 42341.799752153514
-                    },
-                    {
-                        "x": 26224.094257096138,
-                        "y": 42069.01187336568
-                    }
-                ],
-                "sides": [
-                    "top",
-                    "bottom"
-                ]
-            },
-            "isActivated": true
-        },
-        {
             "name": "fk Production Run.product batch id to Product Batch.product batch id",
             "relationshipType": "Foreign Key",
             "parentField": [
@@ -3685,16 +3907,16 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26363.382135884014,
-                        "y": 42800.58763094136
+                        "x": 26547.382135884014,
+                        "y": 42840.58763094136
                     },
                     {
-                        "x": 26363.382135884014,
-                        "y": 42928.58763094139
+                        "x": 26547.382135884014,
+                        "y": 42948.58763094139
                     },
                     {
                         "x": 26305.68516618706,
-                        "y": 42928.58763094139
+                        "y": 42948.58763094139
                     },
                     {
                         "x": 26305.68516618706,
@@ -3740,15 +3962,15 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26458.382135884014,
-                        "y": 42614.58763094136
+                        "x": 26642.382135884014,
+                        "y": 42654.58763094136
                     },
                     {
-                        "y": 42065.58763094136,
-                        "x": 26458.382135884014
+                        "y": 42105.58763094136,
+                        "x": 26642.382135884014
                     },
                     {
-                        "y": 42065.58763094136,
+                        "y": 42105.58763094136,
                         "x": 26935.260923762806
                     },
                     {
@@ -4385,11 +4607,11 @@
                     },
                     {
                         "x": 26517.15550460776,
-                        "y": 44007.67064339327
+                        "y": 44026.17064339327
                     },
                     {
                         "x": 26477.231262183508,
-                        "y": 44007.67064339327
+                        "y": 44026.17064339327
                     }
                 ],
                 "sides": [
@@ -4484,24 +4706,28 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27411.410358407764,
-                        "y": 42019.31490366868
+                        "x": 27279.139711641597,
+                        "y": 42038.31490366868
                     },
                     {
-                        "y": 41874.01187336568,
-                        "x": 27411.410358407764
+                        "y": 42038.31490366868,
+                        "x": 26434.139711641597
                     },
                     {
-                        "y": 41874.01187336568,
-                        "x": 26376.594257096138
+                        "x": 26434.139711641597,
+                        "y": 42456.31490366868
                     },
                     {
-                        "x": 26376.594257096138,
-                        "y": 41931.01187336568
+                        "y": 42456.31490366868,
+                        "x": 26023.927590429474
+                    },
+                    {
+                        "x": 26023.927590429474,
+                        "y": 42666.34520669901
                     }
                 ],
                 "sides": [
-                    "top",
+                    "left",
                     "top"
                 ]
             }
@@ -4543,15 +4769,15 @@
                     },
                     {
                         "x": 26788.94338339566,
-                        "y": 42977.01550080367
+                        "y": 42997.01550080367
                     },
                     {
-                        "x": 26477.382135884014,
-                        "y": 42977.01550080367
+                        "x": 26661.382135884014,
+                        "y": 42997.01550080367
                     },
                     {
-                        "x": 26477.382135884014,
-                        "y": 42800.58763094136
+                        "x": 26661.382135884014,
+                        "y": 42840.58763094136
                     }
                 ],
                 "sides": [
@@ -4758,20 +4984,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25943.971059174415,
-                        "y": 42721.42424242427
+                        "x": 25593.971059174415,
+                        "y": 42705.42424242427
                     },
                     {
-                        "x": 26000.28265813528,
-                        "y": 42721.42424242427
+                        "x": 25710.949324801943,
+                        "y": 42705.42424242427
                     },
                     {
-                        "x": 26000.28265813528,
-                        "y": 42000.01187336568
+                        "x": 25710.949324801943,
+                        "y": 42735.34520669901
                     },
                     {
-                        "x": 26056.594257096138,
-                        "y": 42000.01187336568
+                        "x": 25827.927590429474,
+                        "y": 42735.34520669901
                     }
                 ],
                 "sides": [
@@ -4970,25 +5196,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25752.971059174415,
-                        "y": 42624.92424242427
+                        "x": 25211.971059174415,
+                        "y": 42705.42424242427
                     },
                     {
-                        "x": 25752.971059174415,
-                        "y": 42539.59090909094
+                        "x": 25152.13772584106,
+                        "y": 42705.42424242427
                     },
                     {
-                        "x": 25709.471059174386,
-                        "y": 42539.59090909094
+                        "x": 25152.13772584106,
+                        "y": 42627.59090909091
                     },
                     {
-                        "x": 25709.471059174386,
-                        "y": 42454.25757575761
+                        "x": 25092.304392507707,
+                        "y": 42627.59090909091
                     }
                 ],
                 "sides": [
-                    "top",
-                    "bottom"
+                    "left",
+                    "right"
                 ]
             }
         },
@@ -5132,12 +5358,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25626.557193127876,
+                        "x": 25552.12230188499,
                         "y": 43209.21381161221
                     },
                     {
-                        "x": 25626.557193127876,
-                        "y": 42817.92424242427
+                        "y": 42926.21381161221,
+                        "x": 25552.12230188499
+                    },
+                    {
+                        "y": 42926.21381161221,
+                        "x": 25262.12230188499
+                    },
+                    {
+                        "x": 25262.12230188499,
+                        "y": 42801.92424242427
                     }
                 ],
                 "sides": [
@@ -5178,15 +5412,15 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25943.971059174415,
-                        "y": 42753.59090909093
+                        "x": 25593.971059174415,
+                        "y": 42737.59090909093
                     },
                     {
-                        "x": 26043.828112680738,
-                        "y": 42753.59090909093
+                        "x": 25693.828112680738,
+                        "y": 42737.59090909093
                     },
                     {
-                        "x": 26043.828112680738,
+                        "x": 25693.828112680738,
                         "y": 43077.08763094142
                     },
                     {
@@ -5197,6 +5431,160 @@
                 "sides": [
                     "right",
                     "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Job Step Response Specification.test specification type id to Test Specification Type.test specification type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                    "a27ade01-6a85-4fed-a8ca-22936754fcfd"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                    "7dbd80aa-93f4-43ee-95dd-e20b0e3743df"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+            "childCollection": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+            "GUID": "508f5546-966d-4e9a-8acb-dc06397c54d5",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "6aa5adcb-b8e7-47d8-b751-0b5022e05f42",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25297.260923762828,
+                        "y": 42367.345206699
+                    },
+                    {
+                        "x": 25194.782658135267,
+                        "y": 42367.345206699
+                    },
+                    {
+                        "x": 25194.782658135267,
+                        "y": 42594.25757575758
+                    },
+                    {
+                        "x": 25092.304392507707,
+                        "y": 42594.25757575758
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Job Step Procedure.job step procedure id to Job Step Response Specification.job step procedure id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                    "2b0b7fd4-a14f-4ec7-8530-99dfaf298ca8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                    "d4b949e7-6f5e-40fc-a12d-b6658b2a8026"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+            "childCollection": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+            "GUID": "2f782633-9198-4267-9289-119b89e00e18",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "46e23e50-2524-4b9f-9bcc-54e6d29da118",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25787.260923762813,
+                        "y": 42367.34520669896
+                    },
+                    {
+                        "x": 25632.260923762828,
+                        "y": 42367.345206699
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Job Step.job step procedure id to Job Step Procedure.job step procedure id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                    "d4b949e7-6f5e-40fc-a12d-b6658b2a8026"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7aa25246-c096-4be0-a640-186cc28244ea",
+                    "8c646715-ecef-4e0a-886f-2e3f61f623ca"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+            "childCollection": "7aa25246-c096-4be0-a640-186cc28244ea",
+            "GUID": "5315eed9-493b-4be2-9eaa-6841907302a1",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "157e3a75-0e8e-4bc9-b998-bcfd0a0420a1",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 26433.382135884014,
+                        "y": 42747.58763094136
+                    },
+                    {
+                        "x": 26251.821529823414,
+                        "y": 42747.58763094136
+                    },
+                    {
+                        "x": 26251.821529823414,
+                        "y": 42331.34520669896
+                    },
+                    {
+                        "x": 26122.260923762813,
+                        "y": 42331.34520669896
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
                 ]
             }
         }
@@ -5231,7 +5619,6 @@
         "7aa25246-c096-4be0-a640-186cc28244ea": "Job Step",
         "75240a6f-d8e9-4633-9d66-d62ef2867373": "unit process end timestamp",
         "3d9c1026-c5dc-4e1f-bc85-de502dbe2663": "work master id",
-        "2d8e905b-ef40-4a74-a74a-f7950153ea40": "fk Sensor Event.sensor id to Sensor.sensor id",
         "9fc40ab2-4964-4256-9e51-b65bb2929fd3": "product batch id",
         "dc20d650-6493-4582-b053-90f24d7b00c2": "product batch work order id",
         "1a5dd93d-ed54-4484-a01c-a85129fa1900": "product batch timestamp",
@@ -5373,7 +5760,21 @@
         "f7ba680e-fa89-4572-9e2c-27e213fc3f3b": "personnel",
         "4924cb62-ff3e-49a8-80c8-5f63ede4ad13": "material lots",
         "a602822d-10fc-4c98-9acb-672a604bb098": "equipment",
-        "7d6f7dfa-c04f-451c-8b3b-5b6d2d6bb87c": "job steps"
+        "7d6f7dfa-c04f-451c-8b3b-5b6d2d6bb87c": "job steps",
+        "d4b949e7-6f5e-40fc-a12d-b6658b2a8026": "job step procedure id",
+        "dcec743a-cd6e-42b7-845b-7eec6b7069d5": "job step procedure title",
+        "9ad51cce-f4c5-4651-ad7c-670557febc4a": "Job Step Procedure",
+        "b20f51a8-b1d5-45cb-b77b-ffa625f2ade5": "work master id",
+        "fc87b77a-2b9b-4cba-9ab5-abc5e99af031": "job step response specification id",
+        "c0f6a394-ff65-42ac-a300-080c0670169f": "job step title",
+        "79c3cf30-a11b-439d-80c8-fb5fc86df1cd": "work master code",
+        "ea6a12b9-40b4-4128-bf9d-76e728259ba1": "Job Step Response Specification",
+        "2b0b7fd4-a14f-4ec7-8530-99dfaf298ca8": "job step procedure id",
+        "7dbd80aa-93f4-43ee-95dd-e20b0e3743df": "test specification type id",
+        "508f5546-966d-4e9a-8acb-dc06397c54d5": "fk Job Step Response Specification.test specification type id to Test Specification Type.test specification type id",
+        "2f782633-9198-4267-9289-119b89e00e18": "fk Job Step Procedure.job step procedure id to Job Step Response Specification.job step procedure id",
+        "8c646715-ecef-4e0a-886f-2e3f61f623ca": "job step procedure id",
+        "5315eed9-493b-4be2-9eaa-6841907302a1": "fk Job Step.job step procedure id to Job Step Procedure.job step procedure id"
     },
     "definitions": {
         "type": "definitions",
@@ -5459,7 +5860,7 @@
     "creationTS": "2023-09-25T11:05:29.690Z",
     "GUID": "524d374c-ae8e-4e70-8acb-4f14516b1e84",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-03-05T09:07:33.220Z",
+    "lastModifTS": "2024-03-14T08:29:44.210Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -5479,12 +5880,12 @@
                 "erd": [
                     {
                         "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                        "x": 26056.594257096138,
-                        "y": 41931.01187336568,
+                        "x": 25827.927590429474,
+                        "y": 42666.34520669901,
                         "width": 335,
                         "height": 138,
                         "color": {
-                            "hex": "#2196F3"
+                            "hex": "#00bcd5"
                         }
                     },
                     {
@@ -5519,8 +5920,8 @@
                     },
                     {
                         "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
-                        "x": 26249.382135884014,
-                        "y": 42614.58763094136,
+                        "x": 26433.382135884014,
+                        "y": 42654.58763094136,
                         "width": 342,
                         "height": 186,
                         "color": {
@@ -5669,8 +6070,8 @@
                     },
                     {
                         "GUID": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                        "x": 25561.971059174415,
-                        "y": 42624.92424242427,
+                        "x": 25211.971059174415,
+                        "y": 42608.92424242427,
                         "width": 382,
                         "height": 193,
                         "color": {
@@ -5699,8 +6100,8 @@
                     },
                     {
                         "GUID": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                        "x": 25529.971059174386,
-                        "y": 42354.25757575761,
+                        "x": 24733.304392507707,
+                        "y": 42560.92424242425,
                         "width": 359,
                         "height": 100,
                         "color": {
@@ -5716,6 +6117,26 @@
                         "color": {
                             "hex": "#2196F3"
                         }
+                    },
+                    {
+                        "GUID": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                        "x": 25787.260923762813,
+                        "y": 42298.34520669896,
+                        "width": 335,
+                        "height": 138,
+                        "color": {
+                            "hex": "#00bcd5"
+                        }
+                    },
+                    {
+                        "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                        "x": 25297.260923762828,
+                        "y": 42298.345206699,
+                        "width": 335,
+                        "height": 138,
+                        "color": {
+                            "hex": "#00bcd5"
+                        }
                     }
                 ],
                 "erdDefinitions": {
@@ -5727,7 +6148,7 @@
                 "buckets": [
                     {
                         "x": 24635.78151386864,
-                        "y": 41834.01187336568,
+                        "y": 41969.31235272019,
                         "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
                     },
                     {
@@ -5889,6 +6310,18 @@
                             "size": 100,
                             "x": 24996.049444001685,
                             "y": 43971.5039767266
+                        },
+                        {
+                            "GUID": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
+                            "size": 100,
+                            "x": 26096.594257096138,
+                            "y": 41971.01187336568
+                        },
+                        {
+                            "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                            "size": 100,
+                            "x": 25639.260923762813,
+                            "y": 41960.34520669896
                         }
                     ],
                     "buckets": [
@@ -6005,8 +6438,8 @@
                     },
                     {
                         "GUID": "fa713e1f-c992-4269-95a3-427bad9472db",
-                        "x": 25291.33438807308,
-                        "y": 42174.10023150809,
+                        "x": 25194.364691103357,
+                        "y": 42013.494170902006,
                         "height": 152,
                         "width": 282,
                         "color": {
@@ -6035,8 +6468,8 @@
                     },
                     {
                         "GUID": "d0f011e5-76b5-42f9-b681-996c6da391b6",
-                        "x": 25316.001054739736,
-                        "y": 42263.43356484139,
+                        "x": 25216.001054739736,
+                        "y": 42095.43356484139,
                         "height": 38,
                         "width": 238,
                         "color": {
@@ -6065,8 +6498,8 @@
                     },
                     {
                         "GUID": "65ce55d1-a885-4be1-92cc-ca8baad0b396",
-                        "x": 25314.001054739736,
-                        "y": 42212.100231508055,
+                        "x": 25216.001054739736,
+                        "y": 42050.100231508055,
                         "height": 33,
                         "width": 241,
                         "color": {
@@ -6297,6 +6730,16 @@
                         "autoWidth": false,
                         "autoHeight": false,
                         "GUID": "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "9ad51cce-f4c5-4651-ad7c-670557febc4a"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1"
                     }
                 ],
                 "relationshipUpdateDisabled": false
