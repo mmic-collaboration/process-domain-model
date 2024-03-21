@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Test Result",
+    "title": "Batch Release Test",
     "properties": {
-        "test result id": {
+        "batch release test result id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -13,14 +13,7 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "result description": {
-            "type": "string",
-            "isActivated": true,
-            "alternateKey": false,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "test date": {
+        "batch release test specification id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -28,46 +21,42 @@
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "alternateKey": false,
-            "examples": [
-                10123
-            ]
+            "alternateKey": false
         },
-        "result": {
-            "type": "object",
-            "isActivated": true,
-            "enabled": true,
-            "additionalProperties": false,
-            "alternateKey": false,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "result unit of measure": {
-            "type": "object",
-            "isActivated": true,
-            "enabled": true,
-            "additionalProperties": false,
-            "alternateKey": false,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "expiration": {
+        "result description": {
             "type": "string",
             "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
+            "alternateKey": false,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
+        },
+        "batch release test result id copy": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
+        },
+        "test result id": {
+            "type": "integer",
+            "isActivated": true,
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "alternateKey": false
         }
     },
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "test result id",
-        "test date",
-        "result",
-        "result unit of measure",
-        "expiration"
+        "batch release test result id",
+        "batch release test specification id",
+        "batch release test result id copy",
+        "test result id"
     ]
 }

@@ -14,7 +14,7 @@
             "compositeUniqueKey": false,
             "alternateKey": false
         },
-        "job id": {
+        "job order id": {
             "type": "integer",
             "isActivated": true,
             "tPrecision": 9,
@@ -23,15 +23,6 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
             "alternateKey": false
-        },
-        "job order id": {
-            "type": "integer",
-            "isActivated": true,
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
         },
         "work request id": {
             "type": "integer",
@@ -58,7 +49,7 @@
     "additionalProperties": false,
     "required": [
         "job response id",
-        "job id",
+        "job order id",
         "work schedule id"
     ]
 }

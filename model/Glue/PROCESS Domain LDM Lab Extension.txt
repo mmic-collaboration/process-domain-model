@@ -1,0 +1,311 @@
+aws glue create-database --cli-input-json '{
+  "DatabaseInput": {
+    "Name": "PROCESS Domain LDM Lab Extension",
+    "Description": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Test Result",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab test id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab test result",
+          "Type": "string"
+        },
+        {
+          "Name": "lab test result timestamp",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "result",
+          "Type": "struct<new_column: string>"
+        },
+        {
+          "Name": "expiration",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "result unit of measure",
+          "Type": "struct<new_column: string>"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Test",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab test id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab test result timestamp",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Sample",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab sample id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab product batch id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Product Batch",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "batch sample taken timestamp",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Job Order",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab job order id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job order id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Sample Test",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab sample test id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab test id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab sample id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab test sample timestamp",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Job Order Sample",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab job order sample id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab job order id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab sample id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Job Response",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab job response id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job response id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "lab job order id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain LDM Lab Extension",
+  "TableInput": {
+    "Name": "Lab Test Failure",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "lab test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "deviation id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'

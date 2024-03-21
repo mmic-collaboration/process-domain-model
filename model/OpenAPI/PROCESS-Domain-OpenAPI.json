@@ -1,8 +1,11 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "",
-    "version": "0.6.1"
+    "title": "PROCESS Domain OpenAPI PDM",
+    "contact": {
+      "email": "timothy.galvin@atos.net"
+    },
+    "version": "0.8.2"
   },
   "paths": {},
   "components": {
@@ -49,7 +52,7 @@
         "title": "Process Event",
         "required": [
           "processEventId",
-          "unitProcessId",
+          "jobStepId",
           "processEventStatus"
         ],
         "properties": {
@@ -63,10 +66,10 @@
             "format": "int32",
             "title": "process event type id"
           },
-          "unitProcessId": {
+          "jobStepId": {
             "type": "integer",
             "format": "int32",
-            "title": "unit process id"
+            "title": "job step id"
           },
           "processEventStatus": {
             "type": "string",
@@ -81,69 +84,13 @@
         },
         "nullable": false
       },
-      "processResponse": {
-        "type": "object",
-        "title": "Process Response",
-        "required": [
-          "processEventId"
-        ],
-        "properties": {
-          "processResponseId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process response id"
-          },
-          "processEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event id"
-          },
-          "eventAcknowledgedByPersonId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "event acknowledged by person id",
-            "description": "The event acknowledge by person id is the unique identifier of the person who has acknowledged this Process Event."
-          },
-          "eventAcknowledgedTimestamp": {
-            "type": "string",
-            "format": "date-time",
-            "title": "event acknowledged timestamp"
-          }
-        },
-        "nullable": false
-      },
-      "manufacturingProcessPerson": {
-        "type": "object",
-        "title": "Manufacturing Process Person",
-        "required": [
-          "manufacturingProcessPersonId"
-        ],
-        "properties": {
-          "manufacturingProcessPersonId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "manufacturing process person id"
-          },
-          "manufacturingProcessPersonName": {
-            "type": "string",
-            "title": "manufacturing process person name",
-            "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
-          },
-          "manufacturingProcessPersonRole": {
-            "type": "string",
-            "title": "manufacturing process person role"
-          }
-        },
-        "nullable": false
-      },
       "deviation": {
         "type": "object",
         "title": "Deviation",
         "required": [
           "deviationId",
+          "testResultId",
           "productBatchId",
-          "batchReleaseConditionId",
-          "processEventId",
           "deviationSeverity"
         ],
         "properties": {
@@ -153,34 +100,20 @@
             "title": "deviation id",
             "example": 10123
           },
+          "testResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test result id"
+          },
           "productBatchId": {
             "type": "integer",
             "format": "int32",
             "title": "product batch id",
             "example": 12345678
           },
-          "batchReleaseConditionId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "batch release condition id",
-            "example": 4567890
-          },
-          "deviationRuleId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "deviation rule id",
-            "example": 1234
-          },
-          "processEventId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event id",
-            "example": 99999999
-          },
-          "deviationHeadline": {
+          "deviationDescription": {
             "type": "string",
-            "title": "deviation headline",
-            "example": "Air Pressure Low PS1035"
+            "title": "deviation description"
           },
           "deviationSeverity": {
             "type": "string",
@@ -221,66 +154,27 @@
         },
         "nullable": false
       },
-      "batchReleaseCondition": {
+      "jobStep": {
         "type": "object",
-        "title": "batch release condition",
+        "title": "Job Step",
         "required": [
-          "releaseConditionRuleId",
-          "productBatchId",
-          "batchReleaseConditionId",
-          "batchReleaseConditionDescription",
-          "batchReleaseConditionOutcome"
-        ],
-        "properties": {
-          "releaseConditionRuleId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "release condition rule id"
-          },
-          "productBatchId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "product batch id"
-          },
-          "batchReleaseConditionId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "batch release condition id",
-            "example": 4567890
-          },
-          "batchReleaseConditionDescription": {
-            "type": "string",
-            "title": "batch release condition description"
-          },
-          "batchReleaseConditionOutcome": {
-            "type": "string",
-            "title": "batch release condition outcome",
-            "enum": [
-              "PASS",
-              "FAIL",
-              "INCONCLUSIVE"
-            ],
-            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-            "example": "PASS"
-          }
-        },
-        "nullable": false
-      },
-      "unitProcess": {
-        "type": "object",
-        "title": "Unit Process",
-        "required": [
-          "unitProcessId",
+          "jobStepId",
+          "jobStepProcedureId",
           "jobId",
           "productBatchId",
           "workMasterId",
           "unitProcessStartTimestamp"
         ],
         "properties": {
-          "unitProcessId": {
+          "jobStepId": {
             "type": "integer",
             "format": "int32",
-            "title": "unit process id"
+            "title": "job step id"
+          },
+          "jobStepProcedureId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job step procedure id"
           },
           "jobId": {
             "type": "integer",
@@ -301,10 +195,10 @@
             "format": "int32",
             "title": "work master id"
           },
-          "unitProcessCode": {
+          "jobStepCode": {
             "type": "integer",
             "format": "int32",
-            "title": "unit process code"
+            "title": "job step code"
           },
           "unitProcessStartTimestamp": {
             "type": "string",
@@ -396,6 +290,36 @@
             "format": "date-time",
             "title": "job end date-time",
             "description": "This is the version of the recipe.  In SCADA this is a single integer that increments with each revision."
+          },
+          "physicalAssets": {
+            "type": "array",
+            "title": "physical assets",
+            "items": {},
+            "nullable": false
+          },
+          "personnel": {
+            "type": "array",
+            "title": "personnel",
+            "items": {},
+            "nullable": false
+          },
+          "materialLots": {
+            "type": "array",
+            "title": "material lots",
+            "items": {},
+            "nullable": false
+          },
+          "equipment": {
+            "type": "array",
+            "title": "equipment",
+            "items": {},
+            "nullable": false
+          },
+          "jobSteps": {
+            "type": "array",
+            "title": "job steps",
+            "items": {},
+            "nullable": false
           }
         },
         "nullable": false
@@ -404,16 +328,11 @@
         "type": "object",
         "title": "Job Response",
         "required": [
-          "jobId",
+          "jobOrderId",
           "jobResponseId",
           "workScheduleId"
         ],
         "properties": {
-          "jobId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "job id"
-          },
           "jobOrderId": {
             "type": "integer",
             "format": "int32",
@@ -550,36 +469,235 @@
         },
         "nullable": false
       },
-      "releaseConditionRule": {
+      "testSpecificationType": {
         "type": "object",
-        "title": "Release Condition Rule",
+        "title": "Test Specification Type",
         "required": [
-          "releaseConditionRuleId",
+          "testSpecificationTypeId"
+        ],
+        "properties": {
+          "testSpecificationTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test specification type id"
+          },
+          "testSpecificationTypeSummary": {
+            "type": "string",
+            "title": "test specification type summary"
+          },
+          "testSpecificationTypeName": {
+            "type": "string",
+            "title": "test specification type name",
+            "enum": [
+              "JobStepProcedure",
+              "Equipment",
+              "Qualification",
+              "Material",
+              "PhysicalAsset"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+          }
+        },
+        "nullable": false
+      },
+      "testResult": {
+        "type": "object",
+        "title": "Test Result",
+        "required": [
+          "testResultId",
+          "testDate",
+          "result",
+          "resultUnitOfMeasure",
+          "expiration"
+        ],
+        "properties": {
+          "testResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test result id"
+          },
+          "resultDescription": {
+            "type": "string",
+            "title": "result description"
+          },
+          "testDate": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test date",
+            "example": 10123
+          },
+          "result": {
+            "type": "object",
+            "title": "result",
+            "nullable": false
+          },
+          "resultUnitOfMeasure": {
+            "type": "object",
+            "title": "result unit of measure",
+            "nullable": false
+          },
+          "expiration": {
+            "type": "string",
+            "format": "date-time",
+            "title": "expiration"
+          }
+        },
+        "nullable": false
+      },
+      "jobStepProcedure": {
+        "type": "object",
+        "title": "Job Step Procedure",
+        "required": [
+          "jobStepProcedureId",
           "workMasterId"
         ],
         "properties": {
-          "releaseConditionRuleId": {
+          "jobStepProcedureId": {
             "type": "integer",
             "format": "int32",
-            "title": "release condition rule id"
-          },
-          "releaseConditionRuleSummary": {
-            "type": "string",
-            "title": "release condition rule summary"
-          },
-          "releaseConditionRuleLogic": {
-            "type": "string",
-            "title": "release condition rule logic"
-          },
-          "releaseConditionRuleArguments": {
-            "type": "object",
-            "title": "release condition rule arguments",
-            "nullable": false
+            "title": "job step procedure id"
           },
           "workMasterId": {
             "type": "integer",
             "format": "int32",
             "title": "work master id"
+          },
+          "jobStepProcedureTitle": {
+            "type": "string",
+            "title": "job step procedure title"
+          }
+        },
+        "nullable": false
+      },
+      "jobStepResponseSpecification": {
+        "type": "object",
+        "title": "Job Step Response Specification",
+        "required": [
+          "jobStepResponseSpecificationId",
+          "jobStepProcedureId",
+          "testSpecificationTypeId"
+        ],
+        "properties": {
+          "jobStepResponseSpecificationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job step response specification id"
+          },
+          "jobStepProcedureId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "job step procedure id"
+          },
+          "jobStepTitle": {
+            "type": "string",
+            "title": "job step title"
+          },
+          "workMasterCode": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master code"
+          },
+          "testSpecificationTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test specification type id"
+          }
+        },
+        "nullable": false
+      },
+      "batchReleaseTestSpecification": {
+        "type": "object",
+        "title": "Batch Release Test Specification",
+        "required": [
+          "batchReleaseTestSpecificationId",
+          "testSpecificationTypeId",
+          "workMasterId",
+          "productBatchId",
+          "batchReleaseReleaseTestSpecificationFunction"
+        ],
+        "properties": {
+          "batchReleaseTestSpecificationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "batch release test specification id"
+          },
+          "testSpecificationTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test specification type id"
+          },
+          "workMasterId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "work master id"
+          },
+          "productBatchId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "product batch id"
+          },
+          "batchReleaseTestSpecificationSummary": {
+            "type": "string",
+            "title": "batch release test specification summary"
+          },
+          "batchReleaseReleaseTestSpecificationFunction": {
+            "type": "string",
+            "title": "batch release release test specification function",
+            "enum": [
+              "is",
+              "isnot",
+              "greaterthan",
+              "lessthan",
+              "contains",
+              "equals",
+              "notequals"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+          },
+          "releaseConditionRuleArguments": {
+            "type": "array",
+            "title": "release condition rule arguments",
+            "items": {
+              "type": "string"
+            },
+            "nullable": false
+          }
+        },
+        "nullable": false
+      },
+      "batchReleaseTest": {
+        "type": "object",
+        "title": "Batch Release Test",
+        "required": [
+          "batchReleaseTestResultId",
+          "batchReleaseTestSpecificationId",
+          "batchReleaseTestResultIdCopy",
+          "testResultId"
+        ],
+        "properties": {
+          "batchReleaseTestResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "batch release test result id"
+          },
+          "batchReleaseTestSpecificationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "batch release test specification id"
+          },
+          "resultDescription": {
+            "type": "string",
+            "title": "result description"
+          },
+          "batchReleaseTestResultIdCopy": {
+            "type": "integer",
+            "format": "int32",
+            "title": "batch release test result id copy"
+          },
+          "testResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test result id"
           }
         },
         "nullable": false
@@ -589,9 +707,9 @@
         "title": "Lab Test Result",
         "required": [
           "labTestResultId",
+          "testResultId",
           "labTestId",
-          "deviationId",
-          "labTestResultOutcome"
+          "labTestResult"
         ],
         "properties": {
           "labTestResultId": {
@@ -599,25 +717,19 @@
             "format": "int32",
             "title": "lab test result id"
           },
+          "testResultId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "test result id"
+          },
           "labTestId": {
             "type": "integer",
             "format": "int32",
             "title": "lab test id"
           },
-          "deviationId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "deviation id",
-            "example": 10123
-          },
-          "recipeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe id"
-          },
-          "labTestResultOutcome": {
+          "labTestResult": {
             "type": "string",
-            "title": "lab test result outcome",
+            "title": "lab test result",
             "enum": [
               "PASS",
               "FAIL"
@@ -628,6 +740,21 @@
             "type": "string",
             "format": "date-time",
             "title": "lab test result timestamp"
+          },
+          "result": {
+            "type": "object",
+            "title": "result",
+            "nullable": false
+          },
+          "expiration": {
+            "type": "string",
+            "format": "date-time",
+            "title": "expiration"
+          },
+          "resultUnitOfMeasure": {
+            "type": "object",
+            "title": "result unit of measure",
+            "nullable": false
           }
         },
         "nullable": false
@@ -643,16 +770,6 @@
             "type": "integer",
             "format": "int32",
             "title": "lab test id"
-          },
-          "processEventTypeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event type id"
-          },
-          "recipeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "recipe id"
           },
           "labTestResultTimestamp": {
             "type": "string",
@@ -744,11 +861,6 @@
             "format": "int32",
             "title": "lab sample id"
           },
-          "processEventTypeId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "process event type id"
-          },
           "labTestSampleTimestamp": {
             "type": "string",
             "format": "date-time",
@@ -821,7 +933,6 @@
         "title": "labTestFailure",
         "required": [
           "labTestResultId",
-          "labTestId",
           "deviationId"
         ],
         "properties": {
@@ -829,11 +940,6 @@
             "type": "integer",
             "format": "int32",
             "title": "lab test result id"
-          },
-          "labTestId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "lab test id"
           },
           "deviationId": {
             "type": "integer",

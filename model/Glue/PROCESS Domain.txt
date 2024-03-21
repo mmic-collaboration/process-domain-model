@@ -1,0 +1,740 @@
+aws glue create-database --cli-input-json '{
+  "DatabaseInput": {
+    "Name": "PROCESS Domain",
+    "Description": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Work Master",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "work master id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work master version",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work master title",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "work master code",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Process Event",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "process event id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "process event type id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "process event status",
+          "Type": "string"
+        },
+        {
+          "Name": "process event timestamp",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Deviation",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "deviation id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "deviation description",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "deviation severity",
+          "Type": "string"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Process Event Type",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "process event type id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "process event type name",
+          "Type": "string"
+        },
+        {
+          "Name": "process event type description",
+          "Type": "varchar(255)"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job Step",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job step id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step procedure id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "station id",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "work master id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step code",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "unit process start timestamp",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "unit process end timestamp",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Product Batch",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch work order id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch product id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch timestamp",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "product batch number",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "batch report uri",
+          "Type": "varchar(255)"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work master id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job run code",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job start date-time",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "job end date-time",
+          "Type": "timestamp"
+        },
+        {
+          "Name": "physical assets",
+          "Type": "set<map<string, string>>"
+        },
+        {
+          "Name": "personnel",
+          "Type": "set<map<string, string>>"
+        },
+        {
+          "Name": "material lots",
+          "Type": "set<map<string, string>>"
+        },
+        {
+          "Name": "equipment",
+          "Type": "set<map<string, string>>"
+        },
+        {
+          "Name": "job steps",
+          "Type": "set<map<string, string>>"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job Response",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job response id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job order id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work request id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work schedule id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Deviation Assessment",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "deviation assessment id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "deviation id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "deviation assessed by id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "deviation assessment summary",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "deviation assessment outcome",
+          "Type": "string"
+        },
+        {
+          "Name": "assessment completed status",
+          "Type": "boolean"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job Order",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job order id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work request id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work schedule id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Work Request",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "work request id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work schedule id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Work Schedule",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "work schedule id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Test Specification Type",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "test specification type id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test specification type summary",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "test specification type name",
+          "Type": "string"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Test Result",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "result description",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "test date",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "result",
+          "Type": "struct<new_column: string>"
+        },
+        {
+          "Name": "result unit of measure",
+          "Type": "struct<new_column: string>"
+        },
+        {
+          "Name": "expiration",
+          "Type": "timestamp"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job Step Procedure",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job step procedure id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work master id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step procedure title",
+          "Type": "varchar(255)"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Job Step Response Specification",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "job step response specification id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step procedure id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "job step title",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "work master code",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test specification type id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Batch Release Test Specification",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "batch release test specification id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test specification type id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "work master id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "product batch id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "batch release test specification summary",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "batch release release test specification function",
+          "Type": "string"
+        },
+        {
+          "Name": "release condition rule arguments",
+          "Type": "array<varchar(255)>"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'
+
+aws glue create-table --cli-input-json '{
+  "DatabaseName": "PROCESS Domain",
+  "TableInput": {
+    "Name": "Batch Release Test",
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "batch release test result id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "batch release test specification id",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "result description",
+          "Type": "varchar(255)"
+        },
+        {
+          "Name": "batch release test result id copy",
+          "Type": "tinyint"
+        },
+        {
+          "Name": "test result id",
+          "Type": "tinyint"
+        }
+      ],
+      "SerdeInfo": {
+        "Parameters": {
+          "paths": ""
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": []
+    },
+    "Parameters": {},
+    "PartitionKeys": [],
+    "TableType": ""
+  }
+}'

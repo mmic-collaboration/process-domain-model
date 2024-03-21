@@ -28,7 +28,7 @@
                     "foreignField": [],
                     "childRelationships": [
                         "74bdebba-4faf-47a8-8cdc-98584a380ac8",
-                        "9ee6def2-fa80-4e5c-95d8-1494ea309b64"
+                        "de1f7dc1-22eb-4285-92ae-487189e5d1b9"
                     ],
                     "required": true,
                     "error": {}
@@ -159,9 +159,6 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
-                    "childRelationships": [
-                        "7aa8238d-01de-4ec4-ae94-b0f74d9951d0"
-                    ],
                     "required": true,
                     "error": {}
                 },
@@ -345,36 +342,6 @@
                     "error": {}
                 },
                 {
-                    "name": "process event id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "required": true,
-                    "GUID": "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419",
-                    "parentRelationship": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
-                    "relationshipType": "Foreign Key",
-                    "sample": 99999999,
-                    "error": {},
-                    "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                    "foreignField": [
-                        "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                        "e3092d9a-390a-42d4-9e81-fd488491f87e"
-                    ]
-                },
-                {
                     "name": "product batch id",
                     "hackoladeMeta": {},
                     "isActivated": true,
@@ -407,65 +374,7 @@
                     "parentRelationship": "ac37a7e7-dd53-48b3-95c8-33984691b249"
                 },
                 {
-                    "name": "batch release condition id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "1e995ffe-3e80-45cc-932a-b9629659cc4e",
-                    "required": true,
-                    "sample": 4567890,
-                    "alternateKey": false,
-                    "error": {}
-                },
-                {
-                    "name": "batch release test specification id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "4fbad03a-1372-404d-aed3-e32dc398f6d7",
-                    "childRelationships": [],
-                    "required": true,
-                    "foreignCollection": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                    "foreignField": [
-                        "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                        "becfd121-c513-4491-8398-2d971b045566"
-                    ],
-                    "alternateKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "6f91563d-d96a-4699-9fee-6100088ee746"
-                },
-                {
-                    "name": "result description",
+                    "name": "deviation description",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "primaryKey": false,
@@ -480,117 +389,9 @@
                     "compositeUniqueKey": false,
                     "required": false,
                     "GUID": "b0cce399-e6d5-45df-ab46-576093fee244",
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "foreignCollection": "",
-                    "foreignField": []
-                },
-                {
-                    "name": "test date",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "4c4dd15c-32b1-4a1c-a8c4-3e0b15f220d8",
-                    "required": false,
-                    "sample": 10123,
-                    "alternateKey": false,
                     "foreignCollection": "",
                     "foreignField": [],
-                    "error": {
-                        "name": false,
-                        "code": false
-                    }
-                },
-                {
-                    "name": "result",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": false,
-                    "enabled": true,
-                    "properties": [],
-                    "additionalProperties": false,
-                    "alternateKey": false,
-                    "childType": "object",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "GUID": "966e4775-86a3-429a-9f97-af52b680f52d",
-                    "foreignCollection": "",
-                    "foreignField": []
-                },
-                {
-                    "name": "result unit of measure",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": false,
-                    "enabled": true,
-                    "properties": [],
-                    "additionalProperties": false,
-                    "alternateKey": false,
-                    "childType": "object",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "required": false,
-                    "GUID": "190cef81-10f0-4f1b-bc44-5dd526708a29",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "error": {
-                        "name": false,
-                        "code": false
-                    }
-                },
-                {
-                    "name": "expiration",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "primaryKey": false,
-                    "childType": "timestamp_tz",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "34b6d052-672c-42b3-858d-3629f8d4c930",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "alternateKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    }
+                    "error": {}
                 },
                 {
                     "name": "deviation severity",
@@ -1007,7 +808,7 @@
                         "292fa66a-7584-43af-8008-8067b1b624aa",
                         "41fa27af-247d-4c83-a261-166ddbd10e72",
                         "ac37a7e7-dd53-48b3-95c8-33984691b249",
-                        "60510222-0a7c-4ec4-8fb2-8adbb8cb8151"
+                        "91fbb3cc-5394-4355-b39c-9218911cfae6"
                     ],
                     "required": true,
                     "error": {}
@@ -1387,7 +1188,7 @@
             "type": "object",
             "properties": [
                 {
-                    "name": "job id",
+                    "name": "job order id",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "tPrecision": 9,
@@ -1424,34 +1225,6 @@
                     "index": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "3faf54f1-a31e-4901-af78-d8acd50a425c",
-                    "foreignCollection": "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
-                    "foreignField": [
-                        "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
-                        "8e3292f7-348b-4164-a37c-34ce5d7d7999"
-                    ],
-                    "name": "job order id",
-                    "error": {},
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "e5eb18ac-db3e-4f76-be55-496f127bd115"
-                },
-                {
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
                     "primaryKey": true,
                     "mode": "int32",
                     "childType": "integer",
@@ -1463,15 +1236,20 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "3488564e-3ad5-4acc-9491-a14b3e5f0ca2",
-                    "foreignCollection": "",
-                    "foreignField": [],
+                    "foreignCollection": "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
+                    "foreignField": [
+                        "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
+                        "8e3292f7-348b-4164-a37c-34ce5d7d7999"
+                    ],
                     "name": "job response id",
                     "alternateKey": false,
                     "required": true,
                     "error": {},
                     "childRelationships": [
                         "02cc1814-05b7-4a75-8b5d-d6a2dc8b0d86"
-                    ]
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "dde36b6c-92fe-4b60-b264-867f9a9a1ada"
                 },
                 {
                     "hackoladeMeta": {},
@@ -1743,8 +1521,8 @@
                     "required": false,
                     "alternateKey": false,
                     "childRelationships": [
-                        "e5eb18ac-db3e-4f76-be55-496f127bd115",
-                        "28c8a2f2-b3a7-4609-a693-4fd762b0b4c4"
+                        "28c8a2f2-b3a7-4609-a693-4fd762b0b4c4",
+                        "dde36b6c-92fe-4b60-b264-867f9a9a1ada"
                     ],
                     "error": {}
                 },
@@ -2731,284 +2509,6 @@
             "hackoladeMeta": {}
         },
         {
-            "collectionName": "Batch Release Test Specification",
-            "type": "object",
-            "properties": [
-                {
-                    "name": "batch release test specification id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": true,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "becfd121-c513-4491-8398-2d971b045566",
-                    "required": true,
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "error": {},
-                    "childRelationships": [
-                        "6f91563d-d96a-4699-9fee-6100088ee746"
-                    ]
-                },
-                {
-                    "name": "test specification id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "919f18b7-c866-4b87-9898-089254755bd8",
-                    "childRelationships": [],
-                    "required": true,
-                    "foreignCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                    "foreignField": [
-                        "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                        "a27ade01-6a85-4fed-a8ca-22936754fcfd"
-                    ],
-                    "alternateKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "fe94ba4b-1b19-4533-a285-12b1b3bdcae4"
-                },
-                {
-                    "name": "work master id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "1ee820ba-7459-4c08-a59d-e58e66568c09",
-                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                    "foreignField": [
-                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
-                    ],
-                    "childRelationships": [],
-                    "required": true,
-                    "alternateKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "9ee6def2-fa80-4e5c-95d8-1494ea309b64"
-                },
-                {
-                    "name": "product batch id",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "tPrecision": 9,
-                    "index": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int32",
-                    "childType": "integer",
-                    "type": "numeric",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "e8ff17f7-26c7-4754-97b1-f9da63fa0dc7",
-                    "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
-                    "foreignField": [
-                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
-                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
-                    ],
-                    "required": true,
-                    "alternateKey": false,
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "60510222-0a7c-4ec4-8fb2-8adbb8cb8151"
-                },
-                {
-                    "name": "batch release test specification summary",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "primaryKey": false,
-                    "childType": "varchar",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "78fcb1c8-9bc7-4bc5-b4f3-faa7cf28ab31",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "error": {}
-                },
-                {
-                    "name": "batch release release test specification function",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "required": true,
-                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-                    "primaryKey": false,
-                    "symbols": [
-                        "Y"
-                    ],
-                    "alternateKey": false,
-                    "childType": "enum",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "6641b1bf-3e1e-40ce-bc01-68fda6394f3a",
-                    "enum": [
-                        "is",
-                        "isnot",
-                        "greaterthan",
-                        "lessthan",
-                        "contains",
-                        "equals",
-                        "notequals"
-                    ],
-                    "error": {
-                        "enum": false,
-                        "enums": [
-                            false,
-                            false,
-                            false,
-                            false,
-                            false,
-                            false,
-                            false
-                        ],
-                        "exampleItems": [
-                            false,
-                            false,
-                            false,
-                            false,
-                            false,
-                            false,
-                            false
-                        ]
-                    }
-                },
-                {
-                    "name": "release condition rule arguments",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": false,
-                    "additionalItems": true,
-                    "uniqueItems": false,
-                    "properties": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "primaryKey": false,
-                            "alternateKey": false,
-                            "childType": "varchar",
-                            "type": "string",
-                            "compositeKey": [
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "bf8024ef-e17b-498f-8fa8-ff069c27bf53",
-                            "arrayItem": true,
-                            "displayName": "arg1",
-                            "error": {}
-                        },
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "primaryKey": false,
-                            "alternateKey": false,
-                            "childType": "varchar",
-                            "type": "string",
-                            "compositeKey": [
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "55b55bbd-ec70-45ff-9cb1-6d378215997b",
-                            "arrayItem": true,
-                            "displayName": "arg2",
-                            "error": {}
-                        }
-                    ],
-                    "alternateKey": false,
-                    "childType": "array",
-                    "type": "array",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "error": {},
-                    "GUID": "82d16733-590b-4015-8699-e2a7f44a88c3"
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "3fae2c4c-2810-4cd8-b065-08e54245e07d"
-            },
-            "isActivated": true,
-            "additionalProperties": false,
-            "GUID": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
-            "hackoladeMeta": {
-                "validationErrors": {
-                    "collectionName": true
-                }
-            }
-        },
-        {
             "collectionName": "Lab Job Response",
             "type": "object",
             "properties": [
@@ -3214,8 +2714,8 @@
                     "compositeUniqueKey": false,
                     "GUID": "a27ade01-6a85-4fed-a8ca-22936754fcfd",
                     "childRelationships": [
-                        "fe94ba4b-1b19-4533-a285-12b1b3bdcae4",
-                        "508f5546-966d-4e9a-8acb-dc06397c54d5"
+                        "508f5546-966d-4e9a-8acb-dc06397c54d5",
+                        "5504eb79-244c-4d67-957b-791d8e6c3e8d"
                     ],
                     "required": true,
                     "foreignCollection": "",
@@ -3329,9 +2829,14 @@
                         "a7313ac3-af42-43b0-a7ad-a9ff45f34a04"
                     ],
                     "required": true,
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "error": {}
+                    "foreignCollection": "90d361c0-bc19-48c8-9f4b-70d908244320",
+                    "foreignField": [
+                        "90d361c0-bc19-48c8-9f4b-70d908244320",
+                        "206cff2e-68cf-4123-aacf-0cd6aeebc7d4"
+                    ],
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "25565beb-7d23-4f63-9e9a-dae959b68983"
                 },
                 {
                     "name": "result description",
@@ -3370,7 +2875,7 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "f00dca1a-fd66-44fe-92b6-7653a4cdae20",
-                    "required": false,
+                    "required": true,
                     "sample": 10123,
                     "alternateKey": false,
                     "foreignCollection": "",
@@ -3394,10 +2899,11 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "error": {},
                     "GUID": "d3d174fd-5b49-45f4-910e-b292ec0da9a6",
                     "foreignCollection": "",
-                    "foreignField": []
+                    "foreignField": [],
+                    "required": true,
+                    "error": {}
                 },
                 {
                     "name": "result unit of measure",
@@ -3416,7 +2922,7 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "required": false,
+                    "required": true,
                     "GUID": "6c028fef-f713-4122-98a5-1aec20becf3c",
                     "foreignCollection": "",
                     "foreignField": [],
@@ -3441,6 +2947,7 @@
                     "GUID": "43162a8a-eeb3-450d-87b0-7935709dc655",
                     "foreignCollection": "",
                     "foreignField": [],
+                    "required": true,
                     "error": {}
                 }
             ],
@@ -3701,6 +3208,434 @@
             "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
             "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Batch Release Test Specification",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "batch release test specification id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "04df0e95-b58c-495c-8948-130d08b5c8d4",
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {},
+                    "childRelationships": [
+                        "d3097ccf-8fb2-44e3-bc63-c96bd004df16"
+                    ]
+                },
+                {
+                    "name": "test specification type id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "47f92cb0-bd7e-4b1c-ad40-468711d1347a",
+                    "childRelationships": [],
+                    "required": true,
+                    "foreignCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                    "foreignField": [
+                        "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                        "a27ade01-6a85-4fed-a8ca-22936754fcfd"
+                    ],
+                    "alternateKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5504eb79-244c-4d67-957b-791d8e6c3e8d",
+                    "error": {}
+                },
+                {
+                    "name": "work master id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b111e77d-c45a-4ce9-a60e-a9f7c40f6d70",
+                    "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "foreignField": [
+                        "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "alternateKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "de1f7dc1-22eb-4285-92ae-487189e5d1b9",
+                    "error": {}
+                },
+                {
+                    "name": "product batch id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2bbe6b7d-b6c5-4380-960f-4441cc9ebef9",
+                    "foreignCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "foreignField": [
+                        "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                        "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                    ],
+                    "required": true,
+                    "alternateKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "91fbb3cc-5394-4355-b39c-9218911cfae6",
+                    "error": {}
+                },
+                {
+                    "name": "batch release test specification summary",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "7050064f-04b7-4f13-9556-e8fe3c1b4a83",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "batch release release test specification function",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "symbols": [
+                        "Y"
+                    ],
+                    "alternateKey": false,
+                    "childType": "enum",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "745ba60b-7b31-4b82-9757-998625873cca",
+                    "enum": [
+                        "is",
+                        "isnot",
+                        "greaterthan",
+                        "lessthan",
+                        "contains",
+                        "equals",
+                        "notequals"
+                    ],
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ],
+                        "exampleItems": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ]
+                    },
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "release condition rule arguments",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "alternateKey": false,
+                            "childType": "varchar",
+                            "type": "string",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "850ca6fa-e022-44d4-ba83-0ec88e5bee87",
+                            "arrayItem": true,
+                            "displayName": "arg1",
+                            "error": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "alternateKey": false,
+                            "childType": "varchar",
+                            "type": "string",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "25b1a49f-b3fe-4919-871b-b4f77f1564d4",
+                            "arrayItem": true,
+                            "displayName": "arg2",
+                            "error": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        }
+                    ],
+                    "alternateKey": false,
+                    "childType": "array",
+                    "type": "array",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "error": {},
+                    "GUID": "8fd121c2-6d74-4e53-8e31-84a2c261646d",
+                    "foreignCollection": "",
+                    "foreignField": []
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0a04de44-bb1c-46b3-92de-c09fe8a00ffa"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Batch Release Test",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "batch release test result id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b6cb7451-d724-49b9-93c6-d34990d1214a",
+                    "childRelationships": [],
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "batch release test specification id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "c48a10ce-0b16-4f83-bd05-e13a6ec4fd64",
+                    "required": true,
+                    "foreignCollection": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                    "foreignField": [
+                        "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                        "04df0e95-b58c-495c-8948-130d08b5c8d4"
+                    ],
+                    "childRelationships": [],
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d3097ccf-8fb2-44e3-bc63-c96bd004df16"
+                },
+                {
+                    "name": "result description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "alternateKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "required": false,
+                    "GUID": "43b95d7c-3cf7-418e-90b2-25e3234671d9",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": []
+                },
+                {
+                    "name": "batch release test result id copy",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "ba19a993-1f90-42c2-8741-a66ebba37be8",
+                    "childRelationships": [],
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "test result id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "206cff2e-68cf-4123-aacf-0cd6aeebc7d4",
+                    "childRelationships": [
+                        "25565beb-7d23-4f63-9e9a-dae959b68983"
+                    ],
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "alternateKey": false,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "78b8423a-0468-4bb8-8635-efc70e0903d0"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "90d361c0-bc19-48c8-9f4b-70d908244320",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -3720,11 +3655,12 @@
                 "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
                 "aa3e13b8-b07c-4764-b90f-c541e1c16de2",
                 "1feb59b5-650e-4ef3-8daf-7d2f118b08ab",
-                "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
                 "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
                 "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
                 "9ad51cce-f4c5-4651-ad7c-670557febc4a",
-                "ea6a12b9-40b4-4128-bf9d-76e728259ba1"
+                "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
+                "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                "90d361c0-bc19-48c8-9f4b-70d908244320"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -3799,79 +3735,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26670.65990823194,
-                        "y": 43350.60055603276
+                        "x": 25702.22548376187,
+                        "y": 42695.21839439763
                     },
                     {
-                        "x": 26670.65990823194,
-                        "y": 43262.02196334937
+                        "x": 25702.22548376187,
+                        "y": 42744.109498683945
                     },
                     {
-                        "x": 26658.94338339566,
-                        "y": 43262.02196334937
+                        "x": 25786.81198922863,
+                        "y": 42744.109498683945
                     },
                     {
-                        "x": 26658.94338339566,
-                        "y": 43173.44337066597
+                        "x": 25786.81198922863,
+                        "y": 42793.00060297027
                     }
                 ],
                 "sides": [
-                    "top",
-                    "bottom"
-                ]
-            },
-            "isActivated": true
-        },
-        {
-            "name": "fk Alarm Process Event.process event id to Process Event.process event id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
-                    "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "GUID": "7aa8238d-01de-4ec4-ae94-b0f74d9951d0",
-            "level": "field",
-            "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-            "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "69f2a7f8-8421-4e57-806c-bedf4221081b",
-                "autoPositioning": false,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 25679.12230188499,
-                        "y": 43139.96642687543
-                    },
-                    {
-                        "x": 26389.44338339566,
-                        "y": 43139.96642687543
-                    },
-                    {
-                        "x": 26389.44338339566,
-                        "y": 43158.44337066597
-                    },
-                    {
-                        "x": 26509.44338339566,
-                        "y": 43158.44337066597
-                    }
-                ],
-                "sides": [
-                    "right",
-                    "left"
+                    "bottom",
+                    "top"
                 ]
             },
             "isActivated": true
@@ -3907,20 +3789,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26417.382135884014,
-                        "y": 42720.58763094136
+                        "x": 26475.52346898971,
+                        "y": 42717.59940870017
                     },
                     {
-                        "x": 26417.382135884014,
-                        "y": 42828.58763094139
+                        "x": 26475.52346898971,
+                        "y": 42826.296378397165
                     },
                     {
-                        "x": 26175.68516618706,
-                        "y": 42828.58763094139
+                        "x": 26330.651263205993,
+                        "y": 42826.296378397165
                     },
                     {
-                        "x": 26175.68516618706,
-                        "y": 42936.58763094142
+                        "x": 26330.651263205993,
+                        "y": 42934.993348094154
                     }
                 ],
                 "sides": [
@@ -3962,24 +3844,16 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26512.382135884014,
-                        "y": 42534.58763094136
+                        "x": 26401.40225686847,
+                        "y": 42521.59940870017
                     },
                     {
-                        "y": 41985.58763094136,
-                        "x": 26512.382135884014
+                        "y": 41972.59940870017,
+                        "x": 26401.40225686847
                     },
                     {
-                        "y": 41985.58763094136,
-                        "x": 26805.260923762806
-                    },
-                    {
-                        "x": 26805.260923762806,
-                        "y": 41968.930283980284
-                    },
-                    {
-                        "x": 27149.139711641597,
-                        "y": 41968.930283980284
+                        "x": 26992.159832626054,
+                        "y": 41972.59940870017
                     }
                 ],
                 "sides": [
@@ -4020,20 +3894,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27287.473044975104,
-                        "y": 42877.375509729245
+                        "x": 27186.8264992929,
+                        "y": 42863.29637839714
                     },
                     {
-                        "x": 27287.473044975104,
-                        "y": 42494.34520669896
+                        "x": 27186.8264992929,
+                        "y": 42484.81152991232
                     },
                     {
-                        "x": 27316.639711641597,
-                        "y": 42494.34520669896
+                        "x": 27159.659832626054,
+                        "y": 42484.81152991232
                     },
                     {
-                        "x": 27316.639711641597,
-                        "y": 42111.31490366868
+                        "x": 27159.659832626054,
+                        "y": 42106.32668142749
                     }
                 ],
                 "sides": [
@@ -4074,74 +3948,12 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25748.48484848483,
-                        "y": 43405.80519480522
+                        "x": 25809.11210170128,
+                        "y": 43353.65868000243
                     },
                     {
-                        "x": 25724.48484848483,
-                        "y": 43405.80519480522
-                    },
-                    {
-                        "x": 25724.48484848483,
-                        "y": 43279.57089436327
-                    },
-                    {
-                        "x": 25679.12230188499,
-                        "y": 43279.57089436327
-                    }
-                ],
-                "sides": [
-                    "left",
-                    "right"
-                ]
-            }
-        },
-        {
-            "name": "fk Job Response.job order id to Job Order.job order id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
-                    "8e3292f7-348b-4164-a37c-34ce5d7d7999"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "767417e6-5d6f-4796-b75b-711a6ab9d9b0",
-                    "3faf54f1-a31e-4901-af78-d8acd50a425c"
-                ]
-            ],
-            "isActivated": true,
-            "childCardinality": "0..1",
-            "parentCollection": "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
-            "childCollection": "767417e6-5d6f-4796-b75b-711a6ab9d9b0",
-            "GUID": "e5eb18ac-db3e-4f76-be55-496f127bd115",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "e2daadcf-9e89-4f2a-9d8d-927e1f160570",
-                "autoPositioning": false,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 27231.139711641772,
-                        "y": 42877.375509729245
-                    },
-                    {
-                        "x": 27231.139711641772,
-                        "y": 42797.057327911054
-                    },
-                    {
-                        "x": 27087.230620732564,
-                        "y": 42797.057327911054
-                    },
-                    {
-                        "x": 27087.230620732564,
-                        "y": 42716.73914609286
+                        "x": 25809.11210170128,
+                        "y": 43276.657738773654
                     }
                 ],
                 "sides": [
@@ -4182,12 +3994,12 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26912.200317702205,
-                        "y": 42405.01187336564
+                        "x": 26867.341650807903,
+                        "y": 42400.02365112445
                     },
                     {
-                        "x": 26912.200317702205,
-                        "y": 42296.19369154742
+                        "x": 26867.341650807903,
+                        "y": 42271.20546930623
                     }
                 ],
                 "sides": [
@@ -4228,20 +4040,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26965.230620732564,
-                        "y": 42613.73914609286
+                        "x": 26920.37195383826,
+                        "y": 42608.75092385167
                     },
                     {
-                        "x": 26965.230620732564,
-                        "y": 42560.87550972925
+                        "x": 26920.37195383826,
+                        "y": 42555.88728748806
                     },
                     {
-                        "x": 26911.83668133858,
-                        "y": 42560.87550972925
+                        "x": 26866.978014444278,
+                        "y": 42555.88728748806
                     },
                     {
-                        "x": 26911.83668133858,
-                        "y": 42508.01187336564
+                        "x": 26866.978014444278,
+                        "y": 42503.02365112445
                     }
                 ],
                 "sides": [
@@ -4282,20 +4094,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25256.049444001685,
-                        "y": 44120.5039767266
+                        "x": 24985.852748907535,
+                        "y": 43823.484758753664
                     },
                     {
-                        "x": 25291.049444001685,
-                        "y": 44120.5039767266
+                        "x": 25026.458809513595,
+                        "y": 43823.484758753664
                     },
                     {
-                        "x": 25291.049444001685,
-                        "y": 44017.670643393234
+                        "x": 25026.458809513595,
+                        "y": 43893.04536481425
                     },
                     {
-                        "x": 25326.04944400168,
-                        "y": 44017.670643393234
+                        "x": 25067.064870119655,
+                        "y": 43893.04536481425
                     }
                 ],
                 "sides": [
@@ -4336,20 +4148,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26471.109408611304,
-                        "y": 43784.22399457777
+                        "x": 26269.700592305053,
+                        "y": 43635.356291756354
                     },
                     {
-                        "y": 43613.22399457777,
-                        "x": 26471.109408611304
+                        "y": 43462.762008909085,
+                        "x": 26269.700592305053
                     },
                     {
-                        "y": 43613.22399457777,
-                        "x": 26242.72139648112
+                        "y": 43462.762008909085,
+                        "x": 26397.687493500052
                     },
                     {
-                        "x": 26242.72139648112,
-                        "y": 43077.58763094142
+                        "x": 26397.687493500052,
+                        "y": 43075.993348094154
                     }
                 ],
                 "sides": [
@@ -4390,20 +4202,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26477.231262183508,
-                        "y": 43989.17064339327
+                        "x": 26275.822445877257,
+                        "y": 43840.302940571855
                     },
                     {
-                        "x": 26511.109408611304,
-                        "y": 43989.17064339327
+                        "x": 26309.700592305053,
+                        "y": 43840.302940571855
                     },
                     {
-                        "x": 26511.109408611304,
-                        "y": 43844.22399457777
+                        "x": 26309.700592305053,
+                        "y": 43695.356291756354
                     },
                     {
-                        "x": 26486.109408611304,
-                        "y": 43844.22399457777
+                        "x": 26284.700592305053,
+                        "y": 43695.356291756354
                     }
                 ],
                 "sides": [
@@ -4444,20 +4256,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25736.71611066836,
-                        "y": 44099.33731005992
+                        "x": 25535.30729436211,
+                        "y": 43950.469607238505
                     },
                     {
-                        "x": 25680.88277733502,
-                        "y": 44099.33731005992
+                        "x": 25450.68608224088,
+                        "y": 43950.469607238505
                     },
                     {
-                        "x": 25680.88277733502,
-                        "y": 44017.670643393234
+                        "x": 25450.68608224088,
+                        "y": 43893.04536481425
                     },
                     {
-                        "x": 25625.04944400168,
-                        "y": 44017.670643393234
+                        "x": 25366.064870119655,
+                        "y": 43893.04536481425
                     }
                 ],
                 "sides": [
@@ -4498,20 +4310,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26035.71611066836,
-                        "y": 44099.33731005992
+                        "x": 25834.30729436211,
+                        "y": 43950.469607238505
                     },
                     {
-                        "x": 26103.973686425932,
-                        "y": 44099.33731005992
+                        "x": 25902.564870119684,
+                        "y": 43950.469607238505
                     },
                     {
-                        "x": 26103.973686425932,
-                        "y": 44007.67064339327
+                        "x": 25902.564870119684,
+                        "y": 43858.802940571855
                     },
                     {
-                        "x": 26172.231262183508,
-                        "y": 44007.67064339327
+                        "x": 25970.822445877257,
+                        "y": 43858.802940571855
                     }
                 ],
                 "sides": [
@@ -4552,12 +4364,12 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27049.04880255076,
-                        "y": 43982.83005518378
+                        "x": 26847.21733953323,
+                        "y": 43861.2350796351
                     },
                     {
-                        "x": 27049.04880255076,
-                        "y": 42716.73914609286
+                        "x": 26847.21733953323,
+                        "y": 42711.75092385167
                     }
                 ],
                 "sides": [
@@ -4598,20 +4410,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26557.07974703201,
-                        "y": 44089.33731005992
+                        "x": 26416.27699133183,
+                        "y": 43955.621122390025
                     },
                     {
-                        "x": 26517.15550460776,
-                        "y": 44089.33731005992
+                        "x": 26346.049718604543,
+                        "y": 43955.621122390025
                     },
                     {
-                        "x": 26517.15550460776,
-                        "y": 44026.17064339327
+                        "x": 26346.049718604543,
+                        "y": 43877.302940571855
                     },
                     {
-                        "x": 26477.231262183508,
-                        "y": 44026.17064339327
+                        "x": 26275.822445877257,
+                        "y": 43877.302940571855
                     }
                 ],
                 "sides": [
@@ -4652,20 +4464,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26856.07974703201,
-                        "y": 44089.33731005992
+                        "x": 26715.27699133183,
+                        "y": 43955.621122390025
                     },
                     {
-                        "x": 26951.276396003486,
-                        "y": 44089.33731005992
+                        "x": 26755.928185757846,
+                        "y": 43955.621122390025
                     },
                     {
-                        "x": 26951.276396003486,
-                        "y": 44034.33005518378
+                        "x": 26755.928185757846,
+                        "y": 43912.7350796351
                     },
                     {
-                        "x": 27046.473044974966,
-                        "y": 44034.33005518378
+                        "x": 26796.57938018386,
+                        "y": 43912.7350796351
                     }
                 ],
                 "sides": [
@@ -4706,24 +4518,16 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27149.139711641597,
-                        "y": 41918.31490366868
+                        "x": 26992.159832626054,
+                        "y": 41913.32668142749
                     },
                     {
-                        "y": 41918.31490366868,
-                        "x": 26304.139711641597
+                        "x": 25745.9057521784,
+                        "y": 41913.32668142749
                     },
                     {
-                        "x": 26304.139711641597,
-                        "y": 42336.31490366868
-                    },
-                    {
-                        "y": 42336.31490366868,
-                        "x": 25893.927590429474
-                    },
-                    {
-                        "x": 25893.927590429474,
-                        "y": 42546.34520669901
+                        "x": 25745.9057521784,
+                        "y": 41946.53770865765
                     }
                 ],
                 "sides": [
@@ -4764,25 +4568,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26658.94338339566,
-                        "y": 43033.44337066597
+                        "x": 25936.31198922863,
+                        "y": 42863.00060297027
                     },
                     {
-                        "x": 26658.94338339566,
-                        "y": 42877.01550080367
+                        "x": 26120.41772910917,
+                        "y": 42863.00060297027
                     },
                     {
-                        "x": 26531.382135884014,
-                        "y": 42877.01550080367
+                        "x": 26120.41772910917,
+                        "y": 42619.59940870017
                     },
                     {
-                        "x": 26531.382135884014,
-                        "y": 42720.58763094136
+                        "x": 26304.52346898971,
+                        "y": 42619.59940870017
                     }
                 ],
                 "sides": [
-                    "top",
-                    "bottom"
+                    "right",
+                    "left"
                 ]
             }
         },
@@ -4818,24 +4622,24 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27134.230620732564,
-                        "y": 42660.73914609286
+                        "x": 27089.37195383826,
+                        "y": 42655.75092385167
                     },
                     {
-                        "x": 27149.230620732564,
-                        "y": 42660.73914609286
+                        "x": 27104.37195383826,
+                        "y": 42655.75092385167
                     },
                     {
-                        "x": 27149.230620732564,
-                        "y": 42385.02702488077
+                        "x": 27104.37195383826,
+                        "y": 42380.03880263958
                     },
                     {
-                        "x": 27262.799295322635,
-                        "y": 42385.02702488077
+                        "x": 27105.81941630709,
+                        "y": 42380.03880263958
                     },
                     {
-                        "x": 27262.799295322635,
-                        "y": 42111.31490366868
+                        "x": 27105.81941630709,
+                        "y": 42106.32668142749
                     }
                 ],
                 "sides": [
@@ -4869,32 +4673,24 @@
             "lineSize": 2,
             "hackoladeStyles": {
                 "GUID": "6b3ee234-86f9-453d-9c18-7fb80014f3b9",
-                "autoPositioning": true,
+                "autoPositioning": false,
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27632.473044975104,
-                        "y": 43862.375509729245
+                        "x": 27122.189898053573,
+                        "y": 43799.65932205935
                     },
                     {
-                        "x": 27657.473044975104,
-                        "y": 43862.375509729245
-                    },
-                    {
-                        "x": 27657.473044975104,
-                        "y": 44034.33005518378
-                    },
-                    {
-                        "x": 27384.473044974966,
-                        "y": 44034.33005518378
+                        "x": 27122.189898053573,
+                        "y": 43861.2350796351
                     }
                 ],
                 "sides": [
-                    "right",
-                    "right"
+                    "bottom",
+                    "top"
                 ]
             }
         },
@@ -4930,79 +4726,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 27463.473044975104,
-                        "y": 43791.375509729245
+                        "x": 27159.09898896268,
+                        "y": 43657.65932205935
                     },
                     {
-                        "x": 27463.473044975104,
-                        "y": 43405.375509729245
+                        "x": 27159.09898896268,
+                        "y": 43331.47785022824
                     },
                     {
-                        "x": 27287.473044975104,
-                        "y": 43405.375509729245
+                        "x": 27130.493165959568,
+                        "y": 43331.47785022824
                     },
                     {
-                        "x": 27287.473044975104,
-                        "y": 43019.375509729245
+                        "x": 27130.493165959568,
+                        "y": 43005.29637839714
                     }
                 ],
                 "sides": [
                     "top",
                     "bottom"
-                ]
-            }
-        },
-        {
-            "name": "fk Release Condition Rule.work master id to Work Master.work master id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                    "1ee820ba-7459-4c08-a59d-e58e66568c09"
-                ]
-            ],
-            "isActivated": true,
-            "childCardinality": "0..n",
-            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-            "childCollection": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-            "GUID": "9ee6def2-fa80-4e5c-95d8-1494ea309b64",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "a92157f5-0bf3-4d98-a13c-1d6d3042481f",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 25463.971059174415,
-                        "y": 42585.42424242427
-                    },
-                    {
-                        "x": 25580.949324801943,
-                        "y": 42585.42424242427
-                    },
-                    {
-                        "x": 25580.949324801943,
-                        "y": 42615.34520669901
-                    },
-                    {
-                        "x": 25697.927590429474,
-                        "y": 42615.34520669901
-                    }
-                ],
-                "sides": [
-                    "right",
-                    "left"
                 ]
             }
         },
@@ -5038,20 +4780,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25679.12230188499,
-                        "y": 43104.21381161221
+                        "x": 25943.82092884289,
+                        "y": 43140.657738773654
                     },
                     {
-                        "x": 25748.12230188499,
-                        "y": 43104.21381161221
+                        "x": 25976.82092884289,
+                        "y": 43140.657738773654
                     },
                     {
-                        "x": 25748.12230188499,
-                        "y": 43007.58763094142
+                        "x": 25976.82092884289,
+                        "y": 43065.63383176039
                     },
                     {
-                        "x": 26013.68516618706,
-                        "y": 43007.58763094142
+                        "x": 26168.651263205993,
+                        "y": 43065.63383176039
                     }
                 ],
                 "sides": [
@@ -5092,25 +4834,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25258.549444001685,
-                        "y": 43899.5039767266
+                        "x": 25154.761839816645,
+                        "y": 43689.727182996096
                     },
                     {
-                        "x": 25258.549444001685,
-                        "y": 43960.5039767266
+                        "x": 25070.30729436209,
+                        "y": 43689.727182996096
                     },
                     {
-                        "x": 25156.716110668352,
-                        "y": 43960.5039767266
+                        "x": 25070.30729436209,
+                        "y": 43757.484758753664
                     },
                     {
-                        "x": 25156.716110668352,
-                        "y": 44021.5039767266
+                        "x": 24985.852748907535,
+                        "y": 43757.484758753664
                     }
                 ],
                 "sides": [
-                    "bottom",
-                    "top"
+                    "left",
+                    "right"
                 ]
             }
         },
@@ -5146,75 +4888,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25176.08587294334,
-                        "y": 43759.5039767266
+                        "x": 25464.761839816645,
+                        "y": 43644.12235959628
                     },
                     {
-                        "x": 25176.08587294334,
-                        "y": 43296.0548010115
+                        "x": 25495.245369464097,
+                        "y": 43644.12235959628
                     },
                     {
-                        "x": 25407.12230188499,
-                        "y": 43296.0548010115
+                        "x": 25495.245369464097,
+                        "y": 43235.10252734075
+                    },
+                    {
+                        "x": 25672.82092884289,
+                        "y": 43235.10252734075
                     }
                 ],
                 "sides": [
-                    "top",
+                    "right",
                     "left"
-                ]
-            }
-        },
-        {
-            "name": "fk Batch Release Test Specification.test specification id to Test Specification.test specification id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                    "a27ade01-6a85-4fed-a8ca-22936754fcfd"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                    "919f18b7-c866-4b87-9898-089254755bd8"
-                ]
-            ],
-            "isActivated": true,
-            "childCardinality": "1",
-            "parentCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-            "childCollection": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-            "GUID": "fe94ba4b-1b19-4533-a285-12b1b3bdcae4",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "ddde2f80-f597-4c7b-a80a-0ddfdc4dd966",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 25081.971059174415,
-                        "y": 42585.42424242427
-                    },
-                    {
-                        "x": 25022.13772584106,
-                        "y": 42585.42424242427
-                    },
-                    {
-                        "x": 25022.13772584106,
-                        "y": 42507.59090909091
-                    },
-                    {
-                        "x": 24962.304392507707,
-                        "y": 42507.59090909091
-                    }
-                ],
-                "sides": [
-                    "left",
-                    "right"
                 ]
             }
         },
@@ -5250,20 +4942,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25407.12230188499,
-                        "y": 43253.04960997385
+                        "x": 25672.82092884289,
+                        "y": 43140.657738773654
                     },
                     {
-                        "x": 25334.382777335017,
-                        "y": 43253.04960997385
+                        "x": 25629.820928842906,
+                        "y": 43140.657738773654
                     },
                     {
-                        "x": 25334.382777335017,
-                        "y": 42982.503976726584
+                        "x": 25629.820928842906,
+                        "y": 43081.07144259063
                     },
                     {
-                        "x": 25205.382777335017,
-                        "y": 42982.503976726584
+                        "x": 25369.951518852,
+                        "y": 43081.07144259063
                     }
                 ],
                 "sides": [
@@ -5297,60 +4989,6 @@
             "lineSize": 2,
             "hackoladeStyles": {
                 "GUID": "6796d47b-e523-4d3b-b37d-018d45113a08",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 25057.382777335017,
-                        "y": 44021.5039767266
-                    },
-                    {
-                        "x": 25057.382777335017,
-                        "y": 43511.50397672659
-                    },
-                    {
-                        "x": 25055.382777335017,
-                        "y": 43511.50397672659
-                    },
-                    {
-                        "x": 25055.382777335017,
-                        "y": 43001.503976726584
-                    }
-                ],
-                "sides": [
-                    "top",
-                    "bottom"
-                ]
-            }
-        },
-        {
-            "name": "fk Deviation.batch release test specification id to Batch Release Test Specification.batch release test specification id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                    "becfd121-c513-4491-8398-2d971b045566"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "0e814c54-df5d-449b-a032-c0fee76bf64d",
-                    "4fbad03a-1372-404d-aed3-e32dc398f6d7"
-                ]
-            ],
-            "isActivated": true,
-            "childCardinality": "0..1",
-            "parentCollection": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-            "childCollection": "0e814c54-df5d-449b-a032-c0fee76bf64d",
-            "GUID": "6f91563d-d96a-4699-9fee-6100088ee746",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "bb564b44-a854-40d6-86c0-fcb36d515ad5",
                 "autoPositioning": false,
                 "type": "Orthogonal",
                 "thickness": 2,
@@ -5358,78 +4996,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25422.12230188499,
-                        "y": 43089.21381161221
+                        "x": 24827.678791579274,
+                        "y": 43691.484758753664
                     },
                     {
-                        "y": 42806.21381161221,
-                        "x": 25422.12230188499
+                        "y": 42998.269798044,
+                        "x": 24827.678791579274
                     },
                     {
-                        "y": 42806.21381161221,
-                        "x": 25132.12230188499
-                    },
-                    {
-                        "x": 25132.12230188499,
-                        "y": 42681.92424242427
+                        "x": 25069.951518852,
+                        "y": 42998.269798044
                     }
                 ],
                 "sides": [
                     "top",
-                    "bottom"
-                ]
-            }
-        },
-        {
-            "name": "fk Batch Release Test Specification.product batch id to Product Batch.product batch id",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
-                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                    "e8ff17f7-26c7-4754-97b1-f9da63fa0dc7"
-                ]
-            ],
-            "isActivated": true,
-            "childCardinality": "0..n",
-            "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
-            "childCollection": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-            "GUID": "60510222-0a7c-4ec4-8fb2-8adbb8cb8151",
-            "level": "field",
-            "lineSize": 2,
-            "hackoladeStyles": {
-                "GUID": "788adfe4-5794-4286-b37f-b1521ad571f4",
-                "autoPositioning": false,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 25463.971059174415,
-                        "y": 42617.59090909093
-                    },
-                    {
-                        "x": 25563.828112680738,
-                        "y": 42617.59090909093
-                    },
-                    {
-                        "x": 25563.828112680738,
-                        "y": 42957.08763094142
-                    },
-                    {
-                        "x": 26013.68516618706,
-                        "y": 42957.08763094142
-                    }
-                ],
-                "sides": [
-                    "right",
                     "left"
                 ]
             }
@@ -5466,20 +5046,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25167.260923762828,
-                        "y": 42247.345206699
+                        "x": 25846.946358808073,
+                        "y": 42249.44837976292
                     },
                     {
-                        "x": 25064.782658135267,
-                        "y": 42247.345206699
+                        "x": 25789.94971749746,
+                        "y": 42249.44837976292
                     },
                     {
-                        "x": 25064.782658135267,
-                        "y": 42474.25757575758
+                        "x": 25789.94971749746,
+                        "y": 42410.54685994266
                     },
                     {
-                        "x": 24962.304392507707,
-                        "y": 42474.25757575758
+                        "x": 25732.953076186852,
+                        "y": 42410.54685994266
                     }
                 ],
                 "sides": [
@@ -5520,17 +5100,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 25657.260923762813,
-                        "y": 42247.34520669896
+                        "x": 26014.58769191381,
+                        "y": 42410.510824643585
                     },
                     {
-                        "x": 25502.260923762828,
-                        "y": 42247.345206699
+                        "x": 26014.58769191381,
+                        "y": 42364.47960220325
+                    },
+                    {
+                        "x": 26014.446358808073,
+                        "y": 42364.47960220325
+                    },
+                    {
+                        "x": 26014.446358808073,
+                        "y": 42318.44837976292
                     }
                 ],
                 "sides": [
-                    "left",
-                    "right"
+                    "top",
+                    "bottom"
                 ]
             }
         },
@@ -5566,25 +5154,338 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 26303.382135884014,
-                        "y": 42627.58763094136
+                        "x": 26364.97801444427,
+                        "y": 42521.59940870017
                     },
                     {
-                        "x": 26121.821529823414,
-                        "y": 42627.58763094136
+                        "y": 42450.53880263956,
+                        "x": 26364.97801444427
                     },
                     {
-                        "x": 26121.821529823414,
-                        "y": 42211.34520669896
-                    },
-                    {
-                        "x": 25992.260923762813,
-                        "y": 42211.34520669896
+                        "x": 26182.08769191381,
+                        "y": 42450.53880263956
                     }
                 ],
                 "sides": [
-                    "left",
+                    "top",
                     "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Batch Release Test Specification.test specification id to Test Specification.test specification id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                    "a27ade01-6a85-4fed-a8ca-22936754fcfd"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                    "47f92cb0-bd7e-4b1c-ad40-468711d1347a"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "5504eb79-244c-4d67-957b-791d8e6c3e8d",
+            "level": "field",
+            "parentCollection": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+            "childCollection": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "ddde2f80-f597-4c7b-a80a-0ddfdc4dd966",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25075.17865187145,
+                        "y": 42419.910496306176
+                    },
+                    {
+                        "x": 25373.953076186852,
+                        "y": 42419.910496306176
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Release Condition Rule.work master id to Work Master.work master id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                    "b111e77d-c45a-4ce9-a60e-a9f7c40f6d70"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "de1f7dc1-22eb-4285-92ae-487189e5d1b9",
+            "level": "field",
+            "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "childCollection": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "a92157f5-0bf3-4d98-a13c-1d6d3042481f",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25075.17865187145,
+                        "y": 42383.161879527564
+                    },
+                    {
+                        "x": 25328.02705050979,
+                        "y": 42383.161879527564
+                    },
+                    {
+                        "x": 25328.02705050979,
+                        "y": 42015.53770865765
+                    },
+                    {
+                        "x": 25662.026964299643,
+                        "y": 42015.53770865765
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Batch Release Test Specification.product batch id to Product Batch.product batch id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "647db0e4-11df-4372-aecc-79c937c0a6fb",
+                    "9fc40ab2-4964-4256-9e51-b65bb2929fd3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                    "2bbe6b7d-b6c5-4380-960f-4441cc9ebef9"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "91fbb3cc-5394-4355-b39c-9218911cfae6",
+            "level": "field",
+            "parentCollection": "647db0e4-11df-4372-aecc-79c937c0a6fb",
+            "childCollection": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "788adfe4-5794-4286-b37f-b1521ad571f4",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25075.17865187145,
+                        "y": 42498.91187952759
+                    },
+                    {
+                        "x": 25503.084915252908,
+                        "y": 42498.91187952759
+                    },
+                    {
+                        "x": 25503.084915252908,
+                        "y": 42995.493348094154
+                    },
+                    {
+                        "x": 26168.651263205993,
+                        "y": 42995.493348094154
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Batch Release Test.batch release test specification id to Batch Release Test Specification.batch release test specification id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                    "04df0e95-b58c-495c-8948-130d08b5c8d4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "90d361c0-bc19-48c8-9f4b-70d908244320",
+                    "c48a10ce-0b16-4f83-bd05-e13a6ec4fd64"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..1",
+            "parentCollection": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+            "childCollection": "90d361c0-bc19-48c8-9f4b-70d908244320",
+            "GUID": "d3097ccf-8fb2-44e3-bc63-c96bd004df16",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "cc19793e-1b50-4d4e-9cc0-f83e3dd139b7",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 24878.445274352478,
+                        "y": 42738.61630161348
+                    },
+                    {
+                        "x": 24878.445274352478,
+                        "y": 42647.889090570534
+                    },
+                    {
+                        "x": 24884.17865187145,
+                        "y": 42647.889090570534
+                    },
+                    {
+                        "x": 24884.17865187145,
+                        "y": 42557.16187952759
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "produces (fk Test Result.test result id to Batch Release Test.test result id)",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "90d361c0-bc19-48c8-9f4b-70d908244320",
+                    "206cff2e-68cf-4123-aacf-0cd6aeebc7d4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
+                    "7a671ad5-f5b2-40ce-a3b0-d42b07d51538"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..1",
+            "parentCollection": "90d361c0-bc19-48c8-9f4b-70d908244320",
+            "childCollection": "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
+            "GUID": "25565beb-7d23-4f63-9e9a-dae959b68983",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "be2abf95-83b9-4e7f-ab97-4960218b3372",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 25219.951518852,
+                        "y": 42964.78494955915
+                    },
+                    {
+                        "x": 25219.951518852,
+                        "y": 42927.700625586316
+                    },
+                    {
+                        "x": 24878.445274352478,
+                        "y": 42927.700625586316
+                    },
+                    {
+                        "x": 24878.445274352478,
+                        "y": 42890.61630161348
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "description": "produces"
+        },
+        {
+            "name": "fk Job Response.job response id to Job Order.job order id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
+                    "8e3292f7-348b-4164-a37c-34ce5d7d7999"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "767417e6-5d6f-4796-b75b-711a6ab9d9b0",
+                    "3488564e-3ad5-4acc-9491-a14b3e5f0ca2"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..1",
+            "parentCollection": "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
+            "childCollection": "767417e6-5d6f-4796-b75b-711a6ab9d9b0",
+            "GUID": "dde36b6c-92fe-4b60-b264-867f9a9a1ada",
+            "level": "field",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "645d2048-e3a1-42cd-ab8a-787b3eb5d924",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 27074.159832626236,
+                        "y": 42863.29637839714
+                    },
+                    {
+                        "x": 27074.159832626236,
+                        "y": 42787.52365112441
+                    },
+                    {
+                        "x": 26920.37195383826,
+                        "y": 42787.52365112441
+                    },
+                    {
+                        "x": 26920.37195383826,
+                        "y": 42711.75092385167
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
                 ]
             }
         }
@@ -5608,8 +5509,6 @@
         "0b84f41d-f5f6-4be3-9cc3-13897f8b1b5b": "process event type name",
         "1c7a70e1-8275-4870-9a76-7031d2b3b6d2": "fk Process Event Type.process event type id to Process Event.process event type id",
         "22e85ee9-8ea0-4cde-b0c7-f110b6614c71": "process event type description",
-        "e0ea4590-ebe4-4257-9f92-d4d4e8cd1419": "process event id",
-        "7aa8238d-01de-4ec4-ae94-b0f74d9951d0": "fk Alarm Process Event.process event id to Process Event.process event id",
         "7483d7c3-9f42-44ae-afcb-8453466d753a": "deviation id",
         "f273ad66-c1b4-4e15-8f9f-7717509349af": "deviation severity",
         "8e0b0be7-cc2f-41b8-a9cb-5392f6888b91": "process event status",
@@ -5635,8 +5534,7 @@
         "003f2061-61e8-46d0-b044-3777cb91c6d3": "job id",
         "8e9d1207-b44b-4f51-9a57-91e33f83ace8": "job id",
         "6f173763-2a26-448b-b761-2954bd3f2267": "fk Unit Process.job id to Job.job id",
-        "5076d337-9d02-42d1-8c8a-d31ed626cf05": "job id",
-        "3faf54f1-a31e-4901-af78-d8acd50a425c": "job order id",
+        "5076d337-9d02-42d1-8c8a-d31ed626cf05": "job order id",
         "767417e6-5d6f-4796-b75b-711a6ab9d9b0": "Job Response",
         "55c2e915-dabb-4003-9b07-ebfe0ab1c28e": "fk Job Response.job id to Job.job id",
         "4fdef329-761a-4857-b9eb-3d2ed99c2e96": "station id",
@@ -5647,14 +5545,12 @@
         "c650a08c-ab23-4a6f-88b9-feb566aad1d6": "deviation assessment outcome",
         "b22e0e12-1bef-4cad-bb96-ddddee226377": "deviation assessed by id",
         "766615c7-5af6-47d7-8f3c-d1aa4434cc26": "fk deviation(1).deviation id to deviation.deviation id",
-        "1e995ffe-3e80-45cc-932a-b9629659cc4e": "batch release condition id",
         "bcf9a1b1-8a7d-4730-9350-79c91586719e": "assessment completed status",
         "f72877cb-6109-42e6-916f-e7032c477075": "deviation assessment id",
         "8e3292f7-348b-4164-a37c-34ce5d7d7999": "job order id",
         "5e66a06c-7067-4cbb-bd26-f04fdc235819": "work request id",
         "6c2caddf-3875-4b39-89b8-ea4630d4f26b": "Job Order",
         "3488564e-3ad5-4acc-9491-a14b3e5f0ca2": "job response id",
-        "e5eb18ac-db3e-4f76-be55-496f127bd115": "fk Job Response.job order id to Job Order.job order id",
         "6606d09d-7e25-46fb-855b-d955fca9a516": "work request id",
         "cd284619-3dc7-4745-84b5-8c9fa6360fa9": "work schedule id",
         "7bea9585-a79b-4270-a936-a6847ee7383d": "work request id",
@@ -5701,11 +5597,6 @@
         "b1f3939f-0206-4ac5-a848-f38e815e443e": "fk Lab Sample Test(1).lab sample id to Lab Sample.lab sample id",
         "9a6a5cbf-fae5-4820-a62c-f0b2dc3c9051": "fk Lab Job Order Sample.lab job order id to Lab Job Order.lab job order id",
         "74bdebba-4faf-47a8-8cdc-98584a380ac8": "fk Job.work master id to work master id.work master id",
-        "becfd121-c513-4491-8398-2d971b045566": "batch release test specification id",
-        "78fcb1c8-9bc7-4bc5-b4f3-faa7cf28ab31": "batch release test specification summary",
-        "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3": "Batch Release Test Specification",
-        "6641b1bf-3e1e-40ce-bc01-68fda6394f3a": "batch release release test specification function",
-        "82d16733-590b-4015-8699-e2a7f44a88c3": "release condition rule arguments",
         "95b28d75-0c4c-4158-ae7d-042227d84fad": "job step id",
         "46eabd7a-9945-4d70-b587-2f401d948da8": "fk Process Event.unit process id to Unit Process.unit process id",
         "8fb968f7-d9d5-40a1-abc8-fd2267048883": "job id",
@@ -5717,8 +5608,6 @@
         "851d6ccc-4762-4747-b98a-085847f44671": "fk Lab Job Response.lab job order id to Lab Job Order.lab job order id",
         "1ac96e92-8c82-4818-a94a-8041303854f3": "job response id",
         "02cc1814-05b7-4a75-8b5d-d6a2dc8b0d86": "fk Lab Job Response.job response id to Job Response.job response id",
-        "1ee820ba-7459-4c08-a59d-e58e66568c09": "work master id",
-        "9ee6def2-fa80-4e5c-95d8-1494ea309b64": "fk Release Condition Rule.work master id to Work Master.work master id",
         "b5c48e45-4724-438e-8691-10f7b38c3f31": "product batch id",
         "ac37a7e7-dd53-48b3-95c8-33984691b249": "fk Deviation.product batch id to Product Batch.product batch id",
         "c3e727cb-8f9e-4868-b323-a4f74a7abe3a": "lab test result id",
@@ -5731,8 +5620,6 @@
         "166244f5-35dd-452f-8a28-e82f60b7db55": "test specification type summary",
         "1f021036-554a-4108-b907-c42804f25b12": "test specification type name",
         "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76": "Test Specification Type",
-        "919f18b7-c866-4b87-9898-089254755bd8": "test specification id",
-        "fe94ba4b-1b19-4533-a285-12b1b3bdcae4": "fk Batch Release Test Specification.test specification id to Test Specification.test specification id",
         "7a671ad5-f5b2-40ce-a3b0-d42b07d51538": "test result id",
         "fc2e8056-214d-4efa-ac3e-772c1c73e3e3": "result description",
         "f00dca1a-fd66-44fe-92b6-7653a4cdae20": "test date",
@@ -5746,16 +5633,8 @@
         "699602e3-0b0f-4c4a-8aa3-9e6af476100a": "fk Deviation.id to Test Result.id",
         "a7313ac3-af42-43b0-a7ad-a9ff45f34a04": "fk Lab Test Result.test result id to Test Result.test result id",
         "a30418f4-c981-43b9-b247-eacdfc844d26": "result unit of measure",
-        "190cef81-10f0-4f1b-bc44-5dd526708a29": "result unit of measure",
-        "34b6d052-672c-42b3-858d-3629f8d4c930": "expiration",
         "42c839f7-e7c5-4c7f-9f09-011e34b166a3": "result",
-        "4fbad03a-1372-404d-aed3-e32dc398f6d7": "batch release test specification id",
-        "6f91563d-d96a-4699-9fee-6100088ee746": "fk Deviation.batch release test specification id to Batch Release Test Specification.batch release test specification id",
-        "b0cce399-e6d5-45df-ab46-576093fee244": "result description",
-        "4c4dd15c-32b1-4a1c-a8c4-3e0b15f220d8": "test date",
-        "966e4775-86a3-429a-9f97-af52b680f52d": "result",
-        "e8ff17f7-26c7-4754-97b1-f9da63fa0dc7": "product batch id",
-        "60510222-0a7c-4ec4-8fb2-8adbb8cb8151": "fk Batch Release Test Specification.product batch id to Product Batch.product batch id",
+        "b0cce399-e6d5-45df-ab46-576093fee244": "deviation description",
         "a7b2d55c-9d9c-4c5b-9460-8cf5bd12f478": "physical assets",
         "f7ba680e-fa89-4572-9e2c-27e213fc3f3b": "personnel",
         "4924cb62-ff3e-49a8-80c8-5f63ede4ad13": "material lots",
@@ -5774,7 +5653,27 @@
         "508f5546-966d-4e9a-8acb-dc06397c54d5": "fk Job Step Response Specification.test specification type id to Test Specification Type.test specification type id",
         "2f782633-9198-4267-9289-119b89e00e18": "fk Job Step Procedure.job step procedure id to Job Step Response Specification.job step procedure id",
         "8c646715-ecef-4e0a-886f-2e3f61f623ca": "job step procedure id",
-        "5315eed9-493b-4be2-9eaa-6841907302a1": "fk Job Step.job step procedure id to Job Step Procedure.job step procedure id"
+        "5315eed9-493b-4be2-9eaa-6841907302a1": "fk Job Step.job step procedure id to Job Step Procedure.job step procedure id",
+        "04df0e95-b58c-495c-8948-130d08b5c8d4": "batch release test specification id",
+        "47f92cb0-bd7e-4b1c-ad40-468711d1347a": "test specification type id",
+        "b111e77d-c45a-4ce9-a60e-a9f7c40f6d70": "work master id",
+        "2bbe6b7d-b6c5-4380-960f-4441cc9ebef9": "product batch id",
+        "7050064f-04b7-4f13-9556-e8fe3c1b4a83": "batch release test specification summary",
+        "745ba60b-7b31-4b82-9757-998625873cca": "batch release release test specification function",
+        "8fd121c2-6d74-4e53-8e31-84a2c261646d": "release condition rule arguments",
+        "90f88628-72bc-4ad0-8a76-b9b5452415d2": "Batch Release Test Specification",
+        "5504eb79-244c-4d67-957b-791d8e6c3e8d": "fk Batch Release Test Specification.test specification id to Test Specification.test specification id",
+        "de1f7dc1-22eb-4285-92ae-487189e5d1b9": "fk Release Condition Rule.work master id to Work Master.work master id",
+        "91fbb3cc-5394-4355-b39c-9218911cfae6": "fk Batch Release Test Specification.product batch id to Product Batch.product batch id",
+        "b6cb7451-d724-49b9-93c6-d34990d1214a": "batch release test result id",
+        "43b95d7c-3cf7-418e-90b2-25e3234671d9": "result description",
+        "90d361c0-bc19-48c8-9f4b-70d908244320": "Batch Release Test",
+        "c48a10ce-0b16-4f83-bd05-e13a6ec4fd64": "batch release test specification id",
+        "d3097ccf-8fb2-44e3-bc63-c96bd004df16": "fk Batch Release Test.batch release test specification id to Batch Release Test Specification.batch release test specification id",
+        "ba19a993-1f90-42c2-8741-a66ebba37be8": "batch release test result id copy",
+        "206cff2e-68cf-4123-aacf-0cd6aeebc7d4": "test result id",
+        "25565beb-7d23-4f63-9e9a-dae959b68983": "produces (fk Test Result.test result id to Batch Release Test.test result id)",
+        "dde36b6c-92fe-4b60-b264-867f9a9a1ada": "fk Job Response.job response id to Job Order.job order id"
     },
     "definitions": {
         "type": "definitions",
@@ -5798,14 +5697,14 @@
             "name": "PROCESS Domain CDM",
             "type": "annotation",
             "disableInitialFocus": true,
-            "value": "# Digital Membership\n## PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.7.0\n- date: 5-Feb-2024\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture.  This provides a specification for the data objects and their interrelationships that govern the business aspects of medicines manufacturing process with the Digital Membership.\n\nThis LDM is derived from the Digital Memberhsip PROCESS Domain CDM.\n\nThis domain seeks to align to the ISA95 standard, which derives from definitions in the OPC UA 10000 Specification (v.1.05.03).\n\nThis model follows standard crows-foot notation for Entity-Relationship diagrams.",
+            "value": "# Digital Membership\n## PROCESS Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.8.2\n- date: 21-March-2024\n\nThis is the PROCESS Domain LDM for the Digital Membership data architecture.  This provides a specification for the data objects and their interrelationships that govern the business aspects of medicines manufacturing process with the Digital Membership.\n\nThis LDM is derived from the Digital Memberhsip PROCESS Domain CDM.\n\nThis domain seeks to align to the ISA95 standard, which derives from definitions in the OPC UA 10000 Specification (v.1.05.03).\n\nThis model follows standard crows-foot notation for Entity-Relationship diagrams.",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
         },
         {
             "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
             "name": "TODO - 01",
             "type": "annotation",
-            "value": "Determine if the \"Process Event Recipe\".configuration should be a set of values within the join entity, or broken out in to a separate entity.  Simplify for now (as of 0.3.2).",
+            "value": "Should ProcessEvent.processEventType derive from TestSpecificationType (ISA95)?",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
             "disableInitialFocus": true
         },
@@ -5853,6 +5752,13 @@
             "value": "add sensor event id to Process Event; ref to PLANT domain LDM",
             "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
             "disableInitialFocus": true
+        },
+        {
+            "GUID": "5dc537c2-2bbe-43dc-bb31-8250ba16fbcc",
+            "name": "Abstract Reference Entity",
+            "type": "annotation",
+            "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "disableInitialFocus": true
         }
     ],
     "dbVendor": "Polyglot",
@@ -5860,7 +5766,7 @@
     "creationTS": "2023-09-25T11:05:29.690Z",
     "GUID": "524d374c-ae8e-4e70-8acb-4f14516b1e84",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-03-14T14:17:35.989Z",
+    "lastModifTS": "2024-03-21T14:44:57.959Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -5872,7 +5778,7 @@
         "version": "7.2.0"
     },
     "hackoladeMeta": {},
-    "version": "0.7.0",
+    "version": "0.8.2",
     "author": "timothy.galvin@atos.net",
     "settings": {
         "centralPane": {
@@ -5880,8 +5786,8 @@
                 "erd": [
                     {
                         "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                        "x": 25697.927590429474,
-                        "y": 42546.34520669901,
+                        "x": 25662.026964299643,
+                        "y": 41946.53770865765,
                         "width": 335,
                         "height": 138,
                         "color": {
@@ -5890,8 +5796,8 @@
                     },
                     {
                         "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                        "x": 26509.44338339566,
-                        "y": 43033.44337066597,
+                        "x": 25637.31198922863,
+                        "y": 42793.00060297027,
                         "width": 299,
                         "height": 140,
                         "color": {
@@ -5900,18 +5806,18 @@
                     },
                     {
                         "GUID": "0e814c54-df5d-449b-a032-c0fee76bf64d",
-                        "x": 25407.12230188499,
-                        "y": 43089.21381161221,
-                        "width": 272,
-                        "height": 272,
+                        "x": 25672.82092884289,
+                        "y": 43125.657738773654,
+                        "width": 271,
+                        "height": 151,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "38c05342-c87d-4678-9b81-9231b87b7395",
-                        "x": 26506.15990823194,
-                        "y": 43350.60055603276,
+                        "x": 25537.72548376187,
+                        "y": 42608.21839439763,
                         "width": 329,
                         "height": 87,
                         "color": {
@@ -5920,18 +5826,18 @@
                     },
                     {
                         "GUID": "7aa25246-c096-4be0-a640-186cc28244ea",
-                        "x": 26303.382135884014,
-                        "y": 42534.58763094136,
+                        "x": 26304.52346898971,
+                        "y": 42521.59940870017,
                         "width": 342,
-                        "height": 186,
+                        "height": 196,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "647db0e4-11df-4372-aecc-79c937c0a6fb",
-                        "x": 26013.68516618706,
-                        "y": 42936.58763094142,
+                        "x": 26168.651263205993,
+                        "y": 42934.993348094154,
                         "width": 324,
                         "height": 141,
                         "color": {
@@ -5940,8 +5846,8 @@
                     },
                     {
                         "GUID": "9cd42bbf-5f82-42d2-bf67-02ba07461f60",
-                        "x": 27149.139711641597,
-                        "y": 41899.31490366868,
+                        "x": 26992.159832626054,
+                        "y": 41894.32668142749,
                         "width": 335,
                         "height": 212,
                         "color": {
@@ -5950,8 +5856,8 @@
                     },
                     {
                         "GUID": "767417e6-5d6f-4796-b75b-711a6ab9d9b0",
-                        "x": 27118.473044975104,
-                        "y": 42877.375509729245,
+                        "x": 26961.493165959568,
+                        "y": 42863.29637839714,
                         "width": 338,
                         "height": 142,
                         "color": {
@@ -5960,8 +5866,8 @@
                     },
                     {
                         "GUID": "82da2a44-ef23-491e-bfc6-f5a8bb39f43c",
-                        "x": 25748.48484848483,
-                        "y": 43391.00000000002,
+                        "x": 25650.4773041138,
+                        "y": 43353.65868000243,
                         "width": 330,
                         "height": 154,
                         "color": {
@@ -5970,8 +5876,8 @@
                     },
                     {
                         "GUID": "6c2caddf-3875-4b39-89b8-ea4630d4f26b",
-                        "x": 26796.230620732564,
-                        "y": 42613.73914609286,
+                        "x": 26751.37195383826,
+                        "y": 42608.75092385167,
                         "width": 338,
                         "height": 103,
                         "color": {
@@ -5980,8 +5886,8 @@
                     },
                     {
                         "GUID": "aa3e13b8-b07c-4764-b90f-c541e1c16de2",
-                        "x": 26742.83668133858,
-                        "y": 42405.01187336564,
+                        "x": 26697.978014444278,
+                        "y": 42400.02365112445,
                         "width": 338,
                         "height": 103,
                         "color": {
@@ -5990,18 +5896,18 @@
                     },
                     {
                         "GUID": "1feb59b5-650e-4ef3-8daf-7d2f118b08ab",
-                        "x": 26679.200317702205,
-                        "y": 42193.19369154742,
+                        "x": 26634.341650807903,
+                        "y": 42188.20546930623,
                         "width": 338,
-                        "height": 103,
+                        "height": 83,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "9fc604b0-fef6-4bf9-8f06-7071b8db8126",
-                        "x": 24958.049444001685,
-                        "y": 44021.5039767266,
+                        "x": 24687.852748907535,
+                        "y": 43691.484758753664,
                         "width": 298,
                         "height": 198,
                         "color": {
@@ -6010,8 +5916,8 @@
                     },
                     {
                         "GUID": "116083ac-8974-428b-91c3-c100c4daa8ed",
-                        "x": 25326.04944400168,
-                        "y": 43956.170643393234,
+                        "x": 25067.064870119655,
+                        "y": 43831.54536481425,
                         "width": 299,
                         "height": 123,
                         "color": {
@@ -6020,8 +5926,8 @@
                     },
                     {
                         "GUID": "6fa54bd6-1ab6-4574-a347-c596203ef23e",
-                        "x": 26172.231262183508,
-                        "y": 43952.17064339327,
+                        "x": 25970.822445877257,
+                        "y": 43803.302940571855,
                         "width": 305,
                         "height": 111,
                         "color": {
@@ -6030,8 +5936,8 @@
                     },
                     {
                         "GUID": "b6a3113e-fd94-4b5f-9695-6b1e113fe443",
-                        "x": 26164.109408611304,
-                        "y": 43784.22399457777,
+                        "x": 25962.700592305053,
+                        "y": 43635.356291756354,
                         "width": 322,
                         "height": 120,
                         "color": {
@@ -6040,8 +5946,8 @@
                     },
                     {
                         "GUID": "5fa9eab2-64cb-4316-acda-1b547259ac9d",
-                        "x": 27046.473044974966,
-                        "y": 43982.83005518378,
+                        "x": 26796.57938018386,
+                        "y": 43861.2350796351,
                         "width": 338,
                         "height": 103,
                         "color": {
@@ -6050,8 +5956,8 @@
                     },
                     {
                         "GUID": "f20ed591-30a0-4757-957b-0669f15e1e8f",
-                        "x": 25736.71611066836,
-                        "y": 44028.83731005992,
+                        "x": 25535.30729436211,
+                        "y": 43879.969607238505,
                         "width": 299,
                         "height": 141,
                         "color": {
@@ -6060,8 +5966,8 @@
                     },
                     {
                         "GUID": "ca015624-b9ac-4d72-b42d-c441286feed1",
-                        "x": 26557.07974703201,
-                        "y": 44018.83731005992,
+                        "x": 26416.27699133183,
+                        "y": 43885.121122390025,
                         "width": 299,
                         "height": 141,
                         "color": {
@@ -6069,19 +5975,9 @@
                         }
                     },
                     {
-                        "GUID": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                        "x": 25081.971059174415,
-                        "y": 42488.92424242427,
-                        "width": 382,
-                        "height": 193,
-                        "color": {
-                            "hex": "#00bcd5"
-                        }
-                    },
-                    {
                         "GUID": "a725b90a-f4db-49ba-9d99-d12bd4627c44",
-                        "x": 27294.473044975104,
-                        "y": 43791.375509729245,
+                        "x": 26990.09898896268,
+                        "y": 43657.65932205935,
                         "width": 338,
                         "height": 142,
                         "color": {
@@ -6090,18 +5986,18 @@
                     },
                     {
                         "GUID": "44b20ed4-561f-4426-91ef-09c5a5e5db6e",
-                        "x": 25104.049444001685,
-                        "y": 43759.5039767266,
-                        "width": 309,
-                        "height": 140,
+                        "x": 25154.761839816645,
+                        "y": 43631.727182996096,
+                        "width": 310,
+                        "height": 116,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
-                        "x": 24603.304392507707,
-                        "y": 42440.92424242425,
+                        "x": 25373.953076186852,
+                        "y": 42360.54685994266,
                         "width": 359,
                         "height": 100,
                         "color": {
@@ -6110,8 +6006,8 @@
                     },
                     {
                         "GUID": "67f2c4ef-ac32-41bb-9dbe-0bd60fb95ed1",
-                        "x": 24905.382777335017,
-                        "y": 42849.503976726584,
+                        "x": 25069.951518852,
+                        "y": 42964.78494955915,
                         "width": 300,
                         "height": 152,
                         "color": {
@@ -6120,8 +6016,8 @@
                     },
                     {
                         "GUID": "9ad51cce-f4c5-4651-ad7c-670557febc4a",
-                        "x": 25657.260923762813,
-                        "y": 42178.34520669896,
+                        "x": 25847.08769191381,
+                        "y": 42410.510824643585,
                         "width": 335,
                         "height": 138,
                         "color": {
@@ -6130,12 +6026,32 @@
                     },
                     {
                         "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1",
-                        "x": 25167.260923762828,
-                        "y": 42178.345206699,
+                        "x": 25846.946358808073,
+                        "y": 42180.44837976292,
                         "width": 335,
                         "height": 138,
                         "color": {
                             "hex": "#00bcd5"
+                        }
+                    },
+                    {
+                        "GUID": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                        "x": 24693.17865187145,
+                        "y": 42364.16187952759,
+                        "width": 382,
+                        "height": 193,
+                        "color": {
+                            "hex": "#00bcd5"
+                        }
+                    },
+                    {
+                        "GUID": "90d361c0-bc19-48c8-9f4b-70d908244320",
+                        "x": 24728.445274352478,
+                        "y": 42738.61630161348,
+                        "width": 300,
+                        "height": 152,
+                        "color": {
+                            "hex": "#2196F3"
                         }
                     }
                 ],
@@ -6147,13 +6063,13 @@
                 },
                 "buckets": [
                     {
-                        "x": 24505.78151386864,
-                        "y": 41849.31235272019,
+                        "x": 24651.506024209106,
+                        "y": 41708.26352441836,
                         "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
                     },
                     {
-                        "x": 24918.049444001685,
-                        "y": 43719.5039767266,
+                        "x": 24647.852748907535,
+                        "y": 43591.727182996096,
                         "GUID": "156f4c5e-0763-4cca-8a13-0455c46cebd7"
                     }
                 ],
@@ -6282,12 +6198,6 @@
                             "y": 43832.95852218114
                         },
                         {
-                            "GUID": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3",
-                            "size": 100,
-                            "x": 25373.304392507747,
-                            "y": 43554.2575757576
-                        },
-                        {
                             "GUID": "a725b90a-f4db-49ba-9d99-d12bd4627c44",
                             "size": 100,
                             "x": 26908.473044975104,
@@ -6322,6 +6232,18 @@
                             "size": 100,
                             "x": 25639.260923762813,
                             "y": 41960.34520669896
+                        },
+                        {
+                            "GUID": "90f88628-72bc-4ad0-8a76-b9b5452415d2",
+                            "size": 100,
+                            "x": 25121.971059174415,
+                            "y": 42528.92424242427
+                        },
+                        {
+                            "GUID": "90d361c0-bc19-48c8-9f4b-70d908244320",
+                            "size": 100,
+                            "x": 24899.110953073865,
+                            "y": 42957.52539252257
                         }
                     ],
                     "buckets": [
@@ -6392,6 +6314,13 @@
                             "y": 43172.25447644117,
                             "height": 114,
                             "width": 288
+                        },
+                        {
+                            "GUID": "5dc537c2-2bbe-43dc-bb31-8250ba16fbcc",
+                            "x": 25009.142387845433,
+                            "y": 41872.4453426002,
+                            "height": 33,
+                            "width": 241
                         }
                     ],
                     "forceLayout": true,
@@ -6401,17 +6330,17 @@
                 "decorativeSymbols": [
                     {
                         "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
-                        "x": 24611.334388073068,
-                        "y": 41889.31235272019,
+                        "x": 24691.506024209106,
+                        "y": 41750.08170623658,
                         "height": 446,
                         "width": 425
                     },
                     {
                         "GUID": "543d46a3-fbbf-4e09-8d42-2783a3a069d8",
-                        "x": 24547.054241141384,
-                        "y": 43067.042355229074,
-                        "height": 114,
-                        "width": 288,
+                        "x": 25538.922846974383,
+                        "y": 42492.547689359024,
+                        "height": 73,
+                        "width": 261,
                         "color": {
                             "hsl": {
                                 "h": 0,
@@ -6438,10 +6367,10 @@
                     },
                     {
                         "GUID": "fa713e1f-c992-4269-95a3-427bad9472db",
-                        "x": 25064.364691103357,
-                        "y": 41893.494170902006,
-                        "height": 152,
-                        "width": 282,
+                        "x": 25139.696969697005,
+                        "y": 41748.26352441836,
+                        "height": 186,
+                        "width": 280,
                         "color": {
                             "hsl": {
                                 "h": 199.53488372093022,
@@ -6468,10 +6397,10 @@
                     },
                     {
                         "GUID": "d0f011e5-76b5-42f9-b681-996c6da391b6",
-                        "x": 25086.001054739736,
-                        "y": 41975.43356484139,
-                        "height": 38,
-                        "width": 238,
+                        "x": 25159.696969697005,
+                        "y": 41878.202918357754,
+                        "height": 32,
+                        "width": 240,
                         "color": {
                             "hsl": {
                                 "h": 206.57142857142858,
@@ -6498,8 +6427,8 @@
                     },
                     {
                         "GUID": "65ce55d1-a885-4be1-92cc-ca8baad0b396",
-                        "x": 25086.001054739736,
-                        "y": 41930.100231508055,
+                        "x": 25158.696969697005,
+                        "y": 41784.86958502441,
                         "height": 33,
                         "width": 241,
                         "color": {
@@ -6528,15 +6457,15 @@
                     },
                     {
                         "GUID": "7ccd9f23-b4d9-46b8-a2d5-0399d1fcc3cd",
-                        "x": 25729.382777335002,
-                        "y": 43852.223994577755,
+                        "x": 25602.999748694016,
+                        "y": 43690.043623416146,
                         "height": 103,
                         "width": 275
                     },
                     {
                         "GUID": "8852606a-6f3e-4a2a-b45a-08784e555930",
-                        "x": 26190.594898547148,
-                        "y": 44125.07247942626,
+                        "x": 25989.186082240896,
+                        "y": 43976.20477660484,
                         "height": 108,
                         "width": 295,
                         "color": {
@@ -6565,8 +6494,8 @@
                     },
                     {
                         "GUID": "ac0805ea-6f94-4306-a36d-534ed8ab1f46",
-                        "x": 24545.78151386864,
-                        "y": 43218.19387038057,
+                        "x": 25461.528907580392,
+                        "y": 41749.153749965095,
                         "height": 90,
                         "width": 289,
                         "color": {
@@ -6590,6 +6519,36 @@
                                 "a": 1
                             },
                             "oldHue": 199.53488372093022,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "5dc537c2-2bbe-43dc-bb31-8250ba16fbcc",
+                        "x": 25158.696969697005,
+                        "y": 41830.8695850244,
+                        "height": 33,
+                        "width": 241,
+                        "color": {
+                            "hsl": {
+                                "h": 187.04225352112678,
+                                "s": 1,
+                                "l": 0.4176470588235294,
+                                "a": 1
+                            },
+                            "hex": "#00bcd5",
+                            "rgb": {
+                                "r": 0,
+                                "g": 188,
+                                "b": 213,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 187.04225352112678,
+                                "s": 1,
+                                "v": 0.8352941176470589,
+                                "a": 1
+                            },
+                            "oldHue": 187.04225352112678,
                             "source": "hex"
                         }
                     }
@@ -6704,11 +6663,6 @@
                         "GUID": "8852606a-6f3e-4a2a-b45a-08784e555930"
                     },
                     {
-                        "autoWidth": false,
-                        "autoHeight": false,
-                        "GUID": "fee0c0f9-defd-4e42-9a62-44d35ecf2bf3"
-                    },
-                    {
                         "GUID": "ac0805ea-6f94-4306-a36d-534ed8ab1f46"
                     },
                     {
@@ -6724,7 +6678,11 @@
                     {
                         "autoWidth": false,
                         "autoHeight": false,
-                        "GUID": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76"
+                        "GUID": "7e0b2fc0-5ff4-4328-94c5-c60fbf7c0d76",
+                        "fontStyle": [
+                            "bold",
+                            "italic"
+                        ]
                     },
                     {
                         "autoWidth": false,
@@ -6740,9 +6698,27 @@
                         "autoWidth": false,
                         "autoHeight": false,
                         "GUID": "ea6a12b9-40b4-4128-bf9d-76e728259ba1"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "90f88628-72bc-4ad0-8a76-b9b5452415d2"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "90d361c0-bc19-48c8-9f4b-70d908244320"
+                    },
+                    {
+                        "GUID": "5dc537c2-2bbe-43dc-bb31-8250ba16fbcc",
+                        "fontStyle": [
+                            "bold",
+                            "italic"
+                        ]
                     }
                 ],
-                "relationshipUpdateDisabled": false
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {}
             },
             "collectionLevel": {},
             "changed": false
